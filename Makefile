@@ -12,7 +12,7 @@ sources= \
 	mnesia.xml 
 
 # Erlang compiler
-ERL=erl
+ERL=12erl
 
 all: obj obj/faq.html obj/t1.html
 

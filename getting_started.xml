@@ -14,7 +14,8 @@
 
 	It depends. (did you expect anything else?)
 	</p><p>
-	With a C background (or Java, C++, Pascal, etc.),
+	With an imperative language background (e.g. C, Python, Java, C++, 
+	Pascal, PERL, etc.),
 	it takes most people about a week before they can write 
 	nontrivial programs, about a month to feel really comfortable
 	and a few months before feeling ready to take on something
@@ -22,7 +23,7 @@
 	how to use Erlang around for some hand-holding.
 	</p><p>
 	With a background which includes another declarative language
-	(Lisp, Prolog, Haskell, Scheme), you'll be able
+	(Lisp, Prolog, Haskell, Scheme, etc.), you'll be able
 	to hack Erlang code straight away, though learning to take
 	advantage of the fault tolerance and concurrency takes a while.
 </p>
