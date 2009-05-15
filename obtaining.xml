@@ -188,6 +188,7 @@
 </p><p>
 	
 	Mnesia's internals are described on 
+	<!-- REVISIT: erlang projects was down at last viewing, 2009-05-15 -->
 	<url href="http://www.erlang-projects.org/Groups/erlang_frameworks/mnesia_internals_sli/block_11394822732946/file">
 	H&aring;kan's slides</url>
 
@@ -203,6 +204,7 @@
 	</c>. 
 
 </p><p>
+	<!-- REVISIT: erlang projects was down at last viewing, 2009-05-15 -->
 	Erlang-projects has a <url href="http://www.erlang-projects.org/Public/documentation/serc/">collection</url> of papers written at the
 	now-defunct SERC division of RMIT.
 
@@ -307,7 +309,7 @@ distributing it are:
 
       <item><p>Putting the code on a personal homepage </p></item>
 
-      <item><p>Getting your code <url href="http://cean.process-one.net/contrib/CEAN">packaged into the CEAN</url></p></item>
+      <item><p>Getting your code <url href="http://cean.process-one.net/contrib/packaging-guide.txt">packaged into the CEAN</url></p></item>
     </list>
   </section>
   <section>
@@ -316,7 +318,7 @@ distributing it are:
     <p>
         Even though Erlang is a fairly mature language with a large
         established code-base, changes and enhancements are still
-        being incorporated. There is a newly established mechanism
+        being incorporated. There is a mechanism
         called the <url
         href="http://user.it.uu.se/~pergu/eep/eep-0001.html">Erlang
         Enhancement Proposal</url> which formalises the process.
@@ -410,7 +412,7 @@ distributing it are:
     <p>
 
 	The erlang-questions list is
-	<url href="http://www.erlang.org/ml-archive/erlang-questions/">
+	<url href="http://www.erlang.org/pipermail/erlang-questions/">
 	archived on the Erlang website</url>. 
 
         </p><p>
@@ -438,6 +440,7 @@ distributing it are:
   <section><title>Are there any websites apart from erlang.org?</title>
 
     <p>
+	<!-- REVISIT: erlang projects was down at last viewing, 2009-05-15 -->
 	<url href="http://www.erlang-projects.org/">Erlang-projects</url>
 	aims to track Erlang use in projects.
 

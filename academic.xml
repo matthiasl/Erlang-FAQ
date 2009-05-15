@@ -749,7 +749,7 @@ gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\\n\r\\n"]).
 
 	There is an active research group looking at problems
 	related to formal verification, they have a 
-	<url href="http://www.sics.se/research/fdt.php">home page</url>.
+	<url href="http://www.sics.se/fdt/">home page</url>.
 	
 </p></section>
 <section><title>I've heard it's a bad idea to program defensively in Erlang. Why?</title>

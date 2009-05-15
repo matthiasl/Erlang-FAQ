@@ -67,8 +67,7 @@ href="http://www.erlang.org/ml-archive/erlang-questions/199903/msg00002.html">
 <p>
 	A test suite is especially useful for making sure that
 	"improvements" to the system haven't broken something.
-	The OTP group have released their comprehensive 
-	<url href="http://www.erlang.org/project/test_server/index.html">test system</url> for Erlang. The test server can be used for testing
+	The <url href="http://www.erlang.org/project/test_server/index.html">test system</url> for Erlang. The test server can be used for testing
 	your project and it includes test suites for the Erlang emulator
 	and erlang stdlib.
 	</p><p>
