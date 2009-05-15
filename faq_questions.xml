@@ -18,6 +18,7 @@
 
 <section><title>What's new?</title>
 
+        <section>
 	<title>May 2009</title>
 	<p>Updated for R13B-1, fixed broken links</p>
 
@@ -32,9 +33,6 @@
 
 	<p>Mentioned the #erlang IRC channel.</p>
         </section>
-
-	<section>
-
 
 	<section>
 
