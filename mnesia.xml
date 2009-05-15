@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE chapter SYSTEM "chapter.dtd">
+<chapter>
+  <header>
+    <title>Mnesia Database Questions</title>
+    <prepared>Matthias Lang</prepared>
+<docno></docno>
+<date>2007-09-12</date>
+    <rev>1.0</rev>
+  </header>
+
+<p>
+
+Mnesia is the somewhat odd name for the real-time, distributed database which
+comes with Erlang. 
+
+</p>
+<section><title>What is Mnesia good at?</title>
+
+	<section> <title>Locking and Transactions</title>
+	<p>
+	If you need to keep a database that will be used by multiple 
+	processes and/or nodes, using Mnesia means you don't have
+	to write your own access controls.
+	</p></section>
+
+	<section> <title>Distribution</title>
+	<p>
+
+	Tables can be replicated at many nodes, both for efficiency
+	(database lookup is a local activity) and robustness 
+	(redundancy means if one node goes down, other nodes still 
+	have copies of the data.)
+	</p></section>
+
+	<section> <title>Non-fully-normalised data</title>
+        <p>
+	Unlike most database systems, records can contain data 
+	of arbitrary size and structure.
+	</p></section>
+
+	<section><title>Monitoring</title>
+	<p>
+	Monitoring - processes can subscribe to events which are 
+	sent when various operations on the data take place 
+	(update, delete, etc)  The RDBMS package allows even 
+	more fine-grained control.
+	</p></section>
+
+</section>
+<section><title>What is Mnesia not so good at?</title>
+<p>
+
+	Mnesia is primarily intended to be a memory-resident database.
+	Some of its design tradeoffs reflect this.
+
+</p><p>
+	Really large tables must be stored in a fragmented manner.
+
+</p></section>
+<section><title>Is Mnesia good for storing blobs?</title>
+<p>
+
+	It depends. Erlang has no problem storing Erlang binary data
+	types of arbritary size,  however due to the in-memory-database 
+	design emphasis of mnesia, storing lots of binary 
+	data will eventually hit one of a number of limitations. 
+	These are driven by:
+</p>
+
+	<list>
+	<item><p>
+	
+	Storage type - Both <c>ram_copies</c> and 
+	<c>disc_copies</c> tables 
+	rely on storing a full copy of the whole table and data 
+	in main memory. This will limit total blob storage to 
+	the size of available memory.
+	</p><p>
+
+	On the other hand <c>disc_only_copies</c>
+	 tables do not suffer 
+	from this limitation but they are slow (from disk) and 
+	the data is stored in dets tables which if not closed 
+	properly (e.g. after system crash) can take a long time 
+	to repair (this was improved in recent versions but is 
+	still not quick).
+        </p></item>
+	
+	<item><p>
+	Replication - if the table has a replica then updating 
+	an entry and rebuilding after a restart will copy the 
+	data over the network between the two machines. Depending 
+	on available bandwidth and the uptime requirements
+	this may or may not be acceptable.
+        </p></item>
+	</list>
+
+	<p>
+	
+	As always, measurement of the different mechanisms for your 
+	specific application is recommended.
+
+	</p><p>
+	A more colourful discussion of the these topics can be found
+	in this	<url href="http://www.erlang.org/ml-archive/erlang-questions/199910/msg00059.html">
+	post to the mailing list.</url>
+
+</p></section>
+<section><title>Is there an SQL interface for mnesia?</title>
+<p>
+
+	A partial one was built as a masters project, it's
+	of limited use and not widely used.
+
+</p><p>
+	QLC is the query engine for Mnesia and ETS. It is
+	a much better fit to Erlang than SQL.
+
+</p></section>
+<section><title>How much data can be stored in Mnesia?</title>
+<p>
+
+	Dets uses 32 bit integers for file offsets, so the 
+	largest possible mnesia table (for now) is 4Gb.
+	</p><p>
+	In practice your machine will slow to a crawl way before
+	you reach this limit.
+
+</p></section>
+<section><title>Contributors</title>
+<p> Thanks to Chris Pressey, Ulf Wiger and Sean Hinde for writing
+	the entries in this section.
+</p></section></chapter>

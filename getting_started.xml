@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE chapter SYSTEM "chapter.dtd">
+<chapter>
+  <header>
+    <title>Getting Started</title>
+    <prepared>Matthias Lang</prepared>
+<docno></docno>
+<date>2007-09-12</date>
+    <rev>1.0</rev>
+  </header>
+
+<section><title>How long does it take to learn Erlang?</title>
+<p>
+
+	It depends. (did you expect anything else?)
+	</p><p>
+	With a C background (or Java, C++, Pascal, etc.),
+	it takes most people about a week before they can write 
+	nontrivial programs, about a month to feel really comfortable
+	and a few months before feeling ready to take on something
+	big by themselves. It helps a lot to have someone who knows
+	how to use Erlang around for some hand-holding.
+	</p><p>
+	With a background which includes another declarative language
+	(Lisp, Prolog, Haskell, Scheme), you'll be able
+	to hack Erlang code straight away, though learning to take
+	advantage of the fault tolerance and concurrency takes a while.
+</p>
+</section>
+	
+<section><title>How can I learn Erlang?</title>
+<p>
+
+	There's an <url href="http://www.erlang.org/course/course.html">
+	online tutorial</url>. Any of the
+	<seealso marker="obtaining#books"> Erlang books</seealso> can 
+        also be used as tutorials.
+	</p><p>
+
+	The Erlang distribution includes a step-by-step <em>getting
+	started</em> guide. This is also <url 
+href="http://www.erlang.org/doc/getting_started/part_frame.html"
+	>online</url>
+	</p><p>
+
+	<url href="http://www.erlang.se/training/index.shtml">
+	Ericsson</url> run training courses for Ericsson employees.
+	</p><p>
+
+	<url href="http://www.erlang-consulting.com/">erlang-consulting.com
+	</url> and <url
+	href="http://www.erlang-services.com/">erlang-services.com</url>
+	both run training courses (primarily in London and Stockholm,
+	but also in the US, Asia and Australia) aimed at
+        businesses.
+	</p><p>
+
+	Many <seealso marker="introduction#universities">universities
+        </seealso> run 
+	courses either partly or wholly about Erlang. Courses about
+	functional programming are also useful for getting a solid
+        grounding which will then let you easily learn Erlang by yourself.
+</p>
+</section>
+
+<section><title>What does "hello world" look like?</title>
+<p>
+	Here's one way to write hello world:
+</p>
+
+	<code><![CDATA[
+	-module(hello).
+	-export([hello_world/0]).
+	
+	hello_world() -> io:fwrite("hello, world\\n").
+	]]></code>
+
+<p>
+	To compile this, save it in a file called <c>hello.erl</c> and
+	compile it from the erlang shell. Don't forget the full-stop 
+	("period" in American English) at the end of each command, as shown: 
+</p>
+
+	<pre>
+	Erlang (BEAM) emulator version 4.9.1 [source]
+
+	Eshell V4.9.1  (abort with ^G)
+	1> c(hello).
+	{ok,hello}
+	</pre>
+<p>
+
+	(on unix systems you start the erlang shell by typing "erl" at the 
+	command line. On Windows, open a command prompt window and
+	type "werl", or find the Erlang icon in the programs menu). 
+	To run the program from the Erlang shell:
+</p>
+
+	<pre>
+	2> hello:hello_world().
+	hello, world
+	ok
+	</pre>
+</section>
+
+<section><title>How do I quit the Erlang shell?</title>
+<p>
+	To shut a system down cleanly, use <c>init:stop().</c>
+	</p><p>
+
+	Some quick ways are evaluating <c>halt().</c> or 
+	<c>Control+\</c>.
+	</p><p>
+
+	<c>Control+C</c> and <c>Control+G</c>
+	give you access to menus.
+	</p>
+</section>
+
+<section><title>Why does Erlang print "ok" after my program's output?</title>
+<p>
+	The Erlang shell works by <em>r</em>eading an 
+	Erlang expression,
+	<em>e</em>valuating it, 
+	<em>p</em>rinting the result and 
+	<em>l</em>ooping
+	for another expression, i.e. a REPL shell.
+	</p><p>
+
+	The <c>io:fwrite()</c> function does two things. 
+	It prints out "hello world" and it returns the value 
+	<c>ok</c>.
+	</p><p>
+
+	So, when you execute <c>io:fwrite("hello, world\n")
+	</c> in the shell, the <c>fwrite</c> 
+	function prints the first line and the shell prints the return 
+	value, <c>ok</c>. This can be 
+	avoided by <seealso marker="how_do_i#noshell"> running 
+        Erlang without a shell</seealso>.
+</p>
+</section>
+</chapter>

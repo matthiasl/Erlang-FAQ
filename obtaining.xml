@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE chapter SYSTEM "chapter.dtd">
+<chapter>
+  <header>
+    <title>Obtaining Erlang/OTP and books/articles about it</title>
+    <prepared>Matthias Lang</prepared>
+    <docno></docno>
+    <date>2007-09-12</date>
+    <rev>1.0</rev>
+  </header>
+
+  <section><title>Where can I get Erlang/OTP?</title>
+
+    <p>
+	Open Source Erlang/OTP can be downloaded from 
+	<url href="http://www.erlang.org/">the open source Erlang 
+	site</url>. The site provides full source code as well
+	as binaries for Windows machines. This is probably the best
+	place to go to make sure you're getting the latest version.
+</p><p>
+	
+	The <url href="http://www.debian.org/">Debian Distribution</url>
+	of <em>GNU/Linux</em> includes various versions
+	Erlang in different releases, under <em>interpreters</em>.
+</p><p>
+	Precompiled ready-to-go installers for a variety of platforms
+        are available from the <url href="http://cean.process-one.net/">
+        Comprehensive Erlang Archive Network (CEAN)</url>. CEAN also
+        provides dozens of Erlang applications.
+</p><p>
+
+	Various versions of Erlang appear on various Walnut Creek 
+	FreeBSD CDs.
+</p><p>
+	Users within Ericsson can use Ericsson's internally supported
+        version of Erlang from <url href="http://www.erlang.se/">
+	www.erlang.se</url>.
+</p>
+  </section>
+
+  <section><title>What's the current version of (Open Source) Erlang?</title>
+
+    <p>
+	R13B-1 (``Release 12B, patchlevel 1'') was released in 
+	April 2009. As further patches are released, the "current"
+	version becomes R13B-2, R13B-3 etc. This curious version
+	numbering scheme is also used on Ericsson mobile phones, 
+	for instance my phone is an R1F phone...
+
+	</p><p> Major releases typically come somewhere between six
+	and twelve months apart.
+
+	</p><p>
+	Components of Erlang have their own version numbers, for
+	instance the virtual machine in R7B-0 has version 5.0.1
+	(yes, this is a bit confusing; 
+	<seealso marker="implementations#version-table">
+        see also</seealso>).
+        </p>
+  </section>
+
+  <section><title> Which licence is Open Source Erlang shipped with?</title>
+
+    <p>
+	The Open Source Erlang <url 
+	href="http://www.erlang.org/EPLICENSE">Licence</url> is essentially
+	the Mozilla (Netscape) Public Licence with a few modifications 
+	to make it compatible with Swedish law.
+	</p><p>
+
+	As far as I understand, this means you can obtain Erlang 
+	for free, use it to build cool systems and sell them 
+	without Ericsson coming around to charge you money.
+	For an authoritative statement, you'll need a lawyer.
+</p>
+  </section>
+
+  <section><title> What documentation is there for Erlang?</title>
+
+    <p>
+        The language itself is best described by the 
+	<url href="http://www.erlang.org//doc/reference_manual/part_frame.html">
+        Language Reference Manual</url>.</p><p>
+
+	The documentation delivered with open source erlang
+	as both man pages and <url href="http://www.erlang.org/doc.html">
+	html</url> is the most up-to-date reference to both the
+	OTP libraries and Erlang itself. On unix systems, the
+	easiest way to read the man pages is <c>erl -man gen_tcp
+	</c>.
+	</p><p>
+
+	<em>Programming Erlang: Software for a Concurrent World</em> 
+	(Joe Armstrong)
+	is <em>the</em> book about Erlang, published in 2007. You can buy
+        it on paper from Amazon and other online bookstores, or directly
+        from the <url href="http://pragmaticprogrammer.com/titles/jaerlang/index.html">publisher</url>.
+
+	</p><p>
+	<em>Erlang Programmation</em>(Micka&euml;l R&eacute;mond)
+        is an alternative if your French is up to it, it can be 
+        ordered 
+
+        <url href="http://www.eyrolles.com/Informatique/Livre/9782212110791/livre-erlang.php">from the publisher</url> or via
+	<url href="http://www.amazon.com/exec/obidos/tg/detail/-/2212110790/qid=1087192705/sr=1-3/ref=sr_1_3/102-4008653-6425766?v=glance%25s=books">
+        Amazon</url>.
+
+	</p><p>
+
+	<em>Concurrent Programming in Erlang (2nd. Edition)</em> 
+	(Armstrong, Virding, Wikstr&ouml;m &amp; Williams)
+	is mostly of historical interest, it's fairly out of
+        date. However: the <url href="http://www.erlang.org/doc.html">
+	first half of the book</url> can be downloaded for free, 	
+	but if you also read the <url href=
+	"http://www.erlang.org//doc/reference_manual/part_frame.html">
+	Erlang language reference</url> you'll have covered it all.
+</p><p>
+
+	Maurice Castro's book, <url 
+	href="http://www.castro.aus.net/~maurice/serc/erlbk/"
+        >Erlang in Real Time</url>, grew from lecture notes
+        and is a good introduction to the language.
+	</p>
+  </section>
+
+  <section><title> What advanced Erlang documentation is there?</title>
+    <p>
+
+	The <url href="http://www.erlang.org/download/erl_spec47.ps.gz">
+	Standard Erlang</url> spec aims to define the Erlang language. 
+	There is currently no compiler which actually implements everything
+	exactly the way <em>Standard Erlang</em> specifies.
+	This specification is quite precise; it's intended as a reference, 
+	not a bedtime read! Compiler and tool implementors will find
+	this useful, as will advanced Erlang programmers.
+
+</p><p>
+	<url href="http://www.it.uu.se/research/group/hipe/cerl/">Core Erlang
+	</url> is an effort to define an Erlang-like language which is 
+	nicer to compilers and language tools and can be automatically
+	generated from Erlang. Erlang compilers from R10 onwards can
+	generate Core Erlang from normal Erlang code. They can also
+	generate .beam files from Core Erlang.
+
+</p><p>
+        <url href="http://forum.trapexit.org/viewtopic.php?p=44172#44172">
+        The Erlang Rationale</url> is a short (13 page) discussion 
+        written by one of the original authors of Erlang about why
+        some parts of Erlang became the way they are. It's a work
+        in progress.
+
+</p><p>
+	The proceedings from the Erlang User Conferences contain
+	many interesting articles. The 
+	<url href="http://www.erlang.se/euc/"> 
+	proceedings</url> for each of the yearly conferences since 1999
+	are online.
+
+</p><p>
+	The internals of the BEAM file format are described on
+	<url href="http://www.erlang.se/~bjorn">
+	Bj&ouml;rn's homepage </url>. Eventually
+	this will/might include a description of the 
+	virtual machine's instructions. Bj&ouml;rn also includes some
+	benchmarks comparing different versions of the BEAM machine.
+	You may also want to take a look at the <c>beam_lib</c>
+	module.
+
+</p><p>
+	Joe Armstrong's Thesis, 
+        <url href="http://www.sics.se/~joe/thesis/armstrong_thesis_2003.pdf">
+	Making reliable distributed systems in the presence of software errors</url> contains a lot of interesting information, including a compact overview
+        of the language, a number of case studies and some discussion of 
+        the language's evolution, somewhat similar to Bjarne 
+        Stroustrup's <em>Design and Evolution of C++</em>.
+
+</p><p>
+        <url href="http://www.d.kth.se/~d95-rgr/examensarbetesrapport/">
+        This Masters Thesis</url> contains a good
+        overview of some of Erlang's implementation aspects, including
+        memory allocation (section 7).
+</p><p>
+
+        <url href="http://www.student.nada.kth.se/~d95-bka/thesis.html">
+        Another Masters Thesis</url> contains a good
+        overview of Erlang's distribution mechanisms (Section 5).
+</p><p>
+	
+	Mnesia's internals are described on 
+	<url href="http://www.erlang-projects.org/Groups/erlang_frameworks/mnesia_internals_sli/block_11394822732946/file">
+	H&aring;kan's slides</url>
+
+</p><p>
+        The <url href="http://www.cs-lab.org/papers.html"> 
+	(Ex-Ericsson) computer science laboratory</url> has a collection 
+	of papers about Erlang-related topics.
+
+</p><p>
+	The source-code release includes a directory with some of the
+	internal build documentation in the subdirectory
+	<c>erts/emulator/internal_doc/
+	</c>. 
+
+</p><p>
+	Erlang-projects has a <url href="http://www.erlang-projects.org/Public/documentation/serc/">collection</url> of papers written at the
+	now-defunct SERC division of RMIT.
+
+</p><p>
+	The Trapexit wiki has a collection of
+	<url href="http://wiki.trapexit.org/index.php/Category:HowTo">
+        HowTo</url> documents showing how to do all manner of things from
+        <url href="http://wiki.trapexit.org/index.php/A_fast_web_server_demonstrating_some_undocumented_Erlang_features">how to write a webserver in Erlang</url> to <url href="http://wiki.trapexit.org/index.php/Writing_an_Erlang_Port_using_OTP_Principles">how to write an Erlang Port program</url>.
+
+</p>
+  </section>
+
+  <section><title> What documentation is there in related subjects?</title>
+    <p>
+
+	The standard text about data structures in functional languages
+	is <em>Purely Functional Data Structures</em> by
+	Chris Okasaki. The parts about laziness (about half of the book)
+	do not apply to Erlang, but are interesting nonetheless. 
+	An <url href="http://www-2.cs.cmu.edu/~rwh/theses/okasaki.pdf">early 
+	version of the book</url> is available online, the book itself is 
+	available from many online booksellers.
+
+</p><p>
+	<em>Structure and Interpretation of Computer Programs</em>
+	is a standard introductory text to functional programming. It is
+	available both on paper and
+	<url href="http://mitpress.mit.edu/sicp/">online</url>
+
+</p><p>
+	(Suggestions for further books to for this section are welcome.
+	Mail the maintainer: <url href="mailto:matthias@corelatus.com"> matthias@corelatus.com</url>.)
+
+</p>
+  </section>
+
+  <section><title>Is there public CVS/Git/your-favourite-vcs repository for the Erlang source?</title>
+
+    <marker id="repositories"/>
+
+    <p>The following repositories are all maintained by people outside
+    the Erlang/OTP group at Ericsson, i.e. none is 'official':
+    </p>
+
+    <p>
+        The HIPE group provide public read-only CVS access to their
+        branch, which closely follows the OTP tree, of the Erlang
+        source. <url href="http://www.it.uu.se/research/group/hipe/hacking/cvs.shtml">Instructions
+        are here</url> or you can just check out like this:
+    </p>
+    <pre>
+    cvs -d :pserver:guest@cvs.srv.it.uu.se:/hipe co otp
+    </pre>
+
+    <p>
+    There's a GIT repository which tracks the public Erlang/OTP releases,
+    like this:</p>
+    <pre>
+    git clone git://github.com/mfoemmel/erlang-otp.git
+    </pre>
+
+    <p>
+    And there's a <url href="https://code.launchpad.net/erlang">
+    Bazaar repository</url> of the same thing.
+    </p>
+    
+  </section>
+
+  <section><title>How can I contribute to Erlang?</title>
+
+    <p>
+When you write Erlang code you want to share, there are quite a number of 
+ways to share it. The place to announce such things is the Erlang Questions 
+mailing list, or, in the case of patches, the Erlang Patches mailing list.
+Where you put the actual code is up to you.
+
+</p><p> 
+If your code is a modification to an existing part of OTP,
+attach a patch to your post to the erlang-patches mailing
+list. There's some useful general advice on making and sharing patches
+<url
+href="http://www.kegel.com/academy/opensource.html">here</url>.  The
+OTP group is quite conservative about including such code, especially
+if it requires new test cases to be written, so expect it to take a
+long time (months or years) for your code to find its way into the
+official distribution.  
+</p>
+
+    <p>
+If your code is a new application or library, some common ways of 
+distributing it are:
+</p>
+
+    <list>
+      <item><p>Checking your code into the 
+              <url href="http://jungerl.sourceforge.net">jungerl</url>
+ </p></item>
+
+      <item><p>Starting your own 
+              <url href="http://sourceforge.net/">sourceforge</url>
+		project </p></item>
+
+      <item><p>Putting the code on a personal homepage </p></item>
+
+      <item><p>Getting your code <url href="http://cean.process-one.net/contrib/CEAN">packaged into the CEAN</url></p></item>
+    </list>
+  </section>
+  <section>
+    <marker id="eeps"/> 
+    <title>How can I propose changes to the language itself?</title>
+    <p>
+        Even though Erlang is a fairly mature language with a large
+        established code-base, changes and enhancements are still
+        being incorporated. There is a newly established mechanism
+        called the <url
+        href="http://user.it.uu.se/~pergu/eep/eep-0001.html">Erlang
+        Enhancement Proposal</url> which formalises the process.
+
+</p>
+  </section>
+
+  <section>
+    <title>Where is Erlang discussed in the real world?</title>
+
+    <section>
+      <title>Conferences</title><p>
+
+	Every year (in September or October) there is an <em>
+	Erlang user conference</em>. The<url href="http://www.erlang.se/euc/">
+	proceedings</url> are archived. 
+</p><p>
+        In June 2008 and April 2009, the first ever <em>commercial</em> Erlang
+	conferences were held in London and San Francisco. This is now 
+	a regular event with further <url href="http://www.erlang-exchange.com/">Erlang Exchange
+        </url> events planned.
+</p><p>        
+        Academic conferences about 
+	functional programming are also attended by a few Erlang users.
+	The <url href="http://pli2002.cs.brown.edu/">
+	Principles, Logics, and Implementations of High-Level Programming Languages</url> usually includes an Erlang workshop. The 
+        <url href="http://www.erlang.se/workshop/">ACM Sigplan</url>
+        Conference includes an Erlang workshop too.
+</p>
+  </section>
+  <section>
+     <title>Erlounge and User Groups</title><p> Every so often,
+        someone puts out an invitation on erlang-questions to
+        informally discuss Erlang over a few beers. Past Erlounges
+        have been in Sweden (Stockholm), Scotland, the USA (Atlanta,
+	New York, North
+        Carolina, Schaumburg, Seattle, SF Bay area,
+        Arlington, Washington DC), France (Paris), China (I can't read the
+        characters which described the location), Italy, Germany (Aachen),
+        Poland (Krakow), New Zealand (Wellington) and others. There's a
+        <url href="http://www.trapexit.org/ErlangUserGroups">Trapexit</url>
+        page listing known usergroups.</p>
+  </section>
+  </section>
+
+  <section>
+    <marker id="#mailing-lists"/>
+    <title>Where is Erlang discussed online?</title>
+
+    <p>
+
+	There are several 
+        <url href="http://www.erlang.org/mailman/listinfo">
+	mailing lists devoted to Erlang</url>:
+	</p>
+
+    <section>
+      <title>erlang-questions</title><p>
+
+		This is intended for general 
+		discussion about Erlang. Anyone can send
+		mail to <url href="mailto:erlang-questions@erlang.org">
+		erlang-questions@erlang.org</url>, and anyone can 
+		<url href="http://www.erlang.org/mailman/listinfo">
+                subscribe</url>.</p>
+    </section>
+
+    <section>
+      <title>erlang-announce</title><p>
+	
+		This list carries announcements
+		about new releases of Erlang, patches, etc.
+		All posts to <em>erlang-announce</em> also appear
+		in <em>erlang-questions</em>.</p>
+    </section>
+
+    <section>
+      <title>erlang-patches</title><p>
+		This list is for patches to the Erlang distribution.
+		At the time of writing, it is not archived.</p>
+    </section>
+
+    <section>
+      <title>erlang-bugs</title><p>
+		This list is for bug reports.</p>
+    </section>
+
+  <section>
+    <marker id="forums"/>
+    <title>Web forums and mailing list archives</title>
+    <p>
+
+	The erlang-questions list is
+	<url href="http://www.erlang.org/ml-archive/erlang-questions/">
+	archived on the Erlang website</url>. 
+
+        </p><p>
+        The GMANE news/mail gateway acts as both an archive and a
+        forum-style way of using the mailing list. It has 
+        <url href="http://news.gmane.org/gmane.comp.lang.erlang.general">
+	Erlang Questions</url> and
+	<url href="http://news.gmane.org/gmane.comp.lang.erlang.patches">
+	Erlang Patches</url>. 
+
+        </p><p>
+        The <url href="http://www.trapexit.org/">trapexit</url> site
+        also has a forum interface to the mailing list.
+</p>
+  </section> 
+
+
+    <section>
+      <title>IRC channel</title><p>
+        There's an IRC channel, #erlang, on irc.freenode.net</p>
+    </section>
+
+  </section>
+
+  <section><title>Are there any websites apart from erlang.org?</title>
+
+    <p>
+	<url href="http://www.erlang-projects.org/">Erlang-projects</url>
+	aims to track Erlang use in projects.
+
+</p><p>
+        <url href="http://trapexit.org">trapexit</url> is a grab-bag
+        of erlang news, erlang-related forums and a bidirectional 
+        forum/mailing list gateway.
+ 
+</p><p>
+        <url href="http://planeterlang.org">planet erlang</url> aggregates
+        a couple of dozen erlang-related RSS feeds.
+
+</p><p>
+	The <url href="http://www.erlang.se">Ericsson site</url> for 
+	all matters related to Ericsson-internal use of Erlang
+	also contains information about internal training and consulting.
+      
+</p><p>
+	The mozilla dmoz has a 
+	<url href="http://dmoz.org/Computers/Programming/Languages/Erlang/">
+	directory of Erlang links</url>.
+</p>
+  </section> 
+
+  <section><title>Where can I find Erlang programmers/employers?</title>
+    <p>
+	Posting a short note to <seealso marker="#mailing-lists">
+	erlang-questions@erlang.org</seealso> is probably a good start, 
+	especially if the subject-line clearly identifies the post as 
+	a job request/advert. Some consulting companies have posted 
+	there in the past.
+	</p><p>
+
+	Erlang-consulting.com have a 
+	<url href="http://www.erlang-consulting.com/jobs.html">
+	recruitment page
+	</url>
+	</p><p>
+
+	Several consultant groups have Erlang-certified people in
+	Sweden, including 
+	<url href="http://www.enea.se/"> ENEA data</url> and
+	<url href="http://www.erlang-services.com/">Sj&ouml;land &amp; Thyselius</url>.
+        
+	<url href="http://www.erlang-consulting.com/">erlang-consulting.com 
+	</url> take assignments worldwide.
+
+        <url href="http://www.process-one.net/en/services/">
+         Process-one</url> are based in France.
+
+	</p><p>	
+	If you want to be listed here, send some mail to
+	<url href="mailto:matthias@corelatus.com">
+	matthias@corelatus.com</url>.
+	</p><p>
+
+	Kontakten (Contact), an Ericsson-internal newspaper, may
+	also be useful as it carries many job ads. 
+        </p>
+  </section>
+</chapter>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE part SYSTEM "part.dtd">
+<part>
+  <header>
+    <title>Frequently Asked Questions about Erlang</title>
+    <prepared></prepared>
+    <docno/>
+    <date>29. November 2007</date>
+    <rev/>
+  </header>
+
+  <description>
+    <p>A list of frequently asked questions (FAQ) and answers for 
+the Erlang programming language.</p>
+  </description>
+
+  <include file="introduction"></include>
+  <include file="faq_questions"></include>
+  <include file="obtaining"></include>
+  <include file="getting_started"></include>
+  <include file="how_do_i"></include>
+  <include file="libraries"></include>
+  <include file="tools"></include>
+  <include file="implementations"></include>
+  <include file="problems"></include>
+  <include file="academic"></include>
+  <include file="mnesia"></include>
+</part>

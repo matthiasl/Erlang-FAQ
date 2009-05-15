@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE chapter SYSTEM "chapter.dtd">
+<chapter>
+  <header>
+    <title>Questions about this FAQ</title>
+    <prepared>Matthias Lang</prepared>
+<docno></docno>
+<date>2007-09-12</date>
+    <rev>1.0</rev>
+  </header>
+
+<section><title>Where can I get the latest version of the FAQ?</title>
+<p>
+	The <url href="http://www.erlang.org/faq/faq.html"> 
+	open source Erlang website </url>.
+</p>
+</section>
+
+<section><title>What's new?</title>
+
+	<title>May 2009</title>
+	<p>Updated for R13B-1, fixed broken links</p>
+
+	<p>Updated the sections related to type checking to focus on
+	  or mention dialyzer.</p>
+
+	<p>Added to the list of known high-profile commercial and 
+	  academic users.</p>
+
+	<p>Updated the conference section to cover the Erlang exchange
+	conferences in SF and London.</p>
+
+	<p>Mentioned the #erlang IRC channel.</p>
+        </section>
+
+	<section>
+
+
+	<section>
+
+	<title>January 2009</title>
+	<p>Updated for R12B-5, fixed broken links</p>
+
+	<p>Erlang now has public GIT, Bazaar and 
+        CVS <seealso marker="obtaining#repositories">repositories</seealso></p>
+        </section>
+
+	<section>
+
+	<title>March 2008</title>
+	<p>Updated for R12B-1, fixed broken links</p>
+        </section>
+
+	<section>
+
+	<title>November 2007</title>
+	<p>Migrated the FAQ source from docbook to OTP's own docbuilder</p>
+	<p>Updated for R11B-5, fixed broken links</p>
+        <p>New question: <seealso marker="how_do_i#stderr">How do I 
+           write to standard error on a unix system?</seealso></p>
+        </section>
+
+        <section>
+	<title>May 2007</title>
+	<p>Updated for R11B-4</p>
+
+	<p>Added a link to the new Joe Armstrong book.</p>
+
+	<p>New question: <seealso marker="obtaining#eeps">How can
+           I propose changes to the language itself?</seealso>
+        </p>
+
+
+	<p>New question: <seealso marker="academic#priority-receive">Can 
+           a process receive messages with varying priorities?</seealso>
+        </p>
+
+	<p>Added CEAN (cean.process-one.net) to the 'obtaining' section.
+        </p>
+
+	<p>Removed the "why is the release so big?" question.
+                Given the bandwidth available to most people nowadays, the
+                question is no longer of general interest.
+        </p>
+        </section>
+	
+</section>
+
+<section><title>Where do I ask questions which are not answered in this FAQ?</title>
+<p>
+	In most cases, the best place is the <em>erlang-questions</em>
+	mailing list at <url href="mailto:erlang-questions@erlang.org">
+	erlang-questions@erlang.org</url>. Anyone can
+	<url href="http://www.erlang.org/mailman/listinfo">subscribe.</url>
+</p>
+</section>
+
+<section><title>The answer to question 2.4 is wrong!</title>
+<p>
+	If you've found an editorial error in the FAQ (broken link,
+	an addition to a list of links, typo, ambiguity, badly 
+	expressed answer, etc.), send some mail to
+	<url href="mailto:matthias@corelatus.com">
+	matthias@corelatus.com</url> and I'll fix it.
+</p>
+	<p>
+
+	Problems along the lines of "the advice about
+	the importance of type checking is complete drivel" might
+	be of general interest on the <em>erlang-questions</em> 
+	mailing list at <url 
+	href="mailto:erlang-questions@erlang.org?subject=besserwisser">
+	erlang-questions@erlang.org</url>.
+</p>
+</section>
+
+<section><title>Disclaimer/Distribution</title>
+<p>
+	The information in this document is available free of charge in the
+	hope that it will be of use. However, the author specifically 
+	disclaims any liability for any direct, indirect, or consequential 
+	damages arising out of its use. The author grants permission to
+	distribute this FAQ in unmodified form on any medium.
+</p>
+	<p>
+
+	Opinions in this FAQ do not necessarily agree with Ericsson's
+	official opinions. The 
+	<url href="http://www.corelatus.com/~matthias">maintainer</url>
+	no longer works for Ericsson and this FAQ is not an Ericsson product.
+</p>
+</section>
+</chapter>

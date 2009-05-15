@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE chapter SYSTEM "chapter.dtd">
+<chapter>
+  <header>
+    <title>Erlang Libraries</title>
+    <prepared>Matthias Lang</prepared>
+<docno></docno>
+<date>2007-09-12</date>
+    <rev>1.0</rev>
+  </header>
+
+<section><title> What's in the OTP libraries?</title>
+<p>
+	The full library descriptions are included with the open-source
+	distribution and also 
+	<url href="http://www.erlang.org/doc/">
+	on line</url>. The highlights are:
+</p>
+
+	<section>
+	<title>O&amp;M Support</title>
+        <p>
+		SASL, EVA, INETS and SNMP provide
+		Operations- and maintenance-related functionality:
+		release handling, alarm and event handling,
+		administration via web browser and SNMP.
+        </p>
+
+	</section><section>
+	<title>CORBA</title>
+        <p>
+		ORBER, CosEvent, CosTransactions and IC
+		contain support for everything CORBA related.
+        </p>
+	</section><section>
+	<title>Database</title>
+        <p>
+		Mnesia and Mnemosyne provide a real-time distributed 
+		database which can be both in-RAM and on-disk.
+		There is also a standard ODBC client driver.
+        </p>
+	</section><section>
+	<title>ASN.1</title>
+        <p>
+		There is an ASN.1 compiler which produces Erlang code.
+        </p>
+	</section><section>
+	<title>Standard Library</title>
+        <p>
+		A rich collection of modules provides
+		everything from string, list and regular expression
+		manipulation to	random number generation and calendar 
+		lookups.
+        </p>
+	</section><section>
+	<title>Structural Components</title>
+	<p>
+		gen_server, gen_fsm, 
+		and supervision trees provide standard ways of implementing
+		client/server subsystems, state machines and 
+		supervised fault-tolerant systems.
+        </p>
+	</section><section>
+	<title>GUI and Graphics</title>
+	<p>
+		gs and webtool provide ways to build a gui.
+        </p>
+	</section>
+
+<p>
+	Among other things, there is also a web server and a GUI interface.
+
+</p></section>
+<section><title> Is there a collection of data structures, e.g. balanced trees?</title>
+<p>
+	Linked lists are a fundamental part of Erlang, as are tuples.
+	The other standard data structures are:
+	</p>
+
+	<table>
+	<row><cell>Module</cell><cell>Description</cell></row>
+	<row><cell>sets</cell>
+              <cell>sets, i.e. a collection of unique elements.</cell>
+        </row>
+	<row><cell>gb_sets</cell>
+              <cell>sets, but based on a general balanced data structure</cell>
+        </row>
+	<row><cell>gb_tree</cell>
+              <cell>a general balanced tree</cell>
+        </row>
+	<row><cell>dict</cell>
+              <cell>maps, also called associative arrays</cell>
+        </row>
+	<row><cell>ets</cell>
+              <cell>hash tables and ordered sets (trees)</cell>
+        </row>
+	<row><cell>dets</cell>
+              <cell>on-disk hash tables</cell>
+        </row>
+        <tcaption>Standard data structures</tcaption>
+	</table>
+	
+<p>
+
+	The <url href="http://www.erlang.org/user.html">
+	contributions area</url>
+	at the erlang.org site includes	modules for
+	double-ended queues and balanced trees.
+	</p>
+
+        <p>
+	<c>ordset</c> and <c>orddict</c> are 
+	not really suitable for large amounts of data: they are no 
+	better that lists for many common operations, e.g.
+	inserting an element is O(n) for both. <c>dict</c>
+	and <c>sets</c> are usually preferred.
+	</p><p>
+
+	In practice, Erlang programs use lists (either natively or
+	via <c>dict</c>) for data structures involving 
+	up to a few hundred elements and use <c>ETS</c> 
+	(the Erlang Term Store) or mnesia 
+	for anything larger. ETS uses hashing to allow near 
+	constant-time access to almost arbitrarily large amounts of data.
+	</p><p>
+	
+	For a collection of data consisting of a few (tens or
+	hundreds) items, lists often outperform both ETS and
+	trees. For large numbers of small items, ETS tends to 
+	work best. For larger items, balanced trees can outperform
+	ETS because they avoid copying the data.
+
+</p></section>
+<section><title>Is there a serial port driver for Erlang?</title>
+<p>
+	Johan Bevemyr wrote one which works for unix machines. The
+	code is freely available at 
+	<url href="http://www.erlang.org/user.html"> the contributions
+	area</url> as <em>serial-1.0</em>.
+	</p><p>
+
+	There have been discussions on the mailing list about writing
+	a more general driver which also works on windows machines.
+	Nothing much has come of this (lack of interest?).
+
+</p></section>
+<section><title>Is there a toolkit for building GUIs?</title>
+<p>
+
+	There are several. The reliable-but-ugly option is <c>gs</c>,
+	which is described <url 
+	href="http://www.erlang.org/doc/apps/gs/">
+	here</url>. <c>gs</c> works on both windows 
+	and unix (X Window System).
+	</p><p>
+
+	Many people prefer to use <url 
+	href="http://sourceforge.net/projects/erlgtk/">
+	etk</url> which is a fairly direct binding to 
+	the well-known TK toolkit.
+	</p><p>
+
+	Other graphics-related items on 
+	<url href="http://jungerl.sourceforge.net/">sourceforge</url>
+	are gtkNode (a C node which gives access to a large subset of GTK2) and
+	gd1_drv (a driver which dynamically creates JPEG and PNG images).
+	
+
+	There are a few projects involving experimental graphics
+	interfaces, including a binding to gtk (Ed: can someone 
+	send me some more information about this!), an <url
+	href="http://www.wings3d.com/">OpenGL modeller</url>
+	and some <url href="http://www.sics.se/~joe/ex11/">
+	interesting work</url> to directly access the X protocol.
+	</p><p>
+
+	Finally, many projects which use Erlang recognise that
+	very fine tools are available for creating GUIs using
+	Java, so they use Java for the GUI portion of a system.
+	<c>Jinterface</c> is one way to interface Erlang to Java.
+
+</p></section>
+<section><title>I've written a library to handle XYZ. How do I get it into the standard Erlang distribution?</title>
+<p>
+
+        This takes more work and patience than most people
+        have. Kent Boortz described many of the hurdles 
+        <url href="http://www.erlang.org/ml-archive/erlang-questions/200405/msg00106.html">on the mailing list</url>.
+</p><p>
+        There are other ways to spread your code, including
+        distributing it from your own website or adding it to
+        the <url href="http://jungerl.sourceforge.net/">jungerl</url>.
+
+</p>
+</section>        
+</chapter>

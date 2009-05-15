@@ -1,0 +1,20 @@
+Author: Matthias Lang
+Title: How to build the Erlang FAQ.
+----------------------------------------------------------------------
+
+Building the FAQ:
+	1. Install Erlang R12B-1 or later
+	2. make
+
+Installing at Erlang.org:
+
+	Since I don't have access to erlang.org, I ask Kent to install
+	it for me by sending him the tarfile and saying:
+
+	Here's how I used to update it:
+
+	   cd /home/super/erlang/www/erlang.org/public/faq
+	   rm x*.html
+	   gunzip -c <whatever_the_tarfile_is> | tar -xvf -
+	   (and then check, update the site)
+

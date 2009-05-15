@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE chapter SYSTEM "chapter.dtd">
+<chapter>
+  <header>
+    <title>Implementation and Ports of Erlang</title>
+    <prepared>Matthias Lang</prepared>
+<docno></docno>
+<date>2007-09-12</date>
+    <rev>1.0</rev>
+  </header>
+
+<section>
+    <marker id="implementations"/>
+    <title>What Production-quality implementations of Erlang are there?</title>
+
+	<list>
+	<item><p> <url href="http://www.erlang.org/"> Open Source 
+	Erlang </url>
+	  is the most popular implementation.
+	  It is built from the same source tree as the commercial
+	  version of Erlang. You can use Open Source Erlang to build
+	  commercial products without having to pay royalties or licence
+	  fees to Ericsson.
+	<marker id="commercial-erlang"/>
+        </p></item>
+
+
+	<item><p> <url href="http://www.erlang.se/">
+		Ericsson's Commercial Erlang</url>. This is essentially 
+		the same as Open Source Erlang. The main differences are:
+               </p>
+
+		<list>
+		<item><p>Commercial Erlang comes with a support agreement
+                 </p></item>
+	
+		<item><p>The OTP team go to greater lengths 
+			to test the commercial release, so you 
+			get a more stable product. Similarly, they
+			make the transition between versions smoother.
+                 </p></item>
+
+		<item><p>The commercial version includes some
+			encryption-related code which cannot be 
+			provided in the open source release for legal reasons.
+                 </p></item>
+
+		<item><p>The commercial release does <em>not
+			</em> contain applications which are
+			considered experimental or unstable.
+                 </p></item>
+
+		</list>
+             </item>
+	</list>
+
+</section>
+<section><title>What Experimental and Research Implementations are there?</title>
+
+	<list>
+
+	<item><p><url 
+		href="http://www.it.uu.se/research/group/hipe"> 
+		High Performance Erlang</url> (HIPE). 
+		HIPE is an in-progress project to create a faster Erlang
+		by compiling to native code. Since R8A, the HIPE compiler
+		is tightly integrated with the normal BEAM system; if
+		you have downloaded open source erlang, then you also have
+		HIPE. A <url href="http://www.erlang.se/euc/01/kostis2001/sld001.htm">presentation at the EUC 2001</url> described how to use it.</p></item>
+
+	<item><p>
+		<url href="http://www.iro.umontreal.ca/~etos/"> 
+		Erlang to Scheme Compiler</url> (ETOS). 
+		ETOS is another research project to compile Erlang 
+		programs to native code by first translating the
+	        program into scheme. They have some impressive benchmarks.
+		ETOS is no longer under active development.</p></item>
+
+	<item><p>
+		Geoff's Erlang (GERL) supported a subset of the Erlang 
+                language. GERL compiled to native code via C. GERL has 
+		fallen into disuse.</p></item>
+
+	<item><p><url 
+		href="http://www.adfa.edu.au/~lpb/research/sserl/">
+		Safe Erlang</url>,
+		which is a prototype made by extending an older version
+		of Ericsson's implementation, is intended for
+		applications where Erlang nodes must cooperate with
+		other Erlang nodes which are not trusted. Safe Erlang
+                is no longer under active development.</p></item>
+
+	</list>
+
+</section>
+<section>
+    <marker id="version-table"/>
+    <title> Which version of Erlang am I running?</title>
+    <p>
+	Erlang uses different version numbers for different parts
+	of the system, so the message you see when you start Erlang
+	doesn't reveal which release you're using:
+</p>
+	<pre>
+	Erlang (BEAM) emulator version 5.1.1 [source]
+
+	Eshell V5.1.1  (abort with ^G)
+	</pre>
+
+<p>
+        The start script reveals more information:
+</p>
+
+        <pre>
+        Eshell V5.3.6.3  (abort with ^G)
+        1> init:script_id().
+        {"OTP  APN 181 01","R9C"}
+        </pre>
+
+</section>
+<section><title> What operating systems does Erlang run on?</title>
+<p>
+
+	Erlang runs on most unix and unix-like systems and on the 
+	currently popular flavours of windows. Ericsson 
+	have compiled it for
+</p>
+
+	<list>
+	<item><p> Solaris (including 64 bit)</p></item>
+	<item><p> BSD</p></item>
+	<item><p> Linux</p></item>
+	<item><p> OSX</p></item>
+	<item><p> TRU64</p></item>
+	<item><p> Windows NT/2000/2003/XP/Vista</p></item>
+	<item><p> VxWorks</p></item>
+	</list>
+
+        <p>
+
+	There are reports on the mailing list of other people 
+        compiling it successfully IRIX, along with reports of
+        Erlang running on less usual systems such as iPhones, Xboxes
+        Tilera 64-core CPUs and many embedded systems.
+	</p><p>
+
+</p></section>
+<section><title> What implementations of the Erlang Virtual Machine are there?</title>
+<p>
+
+	Almost everyone uses "the new BEAM", where BEAM stands
+	for Bogdan/Bj&ouml;rn's Erlang Abstract Machine. This is
+	the virtual machine supported in the commercial release.
+	</p><p>
+
+	The other virtual machines are of mostly historical interest:
+</p>
+	<section>
+	<title>JAM</title><p>
+
+		This was the original Erlang virtual machine,
+		  inspired by the (Prolog) WAM. JAM stands for
+		  "Joe's Abstract Machine".</p>
+
+	</section>
+	<section>
+	<title>old BEAM</title><p>
+
+		This was an attempt to compile Erlang
+		to C, and then compile the C to native code. It was
+		abandoned after benchmarking showed that the resulting
+		code was only faster than VM-based Erlang for small programs.
+</p>
+	</section>
+
+</section>
+<section><title>Is there an unofficial port for...?</title>
+<p>
+
+	<em>MacOS X</em>: Releases since R9B compile on
+		MacOS X.
+		</p><p>
+
+	<em>QNX</em>: Vlad Dumitrescu has looked
+		at porting to QNX. If you're interested, ask on the
+		erlang mailing list.</p><p>
+
+	<em>VxWorks</em>: VxWorks support is 
+		included in the standard distribution.  </p><p>
+
+</p></section>
+<section>
+    <marker id="cygwin-cross"/>
+    <title>Can Erlang be compiled under Microsoft Windows?</title>
+<p>
+
+	There is a README.win32 file at the top of the source code
+	distribution which explains how to do this.
+
+</p></section>
+
+<section><title>Can Erlang be cross compiled?</title>
+<p>
+
+	Yes, with a moderate amount of effort. There's a fairly
+        <url href='http://www.trapexit.org/Cross_compiling'>
+        detailed writup</url> on the trapexit wiki which covers
+        cross compiling between linux systems.
+
+	</p><p>
+	Patrik Nyblom posted a <url 
+href="http://www.erlang.org/ml-archive/erlang-questions/200003/msg00013.html">
+	step-by-step VxWorks cross-compiling guide</url>
+	to the mailing list.
+
+	</p><p>
+	Brian Zhou has <url href='http://www.erlang.org/ml-archive/erlang-questions/200507/msg00014.html'>posted instructions</url> and a relatively simple patch to 
+        erts/configure.in which allows cross compilation for many (most?)
+        linux targets.
+
+</p></section>
+<section><title>Is Erlang small enough for Pocket PCs?</title>
+<p>
+
+        Various people on the erlang-questions mailing list have reported
+        Erlang running on pocket PCs, including the 
+	<url href="http://dynamism.com/sl-c3000/main.shtml">Sharp Zaurus</url>.
+
+</p></section>
+<section><title>Is Erlang small enough for embedded systems?</title>
+<p>
+
+	Rule of thumb: if the embedded system can run an
+	operating system like linux, then it is probably possible
+	to get current implementations of Erlang running on it 
+	with a reasonable amount of effort. 
+
+	Getting Erlang to run on, say, an 8 bit CPU with 32kByte of
+	RAM is not feasible.
+
+	People successfully run the Ericsson implementation of
+	Erlang on systems with as little as 16MByte of RAM. It 
+	is reasonably straightforward to fit Erlang itself into 
+	2MByte of persistant storage (e.g. flash or hard disk).
+	</p><p>
+
+	A 2MByte stripped Erlang system can include the
+	beam emulator and almost all of the stdlib, sasl,
+	kernel, inets and runtime_tools libraries, provided
+	the libraries are compiled without debugging information
+	and are compressed:
+	</p>
+
+	<code>
+	compile:file("foo", [compressed,no_debug_info]).
+	</code>
+
+	<p>
+	This can be automated by editing otp.mk.in and adding
+	<c>+compressed +no_debug_info</c> 
+	to the erlang compiler options and then rebuilding all the libraries.
+</p>
+
+</section>
+</chapter>

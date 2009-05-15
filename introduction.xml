@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE chapter SYSTEM "chapter.dtd">
+<chapter>
+  <header>
+    <title>What is Erlang</title>
+    <prepared>Matthias Lang</prepared>
+    <docno></docno>
+    <date>2007-09-12</date>
+    <rev>1.0</rev>
+  </header>
+
+<section><title>In a nutshell, what is Erlang?</title>
+<p>
+
+	Erlang is a general-purpose programming language and 
+	runtime environment. Erlang has built-in support for
+	concurrency, distribution and fault tolerance. Erlang
+	is used in several large telecommunication systems
+	from <url href="http://www.ericsson.com/">Ericsson</url>.
+	Erlang is available as open 
+	source from <url href="http://www.erlang.org/">
+	http://www.erlang.org</url>.
+</p>
+</section>
+
+<section><title>What is OTP?</title>
+<p>
+
+	OTP (Open Telecom Platform) is a large collection of libraries
+	for Erlang to do
+	everything from compiling ASN.1 to providing a WWW server.
+	Most projects using "Erlang" are actually using "Erlang/OTP",
+	i.e. the language and the libraries. OTP is also open source.
+</p>
+	
+</section>
+<section><title>What sort of applications is Erlang particularly suitable for?
+</title>
+<p>
+	Distributed, reliable, <seealso marker="academic#soft-realtime">
+        soft real-time</seealso> concurrent systems. 
+</p>
+
+	<list>
+	<item><p> Telecommunication systems, e.g. controlling a switch 
+		or converting protocols.</p></item>
+
+	<item><p> Servers for Internet applications, e.g. a 
+		mail transfer agent, an IMAP-4 server, an HTTP server or a 
+	        <url href="http://www.erlang.se/euc/99/WAP/index.htm">
+		WAP Stack</url>.</p></item>
+
+	<item><p> Telecommunication applications, e.g. handling 
+                mobility in a mobile network or providing unified messaging.
+               </p></item>
+
+	<item><p> Database applications which require soft realtime 
+		behaviour.</p></item>
+	</list>
+<p>
+	Erlang is good at solving these sorts of problems because
+	this is the problem domain it was originally designed for.
+	Stating the above in terms of features:
+</p>
+
+	<list>
+	<item><p> Erlang provides a simple and powerful model 
+		for error containment and fault tolerance
+		(supervised processes).</p></item>
+
+	<item><p> Concurrency and message passing are a fundamental 
+		to the language. Applications written in Erlang 
+		are often composed of hundreds or thousands of 
+		lightweight processes. Context switching between 
+		Erlang processes is typically one or two orders 
+		of magnitude cheaper than switching between 
+		threads in a C program.</p></item>
+
+	<item><p> Writing applications which are made of parts which 
+		execute on different machines (i.e. distributed
+		applications) is easy. Erlang's distribution
+		mechanisms are transparent: programs need not be
+		aware that they are distributed.</p></item>
+		
+	<item><p> The OTP libraries provide support for many common
+		problems in networking and telecommunications systems.
+           </p></item>
+
+ 	<item><p> The Erlang runtime environment (a virtual machine, 
+		much like the Java virtual machine) means that code 
+		compiled on
+		one architecture runs anywhere. The runtime system 
+		also allows code in a running system to be updated
+		without interrupting the program.
+                </p></item>
+	</list>
+
+<p>
+	The <url href="http://www.erlang.org/white_paper.html">
+	Erlang white paper</url> examines the language in more detail
+	from a technical point of view.
+</p>
+</section>
+<section><title>What sort of problems is Erlang not particularly suitable for?
+</title>
+<p>
+	People use Erlang for all sorts of surprising things, for instance
+	to communicate with X11 at the protocol level, but, there are some
+	common situations where Erlang is not likely to be the language of
+	choice. 
+</p>
+	<p>
+
+	The most common class of 'less suitable' problems is
+	characterised by performance being
+	a prime requirement <em>and</em> constant-factors 
+	having a large effect on performance. Typical examples are
+	image processing, signal processing, sorting large
+	volumes of data and low-level protocol termination.
+</p>
+	<p>
+
+	Another class of problem is characterised by a wide interface
+	to existing C code. A typical example is implementing operating 
+	system device drivers.
+</p>
+	<p>
+
+	Most (all?) large systems developed using Erlang make heavy use
+	of C for low-level code, leaving Erlang
+	to manage the parts which tend to be complex in other languages,
+	like controlling systems spread across several machines and
+	implementing complex protocol logic.
+
+</p>
+</section>
+<section> <title> Who uses Erlang for product development?</title>
+<p>
+
+	The largest user of Erlang is Ericsson. Ericsson use it to
+	write software used in telecommunications systems. Many
+	(dozens) projects have used it, a particularly large one is
+	the extremely scaleable
+
+	<url href="http://www.ericsson.com/ericsson/corpinfo/publications/review/2000_03/files/2000031.pdf">
+	AXD301 ATM switch.</url>
+	AXD301 has several hundred people working on it and the code volume
+        has reached about 850 kloc of Erlang (and 1 Mloc of C/C++).
+</p>
+	<p>
+
+	Some of the other companies using Erlang are
+        </p>
+
+	<list>
+	<item><p>
+	<url href="http://www.nortel.com/">Bluetail/Alteon/Nortel</url> 
+	(distributed, fault tolerant email system, SSL accelerator)
+        </p></item>
+	<item><p>
+	<url href="http://www.cellpoint.com/">Cellpoint</url>
+	(Location-based Mobile Services)
+        </p></item>
+
+	<item><p>
+	 <url href="http://www.corelatus.com/">Corelatus</url>
+	(SS7 monitoring).
+        </p></item>
+
+	<item><p>
+	 <url href="http://counter.hackers.lv/">dqdp.net (in Latvian)</url>
+	(Web Services).
+        </p></item>
+
+	<item><p>
+	<url href="http://www.facebook.com/">Facebook</url>
+	(Facebook chat backend)
+        </p></item>
+
+	<item><p>
+	<url href="http://www.fmi.fi">Finnish Meteorological Institute</url>
+	(Data acquisition and real-time monitoring)
+        </p></item>
+
+	<item><p>
+	<url href="http://www.idt.net">IDT corp.</url>
+	(Real-time least-cost routing expert systems)
+        </p></item>
+	<item><p>
+	<url href="http://www.kreditor.se">Kreditor</url>
+	(Electronic payment systems)
+        </p></item>
+	<item><p>
+	<url href="http://www.mobilearts.se/">Mobilearts</url>
+	(GSM and UMTS services)
+        </p></item>
+	<item><p>
+	<url href="http://www.netkitsolutions.com/">Netkit Solutions</url>
+	(Network Equipment Monitoring and Operations Support Systems)
+        </p></item>
+	<item><p>
+	<url href="http://www.process-one.net/en/">Process-one</url>
+	(Jabber Messaging)
+        </p></item>
+	<item><p>
+	<url href="http://www.schlund.de">Schlund + Partner</url>
+	(Messaging and Interactive Voice Response services)
+        </p></item>
+	<item><p>
+	<url href="http://www.quviq.com">Quviq</url>
+	(Software Test Tool)
+        </p></item>
+	<item><p>
+	<url href="http://www.rabbitmq.com/">RabbitMQ</url>
+	(<url href="http://www.amqp.org/">AMQP</url> Enterprise Messaging)
+        </p></item>
+	<item><p>
+	<url href="http://www.t-mobile.co.uk/">T-Mobile (previously one2one)</url>
+	(advanced call control services)
+        </p></item>
+	<item><p>
+	<url href="http://www.telia.se/"> 
+	Telia</url> (a telecomms operator)
+        </p></item>
+	<item><p>
+	<url href="http://www.vailsys.com">Vail Systems</url>
+	(Interactive Voice Response systems)
+        </p></item>
+	<item><p>
+	<url href="http://www.wavenet.lk">Wavenet</url>
+	(SS7 and IVR applications)
+        </p></item>
+	</list>
+
+	<p>
+	If you want to be listed here, send me some mail: 
+	<url href="mailto:matthias@corelatus.com">
+	matthias@corelatus.com</url> 
+        </p>
+</section>
+<section>
+    <marker id="universities"/>	
+    <title> Who uses Erlang for research and teaching?</title>
+<p>
+
+	Many universities use Erlang at various levels. This list
+	is far from exhaustive!
+</p>
+
+
+	<list>
+	<item><p>
+		<url href="http://www.ituniv.se/">IT University of Gothenburg</url> in Gothenburg, Sweden
+        </p></item>
+
+	<item><p>
+		<url href="http://www.kth.se/">KTH</url> in Stockholm
+        </p></item>
+
+	<item><p>
+		<url href="http://www.macs.hw.ac.uk/~dsg/telecoms/">
+		Motorola/Heriot-Watt University</url> in the UK.
+        </p></item>
+
+	<item><p>
+		<url href="http://vodka.lfcia.org">University of 
+		A Coru&ntilde;a</url>	in Spain.
+        </p></item>
+
+	<item><p>
+		<url href="http://www.cem.itesm.mx/">Tecnol&oacute;gica de 
+		  Monterrey, Campus Estado de M&eacute;xico
+		</url> in the 
+                <url href="http://www.arielortiz.com/apps/s200911/tc2006/noticias/">Programming Languages</url> course.
+        </p></item>
+
+	<item><p>
+	<url href="http://www.rmit.edu.au/">The Royal Melbourne 
+	Institute of Technology </url>
+        </p></item>
+
+	<item><p>
+		<url href="http://www.uu.se/">Uppsala University </url>
+		in Sweden is home to the
+		<url href="http://www.it.uu.se/research/group/hipe/">HIPE</url> 
+		project.
+        </p></item>
+
+	<item><p>
+		<url href="http://www.dcs.shef.ac.uk/~qiang/forse/forse.htm">University of Sheffield</url>
+        </p></item>
+
+	<item><p><url href="https://www.cs.kent.ac.uk/projects/refactor-fp/fp-design/RefactorErlang">The University of Kent</url></p></item>
+
+	</list>
+
+	<p>
+	If you want to be listed here, send me some mail: 
+	<url href="mailto:matthias@corelatus.com">
+	matthias@corelatus.com</url> 
+        </p>
+
+</section>
+<section><title> Can I get commercial support for Erlang?</title>
+	<p>
+	Several consulting companies provide support and training courses: 
+	<url href="http://www.erlang-consulting.com">Erlang-consulting.com
+	</url>,
+	<url href="http://www.erlang-services.com">Sjoland and Thyselius</url> and
+	<url href="http://www.process-one.net/en/services/">Process One</url>.
+        </p>
+
+	<p>
+        Users within Ericsson can obtain support, printed manuals and
+        binaries from <url href="http://www.erlang.se/">www.erlang.se</url>.
+        </p>
+</section>
+</chapter>
