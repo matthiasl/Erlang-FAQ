@@ -40,15 +40,17 @@
 
   <section><title>What's the current version of (Open Source) Erlang?</title>
 
-    <p>
-	R13B-1 (``Release 12B, patchlevel 1'') was released in 
-	April 2009. As further patches are released, the "current"
-	version becomes R13B-2, R13B-3 etc. This curious version
-	numbering scheme is also used on Ericsson mobile phones, 
-	for instance my phone is an R1F phone...
+	<p>R13B was released in April 2009. As further patches are
+	released, the "current" version becomes R13B01, R13B02 etc.
+	This curious version numbering scheme is also used on Ericsson
+	mobile phones, for instance my phone is an R1F phone...</p>
 
-	</p><p> Major releases typically come somewhere between six
-	and twelve months apart.
+
+	<p>Before the R13 releases, releases were named R12B-0, R12B-1,
+	R12B-2 etc.
+
+	</p><p>Major releases typically come somewhere between 12
+	and 18 months apart.
 
 	</p><p>
 	Components of Erlang have their own version numbers, for

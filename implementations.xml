@@ -97,9 +97,25 @@
     <marker id="version-table"/>
     <title> Which version of Erlang am I running?</title>
     <p>
-	Erlang uses different version numbers for different parts
-	of the system, so the message you see when you start Erlang
-	doesn't reveal which release you're using:
+        Starting with R13A, the message you see when you start
+        Erlang actually tells which release you are running:
+    </p>
+
+	<pre>
+	Erlang R13B (erts-5.7.1) [smp:4:4] [rq:4] [async-threads:0] [kernel-poll:false]
+
+	Eshell V5.7.1  (abort with ^G)
+	</pre>
+
+    <p> 
+	From Erlang code, in recent releases, 
+	call <c>erlang:system_info(otp_release)</c>
+	to find out which release you are running.
+    </p>
+    <p>
+	In earlier releses, the message you saw when you
+	started Erlang didn't show you the version number of
+	OTP:
 </p>
 	<pre>
 	Erlang (BEAM) emulator version 5.1.1 [source]
@@ -108,7 +124,7 @@
 	</pre>
 
 <p>
-        The start script reveals more information:
+        The start script revealed some more information:
 </p>
 
         <pre>
