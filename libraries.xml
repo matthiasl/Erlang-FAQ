@@ -63,7 +63,7 @@
 	</section><section>
 	<title>GUI and Graphics</title>
 	<p>
-		gs and webtool provide ways to build a gui.
+		wx, gs and webtool provide ways to build a gui.
         </p>
 	</section>
 
@@ -147,24 +147,28 @@
 <section><title>Is there a toolkit for building GUIs?</title>
 <p>
 
-	There are several. The reliable-but-ugly option is <c>gs</c>,
-	which is described <url 
-	href="http://www.erlang.org/doc/apps/gs/">
-	here</url>. <c>gs</c> works on both windows 
-	and unix (X Window System).
-	</p><p>
+	There are several. 
+</p><p>
 
-	Many people prefer to use <url 
-	href="http://sourceforge.net/projects/erlgtk/">
-	etk</url> which is a fairly direct binding to 
-	the well-known TK toolkit.
+	The <url
+	href="http://www.erlang.org/doc/apps/wx/">wxErlang</url>
+	application lets you make GUIs with <url href="www.wxwidgets.org">
+	wxWidgets</url>, a
+	cross-platform toolkit. wxErlang is part of the OTP
+	distribution.
+</p><p>
+
+	The older <url
+	href="http://www.erlang.org/doc/apps/gs/">gs</url> application
+	uses TK as a backend. Some people prefer to work with TK
+	though <url href="http://sourceforge.net/projects/erlgtk/">
+	etk</url> which is a fairly direct binding to the TK toolkit.
 	</p><p>
 
 	Other graphics-related items on 
 	<url href="http://jungerl.sourceforge.net/">sourceforge</url>
 	are gtkNode (a C node which gives access to a large subset of GTK2) and
 	gd1_drv (a driver which dynamically creates JPEG and PNG images).
-	
 
 	There are a few projects involving experimental graphics
 	interfaces, including a binding to gtk (Ed: can someone 
@@ -173,11 +177,6 @@
 	and some <url href="http://www.sics.se/~joe/ex11/">
 	interesting work</url> to directly access the X protocol.
 	</p><p>
-
-	Finally, many projects which use Erlang recognise that
-	very fine tools are available for creating GUIs using
-	Java, so they use Java for the GUI portion of a system.
-	<c>Jinterface</c> is one way to interface Erlang to Java.
 
 </p></section>
 <section><title>I've written a library to handle XYZ. How do I get it into the standard Erlang distribution?</title>
