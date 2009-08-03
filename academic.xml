@@ -574,6 +574,10 @@ or Visual Basic) does everything.
 	this position in newsgroups/mailing lists tends to trigger 
 	a flamewar.
 	</p>
+
+	<p>The <url href="http://ceylan.sourceforge.net/main/documentation/wooper/">
+	    WOOPER</url> project is one example of a serious effort to
+	  put an OO layer on top of Erlang. </p>
 </section>
 <section>
     <marker id="string-performance"/>
