@@ -161,8 +161,8 @@
 	The older <url
 	href="http://www.erlang.org/doc/apps/gs/">gs</url> application
 	uses TK as a backend. Some people prefer to work with TK
-	though <url href="http://sourceforge.net/projects/erlgtk/">
-	etk</url> which is a fairly direct binding to the TK toolkit.
+	through <url href="http://sourceforge.net/projects/erlgtk/">
+	etk</url>. ETK is a fairly direct binding to the TK toolkit.
 	</p><p>
 
 	Other graphics-related items on 
