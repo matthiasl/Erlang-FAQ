@@ -250,6 +250,7 @@
         to Java's SWIG.</p></item>
       <item><p><url href="http://dryverl.objectweb.org/">Dryverl,
         an Erlang-to-C binding</url>.</p></item>
+      <item><p><url href="http://gitorious.org/erlua">ErLua, an Erlang to Lua interface</url>.</p></item>
     </list>
 
   </section>
