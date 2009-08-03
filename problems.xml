@@ -316,13 +316,13 @@
 <section><title>When distribution won't work</title>
 
 <p>
-	One simple reasons why distribution won't work is if you're
-	combining different versions of Erlang. 
-        R4 nodes can't talk to R5 or R6 nodes. R5, R6, R7, R8 and R9 
-        nodes are compatible with each other. R10 nodes are compatible
-        with R7, R8 and R9 nodes IF the R10 node is started in the
-        appropriate compatibility mode, using the +R switch.
+	One simple reason why distribution won't work is if you're
+	combining different versions of Erlang.
 
+	At the time of writing (R13B), the OTP group's strategy is to
+	maintain backwards compatibility with the two previous major
+	versions of Erlang/OTP, i.e. R13B works with all R13B minor
+	releases as well as with R12B and R11B.
 </p><p>
 	
 	Beyond that, you need to start digging. Erlang nodes communicate
