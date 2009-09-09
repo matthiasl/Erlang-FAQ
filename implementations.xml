@@ -225,12 +225,12 @@
 
 	</p><p>
 	Patrik Nyblom posted a <url 
-href="http://www.erlang.org/ml-archive/erlang-questions/200003/msg00013.html">
+href="http://erlang.org/pipermail/erlang-questions/2000-March/001045.html">
 	step-by-step VxWorks cross-compiling guide</url>
 	to the mailing list.
 
 	</p><p>
-	Brian Zhou has <url href='http://www.erlang.org/ml-archive/erlang-questions/200507/msg00014.html'>posted instructions</url> and a relatively simple patch to 
+	Brian Zhou has <url href="http://erlang.org/pipermail/erlang-questions/2005-July/015905.html">posted instructions</url> and a relatively simple patch to 
         erts/configure.in which allows cross compilation for many (most?)
         linux targets.
 

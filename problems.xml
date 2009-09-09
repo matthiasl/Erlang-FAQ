@@ -450,9 +450,9 @@ Why does my application die every second time I load new code into it?
 	could be used to access the device.
 
 	Two mailing list discussions about the topic can be found
-	<url href="http://www.erlang.org/ml-archive/erlang-questions/200401/msg00341.html">here</url> and
+	<url href="http://erlang.org/pipermail/erlang-questions/2004-January/011351.html">here</url> and
 	<url 
-href="http://www.erlang.org/ml-archive/erlang-questions/200003/msg00018.html">
+href="http://erlang.org/pipermail/erlang-questions/2000-March/001050.html">
 here</url>.
 	</p>
 

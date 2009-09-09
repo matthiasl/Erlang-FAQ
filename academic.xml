@@ -338,7 +338,7 @@
 	different implementations have different limits on the
 	number of processes, the maximum amount of RAM and so on.
 	These are 
-	<url href="http://erlang.org/doc/efficiency_guide/advanced.html#7.2">documented for each implementation</url>.
+	<url href="http://erlang.org/doc/efficiency_guide/advanced.html#9.2">documented for each implementation</url>.
 
 </p></section>
 <section><title>Do funs behave during a code change?</title>
@@ -425,13 +425,13 @@
 
 	Several ways forward have been explored. One is lisp-like
 	<em>structs</em> which have been discussed
-        on <url href="http://www.erlang.org/ml-archive/erlang-questions/200301/msg00103.html">the mailing list.</url> 
+        on <url href="http://erlang.org/pipermail/erlang-questions/2003-January/006683.html">the mailing list.</url> 
 
 	Another is
 	Richard O'Keefe's <em>abstract patterns</em> which
-	was <url href="http://www.erlang.org/ml-archive/erlang-questions/200309/msg00309.html">also posted</url>.
+	was <url href="http://www.erlang.org/cgi-bin/ezmlm-cgi/4/10060">also posted</url>.
 
-        Then there is also a suggestion for <url href="http://www.erlang.org/ml-archive/erlang-questions/200509/msg00329.html">making records more reliable</url>.
+        Then there is also a suggestion for <url href="http://erlang.org/pipermail/erlang-questions/2005-September/017199.html">making records more reliable</url>.
 
 </p></section>
 
@@ -811,7 +811,7 @@ gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\\n\r\\n"]).
 	interface, e.g. a user or an external program.
 </p><p>
 	Joe's 
-	<url href="http://www.erlang.org/ml-archive/erlang-questions/200303/msg00113.html">original explanation</url> is available online.
+	<url href="http://erlang.org/pipermail/erlang-questions/2003-March/007869.html">original explanation</url> is available online.
 
 </p>
 </section>
