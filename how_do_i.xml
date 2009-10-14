@@ -635,13 +635,15 @@
 </p></section>
   <section>
     <marker id="stderr"/>
-    <title>...write to standard error (stderr) on a unix system?</title>
+    <title>...write to standard error (stderr)?</title>
 
-    <p>The simplest approach is to just open file descriptor two:</p>
+    <p>In R13B and later, use the atom <c>standard_error</c>:</p>
 
     <code>
-            P = open_port({fd,0,2}, [out]),
-            port_command(P, "this text goes to stderr\\n").
+            io:put_chars(standard_error, "this text goes to stderr\\n").
     </code>
+
+    <p>That also works with <c>io:format/3</c> and all other functions
+    that take an <c>IoDevice</c> parameter.</p>
   </section>
 </chapter>
