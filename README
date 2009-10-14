@@ -14,3 +14,7 @@ Installing at Erlang.org:
 
         Done manually by Bjorn G. See the makefile.
 
+Doing a git pull from Bjorn's fork
+
+	git pull git://github.com/bjorng/Erlang-FAQ.git
+
