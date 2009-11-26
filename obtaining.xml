@@ -247,8 +247,13 @@
 
     <marker id="repositories"/>
 
-    <p>The following repositories are all maintained by people outside
-    the Erlang/OTP group at Ericsson, i.e. none is 'official':
+    <p>As of R13B02 (November 2009), there is
+      an <url href='http://github.com/erlang/otp'>official Git
+      repository</url> maintained (daily!) by the Erlang/OTP
+      group. There is also
+      an <url href='http://github.com/mfoemmel/erlang-otp'> unofficial
+      repository</url> which includes history before the R13B02
+      release.
     </p>
 
     <p>
@@ -262,14 +267,7 @@
     </pre>
 
     <p>
-    There's a GIT repository which tracks the public Erlang/OTP releases,
-    like this:</p>
-    <pre>
-    git clone git://github.com/mfoemmel/erlang-otp.git
-    </pre>
-
-    <p>
-    And there's a <url href="https://code.launchpad.net/erlang">
+    And there's an unofficial <url href="https://code.launchpad.net/erlang">
     Bazaar repository</url> of the same thing.
     </p>
     
