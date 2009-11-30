@@ -247,12 +247,12 @@
 
     <marker id="repositories"/>
 
-    <p>As of R13B02 (November 2009), there is
+    <p>As of R13B03 (November 2009), there is
       an <url href='http://github.com/erlang/otp'>official Git
       repository</url> maintained (daily!) by the Erlang/OTP
       group. There is also
       an <url href='http://github.com/mfoemmel/erlang-otp'> unofficial
-      repository</url> which includes history before the R13B02
+      repository</url> which includes history before the R13B03
       release.
     </p>
 
