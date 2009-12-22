@@ -88,15 +88,22 @@
 	as both man pages and <url href="http://www.erlang.org/doc.html">
 	html</url> is the most up-to-date reference to both the
 	OTP libraries and Erlang itself. On unix systems, the
-	easiest way to read the man pages is <c>erl -man gen_tcp
+	an easy way to read the man pages is <c>erl -man gen_tcp
 	</c>.
 	</p><p>
 
-	<em>Programming Erlang: Software for a Concurrent World</em> 
-	(Joe Armstrong)
-	is <em>the</em> book about Erlang, published in 2007. You can buy
-        it on paper from Amazon and other online bookstores, or directly
-        from the <url href="http://pragmaticprogrammer.com/titles/jaerlang/index.html">publisher</url>.
+        <em>Erlang Programming (A Concurrent Approach to Software Development)
+	  </em> by Francesco Cesarini and Simon Thompson is the most recent
+	book about Erlang, published in 2009. You can buy it from various
+	online bookstores, or directly from the 
+	<url href="http://oreilly.com/catalog/9780596518189">publisher</url>.
+	</p><p>
+
+	<em>Programming Erlang: Software for a Concurrent World</em>
+	(Joe Armstrong) is a book about Erlang written by one of the
+	original inventors, published in 2007. You can buy it on paper
+	from Amazon and other online bookstores, or directly from
+	the <url href="http://pragmaticprogrammer.com/titles/jaerlang/index.html">publisher</url>.
 
 	</p><p>
 	<em>Erlang Programmation</em>(Micka&euml;l R&eacute;mond)
@@ -109,20 +116,17 @@
 
 	</p><p>
 
-	<em>Concurrent Programming in Erlang (2nd. Edition)</em> 
-	(Armstrong, Virding, Wikstr&ouml;m &amp; Williams)
-	is mostly of historical interest, it's fairly out of
-        date. However: the <url href="http://www.erlang.org/doc.html">
-	first half of the book</url> can be downloaded for free, 	
-	but if you also read the <url href=
-	"http://www.erlang.org//doc/reference_manual/users_guide.html">
-	Erlang language reference</url> you'll have covered it all.
-</p><p>
+	<em>Concurrent Programming in Erlang (2nd. Edition, 1993)</em>
+	(Armstrong, Virding, Wikstr&ouml;m &amp; Williams) is only of
+	historical interest. Archaeologists can download
+	the <url href="http://www.erlang.org/doc.html"> first half of
+	the book</url> from erlang.org.
+	
+        </p><p>
 
-	Maurice Castro's book, <url 
+	Also only of historical interest: Maurice Castro's book, <url 
 	href="http://www.castro.aus.net/~maurice/serc/erlbk/"
-        >Erlang in Real Time</url>, grew from lecture notes
-        and is a good introduction to the language.
+        >Erlang in Real Time (1998)</url>.
 	</p>
   </section>
 
