@@ -81,7 +81,7 @@
 
     <p>
         The language itself is best described by the 
-	<url href="http://www.erlang.org//doc/reference_manual/part_frame.html">
+	<url href="http://www.erlang.org/doc/reference_manual/users_guide.html">
         Language Reference Manual</url>.</p><p>
 
 	The documentation delivered with open source erlang
@@ -115,7 +115,7 @@
         date. However: the <url href="http://www.erlang.org/doc.html">
 	first half of the book</url> can be downloaded for free, 	
 	but if you also read the <url href=
-	"http://www.erlang.org//doc/reference_manual/part_frame.html">
+	"http://www.erlang.org//doc/reference_manual/users_guide.html">
 	Erlang language reference</url> you'll have covered it all.
 </p><p>
 

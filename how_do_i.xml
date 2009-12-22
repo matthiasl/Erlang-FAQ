@@ -217,7 +217,7 @@
 	written in other languages, each with different tradeoffs. The
 	Erlang documentation includes a 
 	<url href=
-	"http://www.erlang.org/doc/tutorial/part_frame.html">
+	"http://www.erlang.org/doc/tutorial/users_guide.html">
 	guide to interfacing with other languages</url> which describes
 	the most common mechanisms:
 </p>
