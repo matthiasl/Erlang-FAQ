@@ -25,7 +25,7 @@ obj:
 	mkdir obj
 
 obj/faq.html: $(sources)
-	$(ERL) -noshell -eval 'docb_transform:file("faq.xml", [{outdir, "obj/"}]), init:stop().'
+	$(ERL) -noshell -eval 'docb_transform:file("faq.xml",[{outdir,"obj/"}]),init:stop().'
 
 # Historically, the FAQ started at t1.html. Preserve that to avoid breaking
 # people's links.
