@@ -152,8 +152,8 @@
 
 	The <url
 	href="http://www.erlang.org/doc/apps/wx/">wxErlang</url>
-	application lets you make GUIs with <url href="www.wxwidgets.org">
-	wxWidgets</url>, a
+	application lets you make GUIs with 
+	<url href="http://www.wxwidgets.org">wxWidgets</url>, a
 	cross-platform toolkit. wxErlang is part of the OTP
 	distribution.
 </p><p>
