@@ -217,24 +217,22 @@
 
 <section><title>Can Erlang be cross compiled?</title>
 <p>
+  From release R13B04 (released February 2010) onwards, the standard
+  Erlang/OTP distribution includes support and documentation for cross
+  compiling. This is described in the INSTALL-CROSS.md file at the
+  top of the Erlang source, available from the
+  <url href='http://erlang.org/download.html'>downloads page</url>.
+</p>
 
-	Yes, with a moderate amount of effort. There's a fairly
-        <url href='http://www.trapexit.org/Cross_compiling'>
-        detailed writup</url> on the trapexit wiki which covers
-        cross compiling between linux systems.
+<p>
+  Releases <em>prior</em> to R13B04 can also be cross-compiled 
+  with a moderate amount of effort. There's a fairly
+  <url href='http://www.trapexit.org/Cross_compiling'>
+    detailed writeup</url> on the trapexit wiki which covers
+  cross compiling between linux systems.
+</p>
+</section>
 
-	</p><p>
-	Patrik Nyblom posted a <url 
-href="http://erlang.org/pipermail/erlang-questions/2000-March/001045.html">
-	step-by-step VxWorks cross-compiling guide</url>
-	to the mailing list.
-
-	</p><p>
-	Brian Zhou has <url href="http://erlang.org/pipermail/erlang-questions/2005-July/015905.html">posted instructions</url> and a relatively simple patch to 
-        erts/configure.in which allows cross compilation for many (most?)
-        linux targets.
-
-</p></section>
 <section><title>Is Erlang small enough for Pocket PCs?</title>
 <p>
 
@@ -257,7 +255,7 @@ href="http://erlang.org/pipermail/erlang-questions/2000-March/001045.html">
 	People successfully run the Ericsson implementation of
 	Erlang on systems with as little as 16MByte of RAM. It 
 	is reasonably straightforward to fit Erlang itself into 
-	2MByte of persistant storage (e.g. flash or hard disk).
+	2MByte of persistant storage (e.g. a flash disk).
 	</p><p>
 
 	A 2MByte stripped Erlang system can include the
