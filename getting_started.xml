@@ -7,6 +7,7 @@
 <docno></docno>
 <date>2007-09-12</date>
     <rev>1.0</rev>
+    <file>getting_started.xml</file>
   </header>
 
 <section><title>How long does it take to learn Erlang?</title>

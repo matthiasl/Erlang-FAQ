@@ -7,6 +7,7 @@
 <docno></docno>
 <date>2007-09-12</date>
     <rev>1.0</rev>
+    <file>tools.xml</file>
   </header>
 
 <section><title>Is there a pretty printer for Erlang?</title>

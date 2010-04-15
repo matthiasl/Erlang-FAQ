@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
 <!DOCTYPE part SYSTEM "part.dtd">
-<part>
+<part xmlns:xi="http://www.w3.org/2001/XInclude">
   <header>
     <title>Frequently Asked Questions about Erlang</title>
     <prepared></prepared>
@@ -14,15 +14,15 @@
 the Erlang programming language.</p>
   </description>
 
-  <include file="introduction"></include>
-  <include file="faq_questions"></include>
-  <include file="obtaining"></include>
-  <include file="getting_started"></include>
-  <include file="how_do_i"></include>
-  <include file="libraries"></include>
-  <include file="tools"></include>
-  <include file="implementations"></include>
-  <include file="problems"></include>
-  <include file="academic"></include>
-  <include file="mnesia"></include>
+  <xi:include href="introduction.xml"/>
+  <xi:include href="faq_questions.xml"/>
+  <xi:include href="obtaining.xml"/>
+  <xi:include href="getting_started.xml"/>
+  <xi:include href="how_do_i.xml"/>
+  <xi:include href="libraries.xml"/>
+  <xi:include href="tools.xml"/>
+  <xi:include href="implementations.xml"/>
+  <xi:include href="problems.xml"/>
+  <xi:include href="academic.xml"/>
+  <xi:include href="mnesia.xml"/>
 </part>

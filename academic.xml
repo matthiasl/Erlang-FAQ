@@ -7,6 +7,7 @@
 <docno></docno>
 <date>2009-04-19</date>
     <rev>1.1</rev>
+    <file>academic.xml</file>
   </header>
 
 <section><title> Why is Erlang called "Erlang"?</title>

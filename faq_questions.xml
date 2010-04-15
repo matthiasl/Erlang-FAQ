@@ -7,6 +7,7 @@
 <docno></docno>
 <date>2007-09-12</date>
     <rev>1.0</rev>
+    <file>faq_questions.xml</file>
   </header>
 
 <section><title>Where can I get the latest version of the FAQ?</title>
@@ -17,6 +18,12 @@
 </section>
 
 <section><title>What's new?</title>
+
+        <section>
+	<title>April 2010</title>
+	<p>Migrated the FAQ to the new OTP documentation build</p>
+
+        </section>
 
         <section>
 	<title>May 2009</title>
