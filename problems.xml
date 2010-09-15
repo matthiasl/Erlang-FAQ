@@ -320,11 +320,10 @@
 	One simple reason why distribution won't work is if you're
 	combining different versions of Erlang.
 
-	At the time of writing (R13B), the OTP group's strategy is to
-	maintain backwards compatibility with the two previous major
-	versions of Erlang/OTP, i.e. R13B works with all R13B minor
-	releases as well as with R12B and R11B.
-</p><p>
+	The OTP group's aim is to maintain backwards compatibility
+	with the two previous major versions of Erlang/OTP, i.e. R13B
+	works with all R13B minor releases as well as with R12B and
+	R11B.  </p><p>
 	
 	Beyond that, you need to start digging. Erlang nodes communicate
 	by connecting to the <c>epmd</c> daemon. 
