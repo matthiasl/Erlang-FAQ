@@ -261,7 +261,7 @@
     </p>
 
     <p>
-        The HIPE group provide public read-only CVS access to their
+        The HiPE group provide public read-only CVS access to their
         branch, which closely follows the OTP tree, of the Erlang
         source. <url href="http://www.it.uu.se/research/group/hipe/hacking/cvs.shtml">Instructions
         are here</url> or you can just check out like this:

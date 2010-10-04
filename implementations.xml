@@ -62,12 +62,12 @@
 
 	<item><p><url 
 		href="http://www.it.uu.se/research/group/hipe"> 
-		High Performance Erlang</url> (HIPE). 
-		HIPE is an in-progress project to create a faster Erlang
-		by compiling to native code. Since R8A, the HIPE compiler
+		High Performance Erlang</url> (HiPE). 
+		HiPE is an in-progress project to create a faster Erlang
+		by compiling to native code. Since R8A, the HiPE compiler
 		is tightly integrated with the normal BEAM system; if
 		you have downloaded open source erlang, then you also have
-		HIPE. A <url href="http://www.erlang.se/euc/01/kostis2001/sld001.htm">presentation at the EUC 2001</url> described how to use it.</p></item>
+		HiPE. A <url href="http://www.erlang.se/euc/01/kostis2001/sld001.htm">presentation at the EUC 2001</url> described how to use it.</p></item>
 
 	<item><p>
 		<url href="http://www.iro.umontreal.ca/~etos/"> 
