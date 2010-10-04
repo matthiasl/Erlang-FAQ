@@ -263,30 +263,22 @@
 
 	<list>
 	<item><p>
-		<url href="http://www.ituniv.se/">IT University of Gothenburg</url> in Gothenburg, Sweden
-        </p></item>
-
-	<item><p>
-		<url href="http://www.kth.se/">KTH</url> in Stockholm
-        </p></item>
-
-	<item><p>
 		<url href="http://www.macs.hw.ac.uk/~dsg/telecoms/">
-		Motorola/Heriot-Watt University</url> in the UK.
+		Heriot-Watt University</url> in the UK.
         </p></item>
 
 	<item><p>
-		<url href="http://www.udc.es/">University of 
-		A Coru&ntilde;a</url>	in Spain.
+		<url href="http://www.ituniv.se/">IT University of Gothenburg</url> in Gothenburg, Sweden.
         </p></item>
 
 	<item><p>
-		<url href="http://www.fer.hr/">University of
-		Zagreb</url> in Croatia, in
-		the <url href="http://www.fer.hr/en/course/conpro">Concurrent
-		Programming</url> course and also for research.
+		<url href="http://www.kth.se/">KTH</url> in Stockholm.
         </p></item>
 
+	<item><p>
+	<url href="http://www.rmit.edu.au/">The Royal Melbourne 
+	Institute of Technology</url> in Australia.
+        </p></item>
 
 	<item><p>
 		<url href="http://www.cem.itesm.mx/">Tecnol&oacute;gica de 
@@ -296,8 +288,21 @@
         </p></item>
 
 	<item><p>
-	<url href="http://www.rmit.edu.au/">The Royal Melbourne 
-	Institute of Technology </url>
+		<url href="http://www.udc.es/">University of 
+		A Coru&ntilde;a</url> in Spain.
+        </p></item>
+
+	<item><p><url href="https://www.cs.kent.ac.uk/projects/refactor-fp/fp-design/RefactorErlang">The University of Kent</url></p></item>
+
+	<item><p>
+		<url href="http://www.dcs.shef.ac.uk/~qiang/forse/forse.htm">University of Sheffield</url>
+        </p></item>
+
+	<item><p>
+		<url href="http://www.fer.hr/">University of
+		Zagreb</url> in Croatia, in
+		the <url href="http://www.fer.hr/en/course/conpro">Concurrent
+		Programming</url> course and also for research.
         </p></item>
 
 	<item><p>
@@ -306,12 +311,6 @@
 		<url href="http://www.it.uu.se/research/group/hipe/">HiPE</url> 
 		project.
         </p></item>
-
-	<item><p>
-		<url href="http://www.dcs.shef.ac.uk/~qiang/forse/forse.htm">University of Sheffield</url>
-        </p></item>
-
-	<item><p><url href="https://www.cs.kent.ac.uk/projects/refactor-fp/fp-design/RefactorErlang">The University of Kent</url></p></item>
 
 	</list>
 
