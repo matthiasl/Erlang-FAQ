@@ -260,21 +260,6 @@
       release.
     </p>
 
-    <p>
-        The HiPE group provide public read-only CVS access to their
-        branch, which closely follows the OTP tree, of the Erlang
-        source. <url href="http://www.it.uu.se/research/group/hipe/hacking/cvs.shtml">Instructions
-        are here</url> or you can just check out like this:
-    </p>
-    <pre>
-    cvs -d :pserver:guest@cvs.srv.it.uu.se:/hipe co otp
-    </pre>
-
-    <p>
-    And there's an unofficial <url href="https://code.launchpad.net/erlang">
-    Bazaar repository</url> of the same thing.
-    </p>
-    
   </section>
 
   <section><title>How can I contribute to Erlang?</title>
