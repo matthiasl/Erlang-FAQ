@@ -196,7 +196,7 @@
 	-export([hello_world/0]).
 	
 	hello_world() -> 
-		io:fwrite("hello, world\\n").
+		io:fwrite("hello, world\n").
 	</code>
 
         <p>
@@ -231,6 +231,7 @@
       <item><p>Jinterface (Java interface to Erlang)</p></item>
       <item><p>IC (IDL compiler, used with C or Java)</p></item>
       <item><p>General TCP or UDP protocols, including ASN.1</p></item>
+      <item><p>NIFs (Functions implemented in C)</p></item>
     </list>
 
     <p>
@@ -255,6 +256,7 @@
     </list>
 
   </section>
+
   <section><title>...write a unix pipe program in Erlang?</title>
     <p>
 
@@ -272,13 +274,13 @@
 	  case io:get_chars('', 8192) of
 	    eof -> init:stop();
 	  Text ->
-	    Rotated = [rot13(C) || C &lt;- Text],
+	    Rotated = [rot13(C) || C <- Text],
 	    io:put_chars(Rotated),
 	    rot13()
 	end.
 	
-	rot13(C) when C >= $a, C =&lt; $z -> $a + (C - $a + 13) rem 26;
-	rot13(C) when C >= $A, C =&lt; $Z -> $A + (C - $A + 13) rem 26;
+	rot13(C) when C >= $a, C =< $z -> $a + (C - $a + 13) rem 26;
+	rot13(C) when C >= $A, C =< $Z -> $A + (C - $A + 13) rem 26;
 	rot13(C) -> C.
         ]]></code>
 
@@ -641,7 +643,7 @@
     <p>In R13B and later, use the atom <c>standard_error</c>:</p>
 
     <code>
-            io:put_chars(standard_error, "this text goes to stderr\\n").
+            io:put_chars(standard_error, "this text goes to stderr\n").
     </code>
 
     <p>That also works with <c>io:format/3</c> and all other functions

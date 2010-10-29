@@ -130,9 +130,9 @@
 	<code>
 	issue_warning() ->
 	  if (os:type() == {win32, windows}) ->    %% illegal guard
-	    ok = io:fwrite("you are using windows\\n");
+	    ok = io:fwrite("you are using windows\n");
 	  true ->
-	    ok = io:fwrite("no problem\\n")
+	    ok = io:fwrite("no problem\n")
 	  end.
 	</code>
 
@@ -145,8 +145,8 @@
 	<code>
 	issue_warning() ->
           case os:type() of
-            {win32, windows} -> ok = io:fwrite("you are using windows\\n");
-            _ -> ok = io:fwrite("no problem\\n")
+            {win32, windows} -> ok = io:fwrite("you are using windows\n");
+            _ -> ok = io:fwrite("no problem\n")
 	  end.
 	</code>
 
