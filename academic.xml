@@ -723,24 +723,10 @@ gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\n\r\n"]).
 </p></section>
 <section><title>Could the Java Virtual Machine be used to run Erlang?</title>
 <p>
-	Yes, and it would be rather nice to be able
-	to benefit from the considerable effort being
-	put into making the JVM go faster.
-	</p><p>
+	Yes.</p>
 
-	There are a couple of obstacles: the JVM does
-	not provide support for tail recursion or
-	tagged data types. Both
-	of these deficiencies can be worked around at a cost.
-	The result will <em>probably</em> be slower and use 
-	more memory than a VM written for Erlang.
-	</p><p>
-
-	Other languages with roughly similar characteristics to
-	Erlang have been written to run on the JVM. Benchmarks from
-	such systems (e.g. KAWA) show a significant performance
-	penalty from running on the JVM.
-	</p><p>
+	<p><url href='http://www.erjang.org/'>Erjang</url> does exactly
+	that. It's an experimental system with some impressive results.
 
 </p></section>
 <section><title>Is it possible to prove the correctness of Erlang programs?
