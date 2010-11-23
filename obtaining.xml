@@ -270,17 +270,10 @@ ways to share it. The place to announce such things is the Erlang Questions
 mailing list, or, in the case of patches, the Erlang Patches mailing list.
 Where you put the actual code is up to you.
 
-</p><p> 
-If your code is a modification to an existing part of OTP,
-attach a patch to your post to the erlang-patches mailing
-list. There's some useful general advice on making and sharing patches
-<url
-href="http://www.kegel.com/academy/opensource.html">here</url>.  The
-OTP group is quite conservative about including such code, especially
-if it requires new test cases to be written, so expect it to take a
-long time (months or years) for your code to find its way into the
-official distribution.  
-</p>
+</p><p> If your code is a correction, modification or extension to an
+existing part of OTP, the usual way of spreading it is via github, the
+wiki has <url
+href='https://github.com/erlang/otp/wiki/submitting-patches'>instructions</url>.</p>
 
     <p>
 If your code is a new application or library, some common ways of 
@@ -288,14 +281,11 @@ distributing it are:
 </p>
 
     <list>
-      <item><p>Checking your code into the 
-              <url href="http://jungerl.sourceforge.net">jungerl</url>
- </p></item>
-
       <item><p>Starting your own 
-              <url href="http://sourceforge.net/">sourceforge</url>
-		or <url href="http://github.com/">github</url>
-	      project </p></item>
+      <url href="http://github.com/">github</url>
+      or <url href="http://code.google.com/projecthosting/">Google code</url>
+      or <url href="http://sourceforge.net/">sourceforge</url>
+      project </p></item>
 
       <item><p>Putting the code on a personal homepage </p></item>
 
