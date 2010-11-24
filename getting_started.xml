@@ -31,17 +31,26 @@
 </section>
 	
 <section><title>How can I learn Erlang?</title>
-<p>
 
-	There's an <url href="http://www.erlang.org/course/course.html">
-	online tutorial</url>. Any of the
-	<seealso marker="obtaining#books"> Erlang books</seealso> can 
-        also be used as tutorials.
-	</p><p>
+        <p>
+        Many people learn on their own, using a book or an online
+        tutorial, often in conjunction with posting to the <url
+        href="http://www.erlang.org/mailman/listinfo">erlang-questions
+        mailing list</url> or #erlang IRC channel on irc.freenode.net.
+        </p>
+
+        <p><url href='http://learnyousomeerlang.com/'>Learn You Some
+        Erlang</url> is an easy-going tutorial which takes a day or
+        two to get through. Alternatively, there's a <url
+        href="http://www.erlang.org/course/course.html"> spartan
+        online tutorial</url>.
+        </p><p> Any of the <seealso
+        marker="obtaining#books"> Erlang books</seealso> can also be
+        used as tutorials.  </p><p>
 
 	The Erlang distribution includes a step-by-step <em>getting
 	started</em> guide. This is also 
-	<url href="http://www.erlang.org/starting.html">online</url>
+	<url href="http://www.erlang.org/starting.html">online</url>.
 	</p><p>
 
 	<url href="http://www.erlang.se/training/index.shtml">
