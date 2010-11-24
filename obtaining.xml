@@ -20,18 +20,19 @@
 	place to go to make sure you're getting the latest version.
 </p><p>
 	
-	The <url href="http://www.debian.org/">Debian Distribution</url>
-	of <em>GNU/Linux</em> includes various versions
-	Erlang in different releases, under <em>interpreters</em>.
-</p><p>
-	Precompiled ready-to-go installers for a variety of platforms
-        are available from the <url href="http://cean.process-one.net/">
-        Comprehensive Erlang Archive Network (CEAN)</url>. CEAN also
-        provides dozens of Erlang applications.
-</p><p>
+	The <url href="http://www.debian.org/">Debian
+	Distribution</url> of <em>GNU/Linux</em>, and derivatives such
+	as Ubuntu, includes various versions Erlang in different
+	releases, under <em>interpreters</em>.  </p>
 
-	Various versions of Erlang appear on various Walnut Creek 
-	FreeBSD CDs.
+	<p> Precompiled ready-to-go installers for a variety of
+	platforms are available from the <url
+	href="http://cean.process-one.net/"> Comprehensive Erlang
+	Archive Network (CEAN)</url>. CEAN also provides dozens of
+	Erlang applications.  </p><p>
+
+	For the BSDs, the 'ports' collection has up to date versions of
+	Erlang.
 </p><p>
 	Users within Ericsson can use Ericsson's internally supported
         version of Erlang from <url href="http://www.erlang.se/">
