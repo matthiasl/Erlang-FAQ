@@ -91,15 +91,25 @@
 	OTP libraries and Erlang itself. On unix systems, the
 	an easy way to read the man pages is <c>erl -man gen_tcp
 	</c>.
-	</p><p>
+	</p>
 
-        <em>Erlang Programming (A Concurrent Approach to Software Development)
-	  </em> by Francesco Cesarini and Simon Thompson is the most recent
-	book about Erlang, published in 2009. You can buy it from various
-	online bookstores, or directly from the 
-	<url href="http://oreilly.com/catalog/9780596518189">publisher</url>.
-	</p><p>
+	<p>
+        <em>Erlang and OTP in Action </em> by Martin Logan, Eric
+        Merritt and Richard Carlsson is the most recent book about
+        Erlang, published in 2010. You can buy it from various online
+        bookstores, or directly from the <url
+        href="http://www.manning.com/logan/">publisher</url>.
+	</p>
 
+	<p>
+        <em>Erlang Programming (A Concurrent Approach to Software
+        Development) </em> by Francesco Cesarini and Simon Thompson
+        was published in 2009. Get it from Amazon etc or directly from
+        the <url
+        href="http://oreilly.com/catalog/9780596518189">publisher</url>.
+	</p>
+
+	<p>
 	<em>Programming Erlang: Software for a Concurrent World</em>
 	(Joe Armstrong) is a book about Erlang written by one of the
 	original inventors, published in 2007. You can buy it on paper
