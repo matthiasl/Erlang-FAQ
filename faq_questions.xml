@@ -19,78 +19,12 @@
 
 <section><title>What's new?</title>
 
-        <section>
-	<title>April 2010</title>
-	<p>Migrated the FAQ to the new OTP documentation build</p>
-
-        </section>
-
-        <section>
-	<title>May 2009</title>
-	<p>Updated for R13B-1, fixed broken links</p>
-
-	<p>Updated the sections related to type checking to focus on
-	  or mention dialyzer.</p>
-
-	<p>Added to the list of known high-profile commercial and 
-	  academic users.</p>
-
-	<p>Updated the conference section to cover the Erlang exchange
-	conferences in SF and London.</p>
-
-	<p>Mentioned the #erlang IRC channel.</p>
-        </section>
-
-	<section>
-
-	<title>January 2009</title>
-	<p>Updated for R12B-5, fixed broken links</p>
-
-	<p>Erlang now has public GIT, Bazaar and 
-        CVS <seealso marker="obtaining#repositories">repositories</seealso></p>
-        </section>
-
-	<section>
-
-	<title>March 2008</title>
-	<p>Updated for R12B-1, fixed broken links</p>
-        </section>
-
-	<section>
-
-	<title>November 2007</title>
-	<p>Migrated the FAQ source from docbook to OTP's own docbuilder</p>
-	<p>Updated for R11B-5, fixed broken links</p>
-        <p>New question: <seealso marker="how_do_i#stderr">How do I 
-           write to standard error on a unix system?</seealso></p>
-        </section>
-
-        <section>
-	<title>May 2007</title>
-	<p>Updated for R11B-4</p>
-
-	<p>Added a link to the new Joe Armstrong book.</p>
-
-	<p>New question: <seealso marker="obtaining#eeps">How can
-           I propose changes to the language itself?</seealso>
-        </p>
-
-
-	<p>New question: <seealso marker="academic#priority-receive">Can 
-           a process receive messages with varying priorities?</seealso>
-        </p>
-
-	<p>Added CEAN (cean.process-one.net) to the 'obtaining' section.
-        </p>
-
-	<p>Removed the "why is the release so big?" question.
-                Given the bandwidth available to most people nowadays, the
-                question is no longer of general interest.
-        </p>
-        </section>
-	
+<p>
+  See the <url href='https://github.com/matthiasl/Erlang-FAQ/commits/master'>
+  FAQ commit history on github.</url>.
+</p>
 </section>
-
+	
 <section><title>Where do I ask questions which are not answered in this FAQ?</title>
 <p>
 	In most cases, the best place is the <em>erlang-questions</em>
@@ -106,10 +40,13 @@
 	an addition to a list of links, typo, ambiguity, badly 
 	expressed answer, etc.), send some mail to
 	<url href="mailto:matthias@corelatus.com">
-	matthias@corelatus.com</url> and I'll fix it.
+	matthias@corelatus.com</url> and I'll fix it.  Alternatively,
+	if you're eager, fork the <url
+	href="https://github.com/matthiasl/Erlang-FAQ">FAQ on
+	github</url>.
 </p>
-	<p>
 
+<p>
 	Problems along the lines of "the advice about
 	the importance of type checking is complete drivel" might
 	be of general interest on the <em>erlang-questions</em> 
