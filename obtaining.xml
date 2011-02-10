@@ -459,17 +459,26 @@ distributing it are:
   <section><title>Where can I find Erlang programmers/employers?</title>
     <p>
 	Posting a short note to <seealso marker="#mailing-lists">
-	erlang-questions@erlang.org</seealso> is probably a good start, 
-	especially if the subject-line clearly identifies the post as 
-	a job request/advert. Some consulting companies have posted 
-	there in the past.
-	</p><p>
+	erlang-questions@erlang.org</seealso> is a good start,
+	especially if the subject-line clearly identifies the post as
+	a job request/advert.</p>
 
-	Erlang-solutions.com have a 
-	<url href="http://www.erlang-solutions.com/jobs.html">
-	recruitment page
-	</url>
-	</p><p>
+	<p>
+	  There are several sites with a high concentration of Erlang jobs:
+	</p>
+
+        <list>
+	  <item><url href="http://www.erlang-solutions.com/jobs/">
+	  Erlang-solutions' recruitment page</url></item>
+
+	  <item><url href="http://totally-erlang.com/">Totally Erlang
+	  </url></item>
+	  
+	  <item><url href="http://functionaljobs.com/">Functional Jobs
+	  </url></item>
+	</list>
+	  
+	<p>
 
 	Several consultant groups have Erlang-certified people in
 	Sweden, including 
