@@ -150,14 +150,20 @@
 </p>
 	<p>
 
-	Some of the other companies using Erlang are
+	A few of the other companies using Erlang are
         </p>
 
 	<list>
 	<item><p>
+	<url href="http://www.aptela.com/">Aptela</url> 
+	(VoIP Service Provider)
+        </p></item>
+
+	<item><p>
 	<url href="http://www.nortel.com/">Bluetail/Alteon/Nortel</url> 
 	(distributed, fault tolerant email system, SSL accelerator)
         </p></item>
+
 	<item><p>
 	<url href="http://www.cellpoint.com/">Cellpoint</url>
 	(Location-based Mobile Services)
