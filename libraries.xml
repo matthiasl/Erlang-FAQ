@@ -159,25 +159,23 @@
 	distribution.
 </p><p>
 
-	The older <url
+	The deprecated <url
 	href="http://www.erlang.org/doc/apps/gs/">gs</url> application
 	uses TK as a backend. Some people prefer to work with TK
 	through <url href="http://sourceforge.net/projects/erlgtk/">
 	etk</url>. ETK is a fairly direct binding to the TK toolkit.
 	</p><p>
 
-	Other graphics-related items on 
-	<url href="http://jungerl.sourceforge.net/">sourceforge</url>
-	are gtkNode (a C node which gives access to a large subset of GTK2) and
-	gd1_drv (a driver which dynamically creates JPEG and PNG images).
+	There's also an <url
+	href="https://github.com/massemanet/gtknode">Erlang binding to
+	GTK</url> and a <url href="https://github.com/nox/gd1_drv">
+	binding to GD</url> which is useful for dynamically creating
+	JPEG and PNG images).
 
-	There are a few projects involving experimental graphics
-	interfaces, including a binding to gtk (Ed: can someone 
-	send me some more information about this!), an <url
-	href="http://www.wings3d.com/">OpenGL modeller</url>
-	and some <url href="http://www.sics.se/~joe/ex11/">
-	interesting work</url> to directly access the X protocol.
-	</p><p>
+	There's a popular <url href="http://www.wings3d.com/">OpenGL
+	modeller</url> and some <url
+	href="http://www.sics.se/~joe/ex11/"> interesting work</url>
+	to directly access the X protocol.  </p><p>
 
 </p></section>
 <section><title>I've written a library to handle XYZ. How do I get it into the standard Erlang distribution?</title>
@@ -185,7 +183,7 @@
 
         This takes more work and patience than most people
         have. Kent Boortz described many of the hurdles 
-        <url href="http://erlang.org/pipermail/erlang-questions/2004-May/012327.html">on the mailing list</url>.
+        <url href="http://erlang.org/pipermail/erlang-questions/2004-May/012329.html">on the mailing list</url>.
 </p><p>
         There are other ways to spread your code, including
         distributing it from your own website or adding it to

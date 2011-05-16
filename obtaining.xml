@@ -362,7 +362,7 @@ distributing it are:
     <p>
 
 	There are several 
-        <url href="http://www.erlang.org/mailman/listinfo">
+        <url href="http://www.erlang.org/static/doc/mailinglist.html">
 	mailing lists devoted to Erlang</url>:
 	</p>
 
@@ -373,7 +373,7 @@ distributing it are:
 		discussion about Erlang. Anyone can send
 		mail to <url href="mailto:erlang-questions@erlang.org">
 		erlang-questions@erlang.org</url>, and anyone can 
-		<url href="http://www.erlang.org/mailman/listinfo">
+		<url href="http://www.erlang.org/static/doc/mailinglist.html">
                 subscribe</url>.</p>
     </section>
 

@@ -35,8 +35,9 @@
         <p>
         Many people learn on their own, using a book or an online
         tutorial, often in conjunction with posting to the <url
-        href="http://www.erlang.org/mailman/listinfo">erlang-questions
-        mailing list</url> or #erlang IRC channel on irc.freenode.net.
+        href="http://www.erlang.org/static/doc/mailinglist.html">
+        erlang-questions mailing list</url> or #erlang IRC channel on
+        irc.freenode.net.
         </p>
 
         <p><url href='http://learnyousomeerlang.com/'>Learn You Some
