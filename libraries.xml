@@ -93,7 +93,7 @@
               <cell>maps, also called associative arrays</cell>
         </row>
 	<row><cell>ets</cell>
-              <cell>hash tables and ordered sets (trees)</cell>
+              <cell>hash tables and ordered sets (trees), stored outside the process</cell>
         </row>
 	<row><cell>dets</cell>
               <cell>on-disk hash tables</cell>
@@ -110,26 +110,9 @@
 	</p>
 
         <p>
-	<c>ordset</c> and <c>orddict</c> are 
-	not really suitable for large amounts of data: they are no 
-	better that lists for many common operations, e.g.
-	inserting an element is O(n) for both. <c>dict</c>
-	and <c>sets</c> are usually preferred.
-	</p><p>
-
-	In practice, Erlang programs use lists (either natively or
-	via <c>dict</c>) for data structures involving 
-	up to a few hundred elements and use <c>ETS</c> 
-	(the Erlang Term Store) or mnesia 
-	for anything larger. ETS uses hashing to allow near 
-	constant-time access to almost arbitrarily large amounts of data.
-	</p><p>
-	
-	For a collection of data consisting of a few (tens or
-	hundreds) items, lists often outperform both ETS and
-	trees. For large numbers of small items, ETS tends to 
-	work best. For larger items, balanced trees can outperform
-	ETS because they avoid copying the data.
+	(Beware: the less frequently used modules <c>ordset</c> and
+	<c>orddict</c> are merely ordered lists, and thus have O(n)
+	for common operations such as insert.)
 
 </p></section>
 <section><title>Is there a serial port driver for Erlang?</title>
