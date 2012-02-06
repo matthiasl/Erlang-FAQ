@@ -12,7 +12,7 @@
 
 <section><title>Where can I get the latest version of the FAQ?</title>
 <p>
-	The <url href="http://www.erlang.org/faq/faq.html"> 
+	The <url href="http://www.erlang.org/faq/faq.html">
 	open source Erlang website </url>.
 </p>
 </section>
@@ -37,7 +37,7 @@
 <section><title>The answer to question 2.4 is wrong!</title>
 <p>
 	If you've found an editorial error in the FAQ (broken link,
-	an addition to a list of links, typo, ambiguity, badly 
+	an addition to a list of links, typo, ambiguity, badly
 	expressed answer, etc.), send some mail to
 	<url href="mailto:matthias@corelatus.com">
 	matthias@corelatus.com</url> and I'll fix it.  Alternatively,
@@ -49,8 +49,8 @@
 <p>
 	Problems along the lines of "the advice about
 	the importance of type checking is complete drivel" might
-	be of general interest on the <em>erlang-questions</em> 
-	mailing list at <url 
+	be of general interest on the <em>erlang-questions</em>
+	mailing list at <url
 	href="mailto:erlang-questions@erlang.org?subject=besserwisser">
 	erlang-questions@erlang.org</url>.
 </p>
@@ -59,15 +59,15 @@
 <section><title>Disclaimer/Distribution</title>
 <p>
 	The information in this document is available free of charge in the
-	hope that it will be of use. However, the author specifically 
-	disclaims any liability for any direct, indirect, or consequential 
+	hope that it will be of use. However, the author specifically
+	disclaims any liability for any direct, indirect, or consequential
 	damages arising out of its use. The author grants permission to
 	distribute this FAQ in unmodified form on any medium.
 </p>
 	<p>
 
 	Opinions in this FAQ do not necessarily agree with Ericsson's
-	official opinions. The 
+	official opinions. The
 	<url href="http://www.corelatus.com/~matthias">maintainer</url>
 	no longer works for Ericsson and this FAQ is not an Ericsson product.
 </p>

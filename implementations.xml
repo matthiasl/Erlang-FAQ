@@ -15,7 +15,7 @@
     <title>What Production-quality implementations of Erlang are there?</title>
 
 	<list>
-	<item><p> <url href="http://www.erlang.org/"> Open Source 
+	<item><p> <url href="http://www.erlang.org/"> Open Source
 	Erlang </url>
 	  is the most popular implementation.
 	  It is built from the same source tree as the commercial
@@ -27,7 +27,7 @@
 
 
 	<item><p> <url href="http://www.erlang.se/">
-		Ericsson's Commercial Erlang</url>. This is essentially 
+		Ericsson's Commercial Erlang</url>. This is essentially
 		the same as Open Source Erlang. The main differences are:
                </p>
 
@@ -35,14 +35,14 @@
 		<item><p>Commercial Erlang comes with a support agreement
                  </p></item>
 	
-		<item><p>The OTP team go to greater lengths 
-			to test the commercial release, so you 
+		<item><p>The OTP team go to greater lengths
+			to test the commercial release, so you
 			get a more stable product. Similarly, they
 			make the transition between versions smoother.
                  </p></item>
 
 		<item><p>The commercial version includes some
-			encryption-related code which cannot be 
+			encryption-related code which cannot be
 			provided in the open source release for legal reasons.
                  </p></item>
 
@@ -60,9 +60,9 @@
 
 	<list>
 
-	<item><p><url 
-		href="http://www.it.uu.se/research/group/hipe"> 
-		High Performance Erlang</url> (HiPE). 
+	<item><p><url
+		href="http://www.it.uu.se/research/group/hipe">
+		High Performance Erlang</url> (HiPE).
 		HiPE is an in-progress project to create a faster Erlang
 		by compiling to native code. Since R8A, the HiPE compiler
 		is tightly integrated with the normal BEAM system; if
@@ -70,19 +70,19 @@
 		HiPE. A <url href="http://www.erlang.se/euc/01/kostis2001/sld001.htm">presentation at the EUC 2001</url> described how to use it.</p></item>
 
 	<item><p>
-		<url href="http://www.iro.umontreal.ca/~etos/"> 
-		Erlang to Scheme Compiler</url> (ETOS). 
-		ETOS is another research project to compile Erlang 
+		<url href="http://www.iro.umontreal.ca/~etos/">
+		Erlang to Scheme Compiler</url> (ETOS).
+		ETOS is another research project to compile Erlang
 		programs to native code by first translating the
 	        program into scheme. They have some impressive benchmarks.
 		ETOS is no longer under active development.</p></item>
 
 	<item><p>
-		Geoff's Erlang (GERL) supported a subset of the Erlang 
-                language. GERL compiled to native code via C. GERL has 
+		Geoff's Erlang (GERL) supported a subset of the Erlang
+                language. GERL compiled to native code via C. GERL has
 		fallen into disuse.</p></item>
 
-	<item><p><url 
+	<item><p><url
 		href="http://www.adfa.edu.au/~lpb/research/sserl/">
 		Safe Erlang</url>,
 		which is a prototype made by extending an older version
@@ -108,8 +108,8 @@
 	Eshell V5.7.1  (abort with ^G)
 	</pre>
 
-    <p> 
-	From Erlang code, in recent releases, 
+    <p>
+	From Erlang code, in recent releases,
 	call <c>erlang:system_info(otp_release)</c>
 	to find out which release you are running.
     </p>
@@ -138,8 +138,8 @@
 <section><title> What operating systems does Erlang run on?</title>
 <p>
 
-	Erlang runs on most unix and unix-like systems and on the 
-	currently popular flavours of windows. Ericsson 
+	Erlang runs on most unix and unix-like systems and on the
+	currently popular flavours of windows. Ericsson
 	have compiled it for
 </p>
 
@@ -155,7 +155,7 @@
 
         <p>
 
-	There are reports on the mailing list of other people 
+	There are reports on the mailing list of other people
         compiling it successfully IRIX, along with reports of
         Erlang running on less usual systems such as iPhones, Xboxes
         Tilera 64-core CPUs and many embedded systems.
@@ -202,7 +202,7 @@
 		at porting to QNX. If you're interested, ask on the
 		erlang mailing list.</p><p>
 
-	<em>VxWorks</em>: VxWorks support is 
+	<em>VxWorks</em>: VxWorks support is
 		included in the standard distribution.  </p><p>
 
 </p></section>
@@ -226,7 +226,7 @@
 </p>
 
 <p>
-  Releases <em>prior</em> to R13B04 can also be cross-compiled 
+  Releases <em>prior</em> to R13B04 can also be cross-compiled
   with a moderate amount of effort. There's a fairly
   <url href='http://www.trapexit.org/Cross_compiling'>
     detailed writeup</url> on the trapexit wiki which covers
@@ -238,7 +238,7 @@
 <p>
 
         Various people on the erlang-questions mailing list have reported
-        Erlang running on pocket PCs, including the 
+        Erlang running on pocket PCs, including the
 	<url href="http://dynamism.com/sl-c3000/main.shtml">Sharp Zaurus</url>.
 
 </p></section>
@@ -247,15 +247,15 @@
 
 	Rule of thumb: if the embedded system can run an
 	operating system like linux, then it is probably possible
-	to get current implementations of Erlang running on it 
-	with a reasonable amount of effort. 
+	to get current implementations of Erlang running on it
+	with a reasonable amount of effort.
 
 	Getting Erlang to run on, say, an 8 bit CPU with 32kByte of
 	RAM is not feasible.
 
 	People successfully run the Ericsson implementation of
-	Erlang on systems with as little as 16MByte of RAM. It 
-	is reasonably straightforward to fit Erlang itself into 
+	Erlang on systems with as little as 16MByte of RAM. It
+	is reasonably straightforward to fit Erlang itself into
 	2MByte of persistant storage (e.g. a flash disk).
 	</p><p>
 
@@ -272,7 +272,7 @@
 
 	<p>
 	This can be automated by editing otp.mk.in and adding
-	<c>+compressed +no_debug_info</c> 
+	<c>+compressed +no_debug_info</c>
 	to the erlang compiler options and then rebuilding all the libraries.
 </p>
 

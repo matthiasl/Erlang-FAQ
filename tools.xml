@@ -24,7 +24,7 @@
 	Erlang's libraries provide an Erlang equivalent for
 	<c>YACC</c> called <c>YECC</c>, but there is no equivalent
 	for <c>LEX</c>. Robert Virding wrote one called <c>LEEX</c>,
-	which is available as a 'user contribution' on 
+	which is available as a 'user contribution' on
 	<url href="http://forum.trapexit.org/viewforum.php?f=20">
 	trapexit</url>.
 
@@ -35,27 +35,27 @@
 	Not really, most people use general-purpose diagram
 	tools like <url href="http://wwwhome.cs.utwente.nl/~tcm/index.html">
 	tcm</url> or xfig. TCM, in particular, is highly recommended.
-	Some people see 
+	Some people see
 	<url href="http://www.sdl-forum.org/">SDL</url>
 	as the natural
 	way of expressing telecomms problems in diagrams,
-	while Maurice Castro presented some interesting work on an 
+	while Maurice Castro presented some interesting work on an
 	<url href="http://www.erlang.se/euc/99/Event.ps">
 	alternative notation</url> at the Erlang User Conference 1999.
 	</p><p>
 
 	The first thing many people say is "what about Rose".
 	An Ericsson project took a look at using
-	Rose for Erlang projects, and concluded that it wasn't 
+	Rose for Erlang projects, and concluded that it wasn't
 	worth using for a whole host of reasons (you can read
 	Ulf Wiger's post about an investigation into using
-	Rose as much more than just a diagram tool 
-	in the <url 
+	Rose as much more than just a diagram tool
+	in the <url
 href="http://erlang.org/pipermail/erlang-questions/1999-March/000165.html">
 	mailing list archive.</url>
 	</p><p>
 	
-	The essential reason for Rose and such not looking 
+	The essential reason for Rose and such not looking
 	promising for use with Erlang is that the way you model
 	a problem in Erlang is rather different to the way you
 	decompose a problem with OO. While you're worrying about
@@ -87,7 +87,7 @@ href="http://erlang.org/pipermail/erlang-questions/1999-March/000165.html">
 	</p><p>
 
 <!--
-	H&aring;kan Matsson released his <url 
+	H&aring;kan Matsson released his <url
 	href="http://www.erlang.org/~hakan/mnesia_test_3.9.2.tgz">
 	mnesia test suite</url>
 	which, by virtue of Mnesia being large, is a reasonable
@@ -99,15 +99,15 @@ href="http://erlang.org/pipermail/erlang-questions/1999-March/000165.html">
 <section><title>Is there a way to benchmark an Erlang implementation?</title>
 <p>
 
-	Bjorn's benchmarks are <url href="http://www.erlang.se/~bjorn/benchmarks2/">freely available</url>. The older ESTONE benchmark 
+	Bjorn's benchmarks are <url href="http://www.erlang.se/~bjorn/benchmarks2/">freely available</url>. The older ESTONE benchmark
 	has pretty much disappeared completely.
 
 </p></section>
 <section><title>Does anyone have a magic file for Erlang?</title>
 <p>
 
-Magic files are used on unix systems with a tool called "file" to identify 
-files. Here's an addition to /etc/magic which allows "file" to identify 
+Magic files are used on unix systems with a tool called "file" to identify
+files. Here's an addition to /etc/magic which allows "file" to identify
 BEAM and JAM files.
 
 </p>
@@ -127,20 +127,20 @@ BEAM and JAM files.
 	<url href="http://www.erlang.org/contrib/nedit_mode-0.9.tgz">
 	colouring mode for nedit</url>. VIM has a fully-fledged Erlang
         mode. A basic version is included in VIM as of version 5.6, a
-        much more complete version is available for 
+        much more complete version is available for
         <url href="http://zanazan.am/vim/">download</url>.
 	</p><p>
 
 	There is an
         <url href="http://sourceforge.net/projects/erlide/">Eclipse
-        plugin for Erlang</url>. 
+        plugin for Erlang</url>.
 	
 	</p><p>
 	Some Windows developers use Ultraedit. Danie Schutte contributed
         a <url href="http://www.erlang.org/download/contrib/ultraedit_erlang.zip">wordfile</url> which provides syntax highlighting.
 
 	</p><p>
-	There is an Erlang editor for NetBeans : 
+	There is an Erlang editor for NetBeans :
 	<url href="http://sourceforge.net/projects/erlybird">ErlyBird</url>
 	</p>
 
@@ -150,7 +150,7 @@ BEAM and JAM files.
 	</p>
 
 	<p>
-	There is a 
+	There is a
 	<url href="http://oneless.blogspot.com/2007/04/howto-erlang-textmate-bundle.html">Textmate bundle</url>
 	</p>
 
@@ -164,7 +164,7 @@ BEAM and JAM files.
 <section><title>Are there Erlang Coding Guidelines?</title>
 <p>
 
-	Yes. They can be found <url 
+	Yes. They can be found <url
      href="http://www.erlang.se/doc/programming_rules.shtml">
 	here</url>
 
@@ -179,11 +179,11 @@ BEAM and JAM files.
 	proper source->source transforms. Among other things they
 	can be used to modify old code so that it no longer uses
 	deprecated functions. It is available on the
-	<url href="http://www.erlang.org/user.html">user contributions 
+	<url href="http://www.erlang.org/user.html">user contributions
 	page</url>
 </p><p>
 	<em>Distel/EMACS</em> is an EMACS monstrosity
-        with support for refactoring and interactive debugging. 
+        with support for refactoring and interactive debugging.
         The <url href="http://fresh.homeunix.net/~luke/distel/">
         homepage</url> has more information.
 
@@ -198,7 +198,7 @@ BEAM and JAM files.
 	it catches errors caused by mistyping module or function names,
 	among others.
 </p><p>
-	The <url href="http://erlang.org/doc/apps/compiler/">Erlang Compiler</url> has several in-built options 
+	The <url href="http://erlang.org/doc/apps/compiler/">Erlang Compiler</url> has several in-built options
 	which help detect problems. Most of these (e.g. reporting unused
 	variables, unused functions and some classes of dead code) are
 	enabled by default.
@@ -217,10 +217,10 @@ BEAM and JAM files.
         Or: I've lost/deleted/whatever the .erl files for my project,
         can I somehow recreate it from the .beam files?
 </p><p>
-        <em>If</em> the code was compiled with 
-        the <c>debug_info</c> flag, then the .beam file 
+        <em>If</em> the code was compiled with
+        the <c>debug_info</c> flag, then the .beam file
         contains a 'partially compiled' representation of the
-        source---basically the parse tree. 
+        source---basically the parse tree.
 </p><p>
         Here is a simple module:
 </p>
@@ -257,16 +257,16 @@ BEAM and JAM files.
    Writing a decompiler which can turn the above example back to source
    is a fifteen minute job. Writing a decompiler which handles more
    complex Erlang code is more time consuming, but not much harder.
-   The <c>syntax_tools</c> package from the 
-   <url href="http://jungerl.sourceforge.net/">jungerl</url> 
+   The <c>syntax_tools</c> package from the
+   <url href="http://jungerl.sourceforge.net/">jungerl</url>
    can be used to do most of the hard work.
 </p><p>
-   If the abstract code is <em>not</em> present in the 
+   If the abstract code is <em>not</em> present in the
    beam file, the problem gets much harder. It is possible to study
-   the remaining information and draw some conclusions about what 
-   the original .erl file might have looked like, for instance which 
-   functions were exported. But a lot of other important information, 
-   such as variable names, is not present. In general, recreating the 
+   the remaining information and draw some conclusions about what
+   the original .erl file might have looked like, for instance which
+   functions were exported. But a lot of other important information,
+   such as variable names, is not present. In general, recreating the
    source code from a beam file without abstract code is not practical.
 </p>
 </section>

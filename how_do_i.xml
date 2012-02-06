@@ -17,7 +17,7 @@
 	Erlang manuals, but sometimes we just want a quick answer...
 	</p><p>
 
-	Keep in mind that the program fragments are intended to 
+	Keep in mind that the program fragments are intended to
 	illustrate an idea, not serve as re-useable, robust modules!
 
 </p>
@@ -25,7 +25,7 @@
   <section><title>...compare numbers?</title>
     <p>
 
-	The operators for comparing numbers are <c> &gt;, &gt;=, &lt;, 
+	The operators for comparing numbers are <c> &gt;, &gt;=, &lt;,
 	=&lt;, == and =/= </c>. Some of these are a little different
 	to C for historical reasons. Here are some examples:
 	</p>
@@ -34,7 +34,7 @@
 	Eshell V4.9.1  (abort with ^G)
 	1> 13 > 2.
 	true
-	2> 18.2 >= 19. 
+	2> 18.2 >= 19.
 	false
 	3> 3 == 3.
 	true
@@ -75,7 +75,7 @@
         does prepending a character.
 	</p><p>
 
-	The bit-syntax, which is described in <url 
+	The bit-syntax, which is described in <url
 	href="http://www.erlang.org/doc/reference_manual/expressions.html#6.16">
 	the manual</url> provides an alternative, but somewhat
 	limited, way to represent strings compactly, for instance:
@@ -94,7 +94,7 @@
 	"ing"
 	]]></pre>
     <p>
-	This style of pattern-matching manipulation of strings 
+	This style of pattern-matching manipulation of strings
 	provides O(1) equivalents of some string operations which are
 	O(N) when using the list representation. Some other operations
 	which are O(1) in the list representation become O(N) when
@@ -102,7 +102,7 @@
 	</p><p>
 
 	There are general ways to
-	<seealso marker="academic#string-performance">improve 
+	<seealso marker="academic#string-performance">improve
         string performance.</seealso>
 
 </p></section>
@@ -111,7 +111,7 @@
     <pre>
         1> string:to_lower("Five Boxing WIZARDS").
 	"five boxing wizards"
-	2> string:to_upper("jump QuickLY").                           
+	2> string:to_upper("jump QuickLY").
 	"JUMP QUICKLY"
         </pre>
 
@@ -135,7 +135,7 @@
     <p>
         See also <c>file:consult/1</c>
     </p></section>
-  
+
   <section><title>...use unicode/UTF-8?</title>
     <p>
 
@@ -146,7 +146,7 @@
 	</p><p>
 
 	In practice, supporting unicode means a bit more, for instance
-	being able to read unicode from a file and being able to sort 
+	being able to read unicode from a file and being able to sort
 	unicode	strings.
 	</p><p>
 
@@ -168,11 +168,11 @@
 
 <!-- REVISIT: I should read Joe's book and find a relevant passage there instead -->
 </p><p>
-        Having said that, there are common methods to achieve 
+        Having said that, there are common methods to achieve
         effects similar to destructive update: store the data
         in a process (use messages to manipulate it), store the data
         in ETS or use a data structure designed
-        for relatively cheap updates (the <c>dict</c> library 
+        for relatively cheap updates (the <c>dict</c> library
         module is one common solution).
 
 </p></section>
@@ -180,10 +180,10 @@
     <marker id="noshell"/>
     <title>...run an Erlang program directly from the unix shell?</title>
     <p>
-	As of Erlang/OTP R11B-4, you can run Erlang code without 
+	As of Erlang/OTP R11B-4, you can run Erlang code without
         compiling by using Escript. The <url href="http://www.erlang.org/doc/man/escript.html">manual page</url> has a
         complete example showing how to do it.
- 
+
 	</p><p>
 	Escript is intended for short, "script-like" programs. A more
         general way to do it, which also works for older Erlang releases,
@@ -195,12 +195,12 @@
 	-module(hello).
 	-export([hello_world/0]).
 	
-	hello_world() -> 
+	hello_world() ->
 		io:fwrite("hello, world\n").
 	</code>
 
         <p>
-	Save this as <c>hello.erl</c>, compile it and 
+	Save this as <c>hello.erl</c>, compile it and
 	run it directly	from the unix (or msdos) command line:
 	</p>
 
@@ -216,7 +216,7 @@
 
 	Erlang has several mechanisms for communicating with programs
 	written in other languages, each with different tradeoffs. The
-	Erlang documentation includes a 
+	Erlang documentation includes a
 	<url href=
 	"http://www.erlang.org/doc/tutorial/users_guide.html">
 	guide to interfacing with other languages</url> which describes
@@ -226,7 +226,7 @@
     <list>
       <item><p>Distributed Erlang</p></item>
       <item><p>Ports and linked-in drivers</p></item>
-      <item><p>EI (C interface to Erlang, replaces the 
+      <item><p>EI (C interface to Erlang, replaces the
                     mostly deprecated erl_interface)</p></item>
       <item><p>Jinterface (Java interface to Erlang)</p></item>
       <item><p>IC (IDL compiler, used with C or Java)</p></item>
@@ -238,8 +238,8 @@
 	Some of the above methods are easier to use than others. Loosely
 	coupled approaches, such as using a custom protocol over a TCP socket,
 	are easier to debug than the more tightly coupled options such as
-	linked-in drivers. The Erlang-questions mailing list archives 
-	contain many desperate cries for help with memory corruption problems 
+	linked-in drivers. The Erlang-questions mailing list archives
+	contain many desperate cries for help with memory corruption problems
 	caused by using Erl Interface and linked-in drivers incorrectly...
 	</p><p>
 	There are a number of user-supported methods and tools, including
@@ -260,7 +260,7 @@
   <section><title>...write a unix pipe program in Erlang?</title>
     <p>
 
-	Lots of useful utilities in unix can be chained together 
+	Lots of useful utilities in unix can be chained together
 	by piping one program's output to another program's input.
 	Here's an example which rot-13 encodes standard input
 	and sends it to standard output:
@@ -291,7 +291,7 @@
     <pre>
 	matthias> cat ~/.bashrc | erl -noshell -s rot13 rot13 | wc
 	</pre>
-    
+
   </section>
   <section><title>...communicate with a DBMS?</title>
     <p>
@@ -301,7 +301,7 @@
 	another system. The other way is for an Erlang program to
 	access a database. The former is a "research" topic. The
 	latter is easily accomplished by going via ODBC, which allows
-	you to access almost any commercial DBMS. The 
+	you to access almost any commercial DBMS. The
 	<url href=
 	"http://www.erlang.org/doc/apps/odbc/index.html">
 	OTP ODBC manual</url>	explains how to do this.
@@ -331,7 +331,7 @@
     <p>
 
 	Erlang crash dumps provide information about the state of the
-	system when the emulator crashed. The 
+	system when the emulator crashed. The
 	<url href="http://erlang.org/doc/apps/erts/crash_dump.html">manual explains</url> how to interpret them.
 
 
@@ -339,40 +339,40 @@
   <section><title>...estimate performance of an Erlang system?</title>
     <p>
 
-	Mike Williams, one of Erlang's original developers, is fond 
+	Mike Williams, one of Erlang's original developers, is fond
 	of saying
 </p> <quote><p>"If you don't run experiments before
-	you start designing a <em>new</em> system, your 
+	you start designing a <em>new</em> system, your
 	<em>entire system</em> will be an experiment!"</p></quote>
     <p>
 
 	This philosophy is widespread around Erlang projects, in part
 	because the Erlang development environment encourages development
-	by prototyping. Such prototyping will also allow sensible 
+	by prototyping. Such prototyping will also allow sensible
 	performance estimates to be made.
 	</p><p>
 
 	For those of you who want to leverage experience with C
 	and C++, some rough rules of thumb are:
 	</p>
-    
+
     <list>
       <item><p>Code which involves mainly number crunching and
 	data processing will run about 10 times slower than
-	an equivalent C program. This includes almost all 
+	an equivalent C program. This includes almost all
 	"micro benchmarks"</p></item>
-      
-      <item><p>Large systems which spent most of their time 
-	communicating with other systems, recovering from faults and 
-	making complex decisions run at least as fast as equivalent 
+
+      <item><p>Large systems which spent most of their time
+	communicating with other systems, recovering from faults and
+	making complex decisions run at least as fast as equivalent
 	C programs.</p></item>
     </list>
 
     <p>
 	Like in any other language or system, experienced developers
-	develop a sense of which operations are expensive and which 
+	develop a sense of which operations are expensive and which
 	are cheap. Erlang newcomers accustomed to the relatively slow
-	interprocess communication facilities in other languages 
+	interprocess communication facilities in other languages
 	tend to over-estimate the cost of creating Erlang processes and
 	passing messages between them.
 
@@ -385,12 +385,12 @@
 
 	</p>
     <code>
-	7> timer:tc(lists, reverse, ["hello world"]).                        
+	7> timer:tc(lists, reverse, ["hello world"]).
 	{27,"dlrow olleh"}
 	8> timer:tc(lists, reverse, ["hello world this is a longer string"]).
 	{34,"gnirts regnol a si siht dlrow olleh"}
 	</code>
-    
+
     <p>
 
 	The <c>eperf</c> library provides a way to profile
@@ -402,12 +402,12 @@
 
 	Memory consumption is a bit of a tricky issue in Erlang. Usually,
 	you don't need to worry about it because the garbage collector
-	looks after memory management for you. But, when things go 
-	wrong, there are several sources of information. Starting 
+	looks after memory management for you. But, when things go
+	wrong, there are several sources of information. Starting
 	from the most general:
 </p><p>
 	Some operating systems provide detailed information
-	about process memory use with tools like top, 
+	about process memory use with tools like top,
 	ps or the linux /proc filesystem:
 </p>
 
@@ -427,12 +427,12 @@
 	This gives you a rock-solid upper-bound on the amount of
 	memory the entire Erlang system is using.
 </p><p>
-	<c>erlang:system_info</c> reports 
+	<c>erlang:system_info</c> reports
 	interesting things about some globally allocated structures in bytes:
 </p>
 
     <pre>
-        3> erlang:system_info(allocated_areas).  
+        3> erlang:system_info(allocated_areas).
 	[{static,390265},
 	 {atom_space,65544,49097},
 	 {binary,13866},
@@ -455,7 +455,7 @@
 
     <p>
 	Information about individual processes can be obtained
-	from <c>erlang:process_info/1</c> or 
+	from <c>erlang:process_info/1</c> or
 	<c>erlang:process_info/2</c>:
 </p>
     <pre>
@@ -483,7 +483,7 @@
 	erlang process on the system. Out-of-control processes often have
 	enormous message queues. A common reason for Erlang processes to
 	get unexpectedly large is an endlessly looping function which isn't
-	tail recursive. 
+	tail recursive.
 </p><p>
 	3. Check the amount of memory used for binaries (reported
 	by <c>system_info</c>). Normal data in Erlang is
@@ -507,12 +507,12 @@
 	A rough rule of thumb is that about the same number of lines
 	of code are produced per developer as in a C project.
 	A reasonably complex problem involving distribution and
-	fault tolerance will be roughly five times shorter in 
+	fault tolerance will be roughly five times shorter in
 	<em>Erlang</em> than in C.
 	</p><p>
 	
 	The traditional ways of slowing down projects, like adding
-	armies of consultants halfway through, 
+	armies of consultants halfway through,
 	spending a year writing detailed design specifications
 	before any code is written, rigidly following a waterfall
 	model, spreading development across several countries and
@@ -527,7 +527,7 @@
         (Solaris, Linux, MacOSX on PPC) had SMP support in earlier
         versions.
 </p><p>
-        Given that Erlang programs are naturally written in a concurrent 
+        Given that Erlang programs are naturally written in a concurrent
         manner, most programs require no modification at all to take
         advantage of SMP.
 </p><p>
@@ -539,7 +539,7 @@
     <p>
 	The simplest approach is to make an a-priori restriction to the
         TCP ports distributed Erlang uses to communicate through by
-	setting the (undocumented) kernel variables 'inet_dist_listen_min' 
+	setting the (undocumented) kernel variables 'inet_dist_listen_min'
 	and 'inet_dist_listen_max'. Example:
 </p>
 
@@ -596,14 +596,14 @@
         The first is to use the <url href="http://www.erlang.org/doc/apps/debugger/">erlang debugger</url> to single-step
         the program.
 </p><p>
-        Another option is to compile your code using the smart 
-        exceptions package, available from 
+        Another option is to compile your code using the smart
+        exceptions package, available from
         <url href='http://jungerl.cvs.sourceforge.net/jungerl/jungerl/lib/smart_exceptions/src/'>the jungerl</url>. Smart exceptions then provide line
 	number information:
 </p>
 
     <pre>
-        4> c(crash, [{parse_transform, smart_exceptions}]).    
+        4> c(crash, [{parse_transform, smart_exceptions}]).
         {ok,crash}
         5> crash:f().
         ** exited: {{crash,g,0},{line,9},match,[5]} **
@@ -623,17 +623,17 @@
         indirectly via a packaging system such as Debian's or BSD's) is
         the simplest option in many cases.
 </p><p>
-        A more modular alternative is to install the 
+        A more modular alternative is to install the
 	<url href="http://cean.process-one.net/">CEAN</url>
         runtime.
 </p><p>
-        A further alternative which has fallen into disuse is SAE: 
+        A further alternative which has fallen into disuse is SAE:
         stand-alone Erlang. SAE allows an Erlang program to be distributed
         as just two files, totalling about 500k. SAE no longer works
         on current Erlang releases, but for historical interest, there is
 	<url href="http://www.sics.se/~joe/sae.html">
 	a page about SAE</url> which shows you how to build a self-contained
-	system for the (somewhat outdated) R9B Erlang release. 
+	system for the (somewhat outdated) R9B Erlang release.
 
 </p></section>
   <section>

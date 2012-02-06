@@ -13,7 +13,7 @@
 <section><title> What's in the OTP libraries?</title>
 <p>
 	The full library descriptions are included with the open-source
-	distribution and also 
+	distribution and also
 	<url href="http://www.erlang.org/doc/">
 	on line</url>. The highlights are:
 </p>
@@ -36,7 +36,7 @@
 	</section><section>
 	<title>Database</title>
         <p>
-		Mnesia and Mnemosyne provide a real-time distributed 
+		Mnesia and Mnemosyne provide a real-time distributed
 		database which can be both in-RAM and on-disk.
 		There is also a standard ODBC client driver.
         </p>
@@ -50,15 +50,15 @@
         <p>
 		A rich collection of modules provides
 		everything from string, list and regular expression
-		manipulation to	random number generation and calendar 
+		manipulation to	random number generation and calendar
 		lookups.
         </p>
 	</section><section>
 	<title>Structural Components</title>
 	<p>
-		gen_server, gen_fsm, 
+		gen_server, gen_fsm,
 		and supervision trees provide standard ways of implementing
-		client/server subsystems, state machines and 
+		client/server subsystems, state machines and
 		supervised fault-tolerant systems.
         </p>
 	</section><section>
@@ -118,7 +118,7 @@
 <section><title>Is there a serial port driver for Erlang?</title>
 <p>
 	Johan Bevemyr wrote one which works for unix machines. The
-	code is freely available at 
+	code is freely available at
 	<url href="http://www.erlang.org/user.html"> the contributions
 	area</url> as <em>serial-1.0</em>.
 	</p><p>
@@ -131,12 +131,12 @@
 <section><title>Is there a toolkit for building GUIs?</title>
 <p>
 
-	There are several. 
+	There are several.
 </p><p>
 
 	The <url
 	href="http://www.erlang.org/doc/apps/wx/">wxErlang</url>
-	application lets you make GUIs with 
+	application lets you make GUIs with
 	<url href="http://www.wxwidgets.org">wxWidgets</url>, a
 	cross-platform toolkit. wxErlang is part of the OTP
 	distribution.
@@ -165,7 +165,7 @@
 <p>
 
         This takes more work and patience than most people
-        have. Kent Boortz described many of the hurdles 
+        have. Kent Boortz described many of the hurdles
         <url href="http://erlang.org/pipermail/erlang-questions/2004-May/012329.html">on the mailing list</url>.
 </p><p>
         There are other ways to spread your code, including
@@ -173,5 +173,5 @@
         the <url href="http://jungerl.sourceforge.net/">jungerl</url>.
 
 </p>
-</section>        
+</section>
 </chapter>

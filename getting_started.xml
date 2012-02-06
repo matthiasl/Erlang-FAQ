@@ -15,9 +15,9 @@
 
 	It depends. (did you expect anything else?)
 	</p><p>
-	With an imperative language background (e.g. C, Python, Java, C++, 
+	With an imperative language background (e.g. C, Python, Java, C++,
 	Pascal, PERL, etc.),
-	it takes most people about a week before they can write 
+	it takes most people about a week before they can write
 	nontrivial programs, about a month to feel really comfortable
 	and a few months before feeling ready to take on something
 	big by themselves. It helps a lot to have someone who knows
@@ -50,7 +50,7 @@
         used as tutorials.  </p><p>
 
 	The Erlang distribution includes a step-by-step <em>getting
-	started</em> guide. This is also 
+	started</em> guide. This is also
 	<url href="http://www.erlang.org/starting.html">online</url>.
 	</p><p>
 
@@ -67,7 +67,7 @@
 	</p><p>
 
 	Many <seealso marker="introduction#universities">universities
-        </seealso> run 
+        </seealso> run
 	courses either partly or wholly about Erlang. Courses about
 	functional programming are also useful for getting a solid
         grounding which will then let you easily learn Erlang by yourself.
@@ -88,8 +88,8 @@
 
 <p>
 	To compile this, save it in a file called <c>hello.erl</c> and
-	compile it from the erlang shell. Don't forget the full-stop 
-	("period" in American English) at the end of each command, as shown: 
+	compile it from the erlang shell. Don't forget the full-stop
+	("period" in American English) at the end of each command, as shown:
 </p>
 
 	<pre>
@@ -101,9 +101,9 @@
 	</pre>
 <p>
 
-	(on unix systems you start the erlang shell by typing "erl" at the 
+	(on unix systems you start the erlang shell by typing "erl" at the
 	command line. On Windows, open a command prompt window and
-	type "werl", or find the Erlang icon in the programs menu). 
+	type "werl", or find the Erlang icon in the programs menu).
 	To run the program from the Erlang shell:
 </p>
 
@@ -119,7 +119,7 @@
 	To shut a system down cleanly, use <c>init:stop().</c>
 	</p><p>
 
-	Some quick ways are evaluating <c>halt().</c> or 
+	Some quick ways are evaluating <c>halt().</c> or
 	<c>Control+\</c>.
 	</p><p>
 
@@ -130,24 +130,24 @@
 
 <section><title>Why does Erlang print "ok" after my program's output?</title>
 <p>
-	The Erlang shell works by <em>r</em>eading an 
+	The Erlang shell works by <em>r</em>eading an
 	Erlang expression,
-	<em>e</em>valuating it, 
-	<em>p</em>rinting the result and 
+	<em>e</em>valuating it,
+	<em>p</em>rinting the result and
 	<em>l</em>ooping
 	for another expression, i.e. a REPL shell.
 	</p><p>
 
-	The <c>io:fwrite()</c> function does two things. 
-	It prints out "hello world" and it returns the value 
+	The <c>io:fwrite()</c> function does two things.
+	It prints out "hello world" and it returns the value
 	<c>ok</c>.
 	</p><p>
 
 	So, when you execute <c>io:fwrite("hello, world\n")
-	</c> in the shell, the <c>fwrite</c> 
-	function prints the first line and the shell prints the return 
-	value, <c>ok</c>. This can be 
-	avoided by <seealso marker="how_do_i#noshell"> running 
+	</c> in the shell, the <c>fwrite</c>
+	function prints the first line and the shell prints the return
+	value, <c>ok</c>. This can be
+	avoided by <seealso marker="how_do_i#noshell"> running
         Erlang without a shell</seealso>.
 </p>
 </section>

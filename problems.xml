@@ -24,21 +24,21 @@
 <p>
 
 	In Erlang, all variables must start with a capital letter,
-	so you can write <c>A = 3.</c> but not 
-	<c>a = 3.</c> In the latter case Erlang 
+	so you can write <c>A = 3.</c> but not
+	<c>a = 3.</c> In the latter case Erlang
 	complains that this is a "bad match".
 	</p><p>
 
 	In the second version, the 'a' is an atom while 3 is a number.
-	'a' cannot be <em>pattern matched</em> with 3. The use of 
+	'a' cannot be <em>pattern matched</em> with 3. The use of
 	capital letters for variables comes from Prolog.
 	</p><p>
 
 	If the terms <em>atom</em> and <em>pattern match </em> are new to you,
 	have a read of the first chapter or two of the
         <url href="http://www.erlang.org/doc.html"> Erlang book</url>.
-	(<em>Very</em> roughly, an atom corresponds to 
-	an enum in C and pattern matching in this case is like an 
+	(<em>Very</em> roughly, an atom corresponds to
+	an enum in C and pattern matching in this case is like an
 	<c>assert</c> statement.
 
 </p></section>
@@ -71,7 +71,7 @@
 	(This behaviour is called "single assignment", and it's
 	considered to be a feature, not a bug. Most functional
 	languages, including ML and Haskell, also behave this way.
-	Among other things, It's nice being able to rely on a 
+	Among other things, It's nice being able to rely on a
 	certain variable always having the same value.)
         </p>
 	
@@ -105,7 +105,7 @@
 <p>
 	A similar problem occurs with <c>io:fwrite()</c>,
 	but in that case you can take direct control by specifying the
-	appropriate formatting character. "~s" always prints the 
+	appropriate formatting character. "~s" always prints the
 	argument as a string, "~w" always prints it as a list.
 </p>
 
@@ -137,8 +137,8 @@
 	</code>
 
         <p>
-        The solution is usually to use <c>case</c> 
-	instead. Case is used much more frequently than 
+        The solution is usually to use <c>case</c>
+	instead. Case is used much more frequently than
 	<c>if</c> in most Erlang programs:
 	
 	</p>
@@ -164,9 +164,9 @@
 	</code>
 
 <p>
-	will return <c>yes</c> for 
-	<c>f(5)</c> as well as 
-	<c>f(blork)</c>. Similarly, the comma is 
+	will return <c>yes</c> for
+	<c>f(5)</c> as well as
+	<c>f(blork)</c>. Similarly, the comma is
 	used for logical and:
 
 	</p>
@@ -178,8 +178,8 @@
 <p>
 	Beware! The semicolon operator
 	doesn't mean exactly the same thing as 'or', for instance
-	<c>f(hello)</c> returns <c>yes </c>, whereas evaluating 
-	<c>f(hello - 1) > 3 or atom(hello)</c> 
+	<c>f(hello)</c> returns <c>yes </c>, whereas evaluating
+	<c>f(hello - 1) > 3 or atom(hello)</c>
 	returns a <c>badarith</c> error.
 	The first example, f(), is <em>defined</em>
 	 as having the same effect as writing:
@@ -204,7 +204,7 @@
 	</code>
 
 <p>
-	But the parsing rules for Erlang are a bit unexpected here, 
+	But the parsing rules for Erlang are a bit unexpected here,
 	catch binds less tightly than you might expect it to.
 	To make it parse the way you really want:
 </p>
@@ -232,7 +232,7 @@
 	</code>
 
 <p>
-	The problem is that there already is a standard library module 
+	The problem is that there already is a standard library module
 	called 'sets'. The Erlang runtime system is protecting
 	you.
 
@@ -245,29 +245,29 @@
 </p></section>
 <section><title>Why won't my distributed Erlang nodes communicate?</title><p>
 
-	For Erlang nodes to be able to communicate, you need 
+	For Erlang nodes to be able to communicate, you need
 </p>
 
 	<list>
-	<item><p>A working tcp network between the nodes. 
-		On unix systems	you can check this by using telnet, 
+	<item><p>A working tcp network between the nodes.
+		On unix systems	you can check this by using telnet,
 		though a working telnet doesn't guarantee that
 		enough of your network is working, e.g. DNS problems
 		throw a spanner in Erlang's distribution mechanisms.
 </p></item>
 
-	<item><p>The nodes to use the same node naming scheme 
-		(you cannot have a system where some nodes use fully 
+	<item><p>The nodes to use the same node naming scheme
+		(you cannot have a system where some nodes use fully
 		qualified names and others use short names).
 </p></item>
 
-	<item><p>The nodes must agree to use the same 
+	<item><p>The nodes must agree to use the same
 		"magic security cookie".
 </p></item>
 	</list>
 
 <p>
-	Here's an example of how to create two nodes on different machines 
+	Here's an example of how to create two nodes on different machines
 	called <em>martell</em> and <em>grolsch</em>
 	and verify that they're connected. On one machine:
 
@@ -275,7 +275,7 @@
 	<code>
 	~ >rlogin martell
 	Last login: Sat Feb 5 20:40:52 from super
-	~ >erl -sname first_node 
+	~ >erl -sname first_node
 	Eshell V4.9.1.1  (abort with ^G)
 	(first_node@martell)1> erlang:set_cookie(first_node, nocookie).
 	true
@@ -299,10 +299,10 @@
 	</code>
 <p>
 
-	The <c>pong</c> tells us that the 
+	The <c>pong</c> tells us that the
 	connection works, the result
 	of <c>net:ping()</c> is <c>pang </c> when the connection isn't working.
-	The <c>rpc:call()</c> command illustrates 
+	The <c>rpc:call()</c> command illustrates
 	executing a command on the other node.
 	</p>
 
@@ -326,12 +326,12 @@
 	R11B.  </p><p>
 	
 	Beyond that, you need to start digging. Erlang nodes communicate
-	by connecting to the <c>epmd</c> daemon. 
+	by connecting to the <c>epmd</c> daemon.
 	The daemon is started
 	automatically the first time you start a distributed node. For
 	debugging, it's useful to kill it by running <c>epmd -kill
 	</c>) and
-	then restart it with the debugging flag. You can find 
+	then restart it with the debugging flag. You can find
 	<c>epmd</c> in the same directory as the erlang binary:
 	
 	</p>
@@ -353,10 +353,10 @@
 	</code>
 
 <p>
-	Similarly, when you use <c>net:ping</c> from a 
+	Similarly, when you use <c>net:ping</c> from a
 	node on another
 	system, you should see some messages go by. If nothing seems
-	to be happening on <c>epmd</c>, 
+	to be happening on <c>epmd</c>,
 	it's useful to scan for
 	packets on the ethernet to see if the information is really
 	getting out on the net. On unix systems you can do this with
@@ -366,7 +366,7 @@
 	<code>
 	# /usr/local/sbin/tcpdump port 4369
 	tcpdump: listening on le0
-	21:10:17.349286 grolsch.37558 > martell.4369: S 747683789:747683789(0) 
+	21:10:17.349286 grolsch.37558 > martell.4369: S 747683789:747683789(0)
 	</code>
 
 </section>
@@ -374,7 +374,7 @@
 
 	One fairly common obstacle to getting distribution to work is
 	a broken DNS setup. One way to avoid that, or test for it, is
-	to start distributed Erlang with IP addresses instead of hostnames, 
+	to start distributed Erlang with IP addresses instead of hostnames,
 	e.g. on one machine or window:
 	</p>
 
@@ -451,7 +451,7 @@ Why does my application die every second time I load new code into it?
 
 	Two mailing list discussions about the topic can be found
 	<url href="http://erlang.org/pipermail/erlang-questions/2004-January/011353.html">here</url> and
-	<url 
+	<url
 href="http://erlang.org/pipermail/erlang-questions/2000-March/001050.html">
 here</url>.
 	</p>
@@ -483,8 +483,8 @@ this code:
 </title><p>
 
 	Consider using a binary release (Debian GNU/Linux includes them in the
-	woody and potato releases, windows binaries are on the 
-	<url href="http://www.erlang.org/download.html"> 
+	woody and potato releases, windows binaries are on the
+	<url href="http://www.erlang.org/download.html">
 	download page </url>).
 
 	</p><p>
