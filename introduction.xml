@@ -13,12 +13,12 @@
 <section><title>In a nutshell, what is Erlang?</title>
 <p>
 
-	Erlang is a general-purpose programming language and 
+	Erlang is a general-purpose programming language and
 	runtime environment. Erlang has built-in support for
 	concurrency, distribution and fault tolerance. Erlang
 	is used in several large telecommunication systems
 	from <url href="http://www.ericsson.com/">Ericsson</url>.
-	Erlang is available as open 
+	Erlang is available as open
 	source from <url href="http://www.erlang.org/">
 	http://www.erlang.org</url>.
 </p>
@@ -33,29 +33,29 @@
 	Most projects using "Erlang" are actually using "Erlang/OTP",
 	i.e. the language and the libraries. OTP is also open source.
 </p>
-	
+
 </section>
 <section><title>What sort of applications is Erlang particularly suitable for?
 </title>
 <p>
 	Distributed, reliable, <seealso marker="academic#soft-realtime">
-        soft real-time</seealso> concurrent systems. 
+        soft real-time</seealso> concurrent systems.
 </p>
 
 	<list>
-	<item><p> Telecommunication systems, e.g. controlling a switch 
+	<item><p> Telecommunication systems, e.g. controlling a switch
 		or converting protocols.</p></item>
 
-	<item><p> Servers for Internet applications, e.g. a 
-		mail transfer agent, an IMAP-4 server, an HTTP server or a 
+	<item><p> Servers for Internet applications, e.g. a
+		mail transfer agent, an IMAP-4 server, an HTTP server or a
 	        <url href="http://www.erlang.se/euc/99/WAP/index.htm">
 		WAP Stack</url>.</p></item>
 
-	<item><p> Telecommunication applications, e.g. handling 
+	<item><p> Telecommunication applications, e.g. handling
                 mobility in a mobile network or providing unified messaging.
                </p></item>
 
-	<item><p> Database applications which require soft realtime 
+	<item><p> Database applications which require soft realtime
 		behaviour.</p></item>
 	</list>
 <p>
@@ -65,32 +65,32 @@
 </p>
 
 	<list>
-	<item><p> Erlang provides a simple and powerful model 
+	<item><p> Erlang provides a simple and powerful model
 		for error containment and fault tolerance
 		(supervised processes).</p></item>
 
-	<item><p> Concurrency and message passing are a fundamental 
-		to the language. Applications written in Erlang 
-		are often composed of hundreds or thousands of 
-		lightweight processes. Context switching between 
-		Erlang processes is typically one or two orders 
-		of magnitude cheaper than switching between 
+	<item><p> Concurrency and message passing are a fundamental
+		to the language. Applications written in Erlang
+		are often composed of hundreds or thousands of
+		lightweight processes. Context switching between
+		Erlang processes is typically one or two orders
+		of magnitude cheaper than switching between
 		threads in a C program.</p></item>
 
-	<item><p> Writing applications which are made of parts which 
+	<item><p> Writing applications which are made of parts which
 		execute on different machines (i.e. distributed
 		applications) is easy. Erlang's distribution
 		mechanisms are transparent: programs need not be
 		aware that they are distributed.</p></item>
-		
+
 	<item><p> The OTP libraries provide support for many common
 		problems in networking and telecommunications systems.
            </p></item>
 
- 	<item><p> The Erlang runtime environment (a virtual machine, 
-		much like the Java virtual machine) means that code 
+ 	<item><p> The Erlang runtime environment (a virtual machine,
+		much like the Java virtual machine) means that code
 		compiled on
-		one architecture runs anywhere. The runtime system 
+		one architecture runs anywhere. The runtime system
 		also allows code in a running system to be updated
 		without interrupting the program.
                 </p></item>
@@ -108,13 +108,13 @@
 	People use Erlang for all sorts of surprising things, for instance
 	to communicate with X11 at the protocol level, but, there are some
 	common situations where Erlang is not likely to be the language of
-	choice. 
+	choice.
 </p>
 	<p>
 
 	The most common class of 'less suitable' problems is
 	characterised by performance being
-	a prime requirement <em>and</em> constant-factors 
+	a prime requirement <em>and</em> constant-factors
 	having a large effect on performance. Typical examples are
 	image processing, signal processing, sorting large
 	volumes of data and low-level protocol termination.
@@ -122,7 +122,7 @@
 	<p>
 
 	Another class of problem is characterised by a wide interface
-	to existing C code. A typical example is implementing operating 
+	to existing C code. A typical example is implementing operating
 	system device drivers.
 </p>
 	<p>
@@ -155,12 +155,12 @@
 
 	<list>
 	<item><p>
-	<url href="http://www.aptela.com/">Aptela</url> 
+	<url href="http://www.aptela.com/">Aptela</url>
 	(VoIP Service Provider)
         </p></item>
 
 	<item><p>
-	<url href="http://www.nortel.com/">Bluetail/Alteon/Nortel</url> 
+	<url href="http://www.nortel.com/">Bluetail/Alteon/Nortel</url>
 	(distributed, fault tolerant email system, SSL accelerator)
         </p></item>
 
@@ -239,11 +239,11 @@
 	(advanced call control services)
         </p></item>
 	<item><p>
-	<url href="http://www.telia.se/"> 
+	<url href="http://www.telia.se/">
 	Telia</url> (a telecomms operator)
         </p></item>
 	<item><p>
-	<url href="http://www.textendo.com/"> 
+	<url href="http://www.textendo.com/">
 	Textendo</url> (Innovative text messaging services)
         </p></item>
 	<item><p>
@@ -257,13 +257,13 @@
 	</list>
 
 	<p>
-	If you want to be listed here, send me some mail: 
+	If you want to be listed here, send me some mail:
 	<url href="mailto:matthias@corelatus.com">
-	matthias@corelatus.com</url> 
+	matthias@corelatus.com</url>
         </p>
 </section>
 <section>
-    <marker id="universities"/>	
+    <marker id="universities"/>
     <title> Who uses Erlang for research and teaching?</title>
 <p>
 
@@ -273,6 +273,13 @@
 
 
 	<list>
+	<item><p>
+		<url href="http://cmsprod.bgu.ac.il/eng/engn/cse">
+		Ben-Gurion University</url> (Israel) in the
+		Communication Systems Engineering
+		Department.</p></item>
+
+
 	<item><p>
 		<url href="http://www.tec.ac.cr/sitios/Docencia/computacion/Paginas/default.aspx">
 		Costa Rican Institute of Technology</url>.
@@ -285,8 +292,8 @@
         </p></item>
 
 	<item><p>
-		<url href="http://www.iit.edu.ph/">Iligan Institute of 
-		Technology of the Mindanao State University</url> in 
+		<url href="http://www.iit.edu.ph/">Iligan Institute of
+		Technology of the Mindanao State University</url> in
 		the Philippines.
         </p></item>
 
@@ -299,26 +306,26 @@
         </p></item>
 
 	<item><p>
-	<url href="http://www.rmit.edu.au/">The Royal Melbourne 
+	<url href="http://www.rmit.edu.au/">The Royal Melbourne
 	Institute of Technology</url> in Australia.
         </p></item>
 
 	<item><p>
-		<url href="http://www.cem.itesm.mx/">Tecnol&oacute;gica de 
+		<url href="http://www.cem.itesm.mx/">Tecnol&oacute;gica de
 		  Monterrey, Campus Estado de M&eacute;xico
-		</url> in the 
+		</url> in the
                 <url href="http://www.arielortiz.com/apps/s200911/tc2006/noticias/">Programming Languages</url> course.
         </p></item>
 
 	<item><p>
-		<url href="http://www.udc.es/">University of 
+		<url href="http://www.udc.es/">University of
 		A Coru&ntilde;a</url> in Spain.
         </p></item>
 
-	<item><p><url href="https://www.cs.kent.ac.uk/projects/refactor-fp/fp-design/RefactorErlang">The University of Kent</url></p></item>
+	<item><p><url href="https://www.cs.kent.ac.uk/projects/refactor-fp/fp-design/RefactorErlang">The University of Kent</url> in the UK</p></item>
 
 	<item><p>
-		<url href="http://www.dcs.shef.ac.uk/~qiang/forse/forse.htm">University of Sheffield</url>
+		<url href="http://www.dcs.shef.ac.uk/~qiang/forse/forse.htm">University of Sheffield</url> in the UK
         </p></item>
 
 	<item><p>
@@ -331,22 +338,22 @@
 	<item><p>
 		<url href="http://www.uu.se/">Uppsala University </url>
 		in Sweden is home to the
-		<url href="http://www.it.uu.se/research/group/hipe/">HiPE</url> 
+		<url href="http://www.it.uu.se/research/group/hipe/">HiPE</url>
 		project.
         </p></item>
 
 	</list>
 
 	<p>
-	If you want to be listed here, send me some mail: 
+	If you want to be listed here, send me some mail:
 	<url href="mailto:matthias@corelatus.com">
-	matthias@corelatus.com</url> 
+	matthias@corelatus.com</url>
         </p>
 
 </section>
 <section><title> Can I get commercial support for Erlang?</title>
 	<p>
-	Several consulting companies provide support and training courses: 
+	Several consulting companies provide support and training courses:
 	<url href="http://www.erlang-solutions.com">Erlang-solutions.com
 	</url>,
 	<url href="http://www.erlang-services.com">Sjoland and Thyselius</url> and
