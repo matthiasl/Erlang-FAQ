@@ -19,7 +19,7 @@
 	as binaries for Windows machines. This is probably the best
 	place to go to make sure you're getting the latest version.
 </p><p>
-	
+
 	The <url href="http://www.debian.org/">Debian
 	Distribution</url> of <em>GNU/Linux</em>, and derivatives such
 	as Ubuntu, includes various versions Erlang in different
@@ -42,8 +42,8 @@
 
   <section><title>What's the current version of (Open Source) Erlang?</title>
 
-	<p>R14B was released in September 2010. As further patches are
-	released, the "current" version becomes R14B01, R14B02 etc.
+	<p>R15B was released in December 2011. As further patches are
+	released, the "current" version becomes R15B01, R15B02 etc.
 	This curious version numbering scheme is also used on Ericsson
 	mobile phones, for instance my phone is an R1F phone...</p>
 
@@ -132,7 +132,7 @@
 	historical interest. Archaeologists can download
 	the <url href="http://www.erlang.org/doc.html"> first half of
 	the book</url> from erlang.org.
-	
+
         </p><p>
 
 	Also only of historical interest: Maurice Castro's book, <url
@@ -203,7 +203,7 @@
         Another Masters Thesis</url> contains a good
         overview of Erlang's distribution mechanisms (Section 5).
 </p><p>
-	
+
 	Mnesia's internals are described on
 	<!-- REVISIT: erlang projects was down at last viewing, 2009-05-15 -->
 	<url href="http://www.erlang-projects.org/Groups/erlang_frameworks/mnesia_internals_sli/block_11394822732946/file">
@@ -379,7 +379,7 @@ distributing it are:
 
     <section>
       <title>erlang-announce</title><p>
-	
+
 		This list carries announcements
 		about new releases of Erlang, patches, etc.
 		All posts to <em>erlang-announce</em> also appear
@@ -473,11 +473,11 @@ distributing it are:
 
 	  <item><url href="http://totally-erlang.com/">Totally Erlang
 	  </url></item>
-	
+
 	  <item><url href="http://functionaljobs.com/">Functional Jobs
 	  </url></item>
 	</list>
-	
+
 	<p>
 
 	Several consultant groups have Erlang-certified people in
@@ -491,7 +491,7 @@ distributing it are:
         <url href="http://www.process-one.net/en/services/">
          Process-one</url> are based in France.
 
-	</p><p>	
+	</p><p>
 	If you want to be listed here, send some mail to
 	<url href="mailto:matthias@corelatus.com">
 	matthias@corelatus.com</url>.
