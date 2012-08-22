@@ -194,7 +194,7 @@
 	<code>
 	-module(hello).
 	-export([hello_world/0]).
-	
+
 	hello_world() ->
 		io:fwrite("hello, world\n").
 	</code>
@@ -209,7 +209,7 @@
 	matthias >erl -noshell -s hello hello_world -s init stop
 	hello, world
 	</pre>
-	
+
   </section>
   <section><title>...communicate with non-Erlang programs?</title>
     <p>
@@ -278,7 +278,7 @@
 	    io:put_chars(Rotated),
 	    rot13()
 	end.
-	
+
 	rot13(C) when C >= $a, C =< $z -> $a + (C - $a + 13) rem 26;
 	rot13(C) when C >= $A, C =< $Z -> $A + (C - $A + 13) rem 26;
 	rot13(C) -> C.
@@ -470,7 +470,7 @@
 	</c> and <c>system_info</c> to add up to
 	the total memory use reported by the operating system. The Erlang
 	runtime also uses memory for other things.
-</p><p>	
+</p><p>
 	A typical approach when you suspect you have memory problems
 	is
 </p><p>
@@ -510,7 +510,7 @@
 	fault tolerance will be roughly five times shorter in
 	<em>Erlang</em> than in C.
 	</p><p>
-	
+
 	The traditional ways of slowing down projects, like adding
 	armies of consultants halfway through,
 	spending a year writing detailed design specifications
