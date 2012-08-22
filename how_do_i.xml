@@ -561,56 +561,6 @@
 
 </p></section>
   <section>
-    <marker id="crash-line-number"/>
-    <title>...find out which line my Erlang program crashed at?</title>
-    <p>
-        The run-time system's error reports tell you which function
-        crashed, but not the line number. Consider this module:
-</p>
-
-    <pre>
-        -module(crash).
-        -export([f/0]).
-
-        f() ->
-          g().
-
-        g() ->
-          A = 4,
-          b = 5,  % Error is on this line.
-          A.
-        </pre>
-
-    <pre>
-        3> crash:f().
-        ** exited: {{badmatch,5},[{crash,g,0},{shell,exprs,6},{shell,eval_loop,3}]} **
-        </pre>
-
-    <p>
-        The crash message tells us that the crash was in the function
-        <c>crash:g/1</c>, and that it was a badmatch. For
-        programs with short functions, this is enough information for
-        an experienced programmer to find the problem.
-</p><p>
-        In cases where you want more information, there are two options.
-        The first is to use the <url href="http://www.erlang.org/doc/apps/debugger/">erlang debugger</url> to single-step
-        the program.
-</p><p>
-        Another option is to compile your code using the smart
-        exceptions package, available from
-        <url href='http://jungerl.cvs.sourceforge.net/jungerl/jungerl/lib/smart_exceptions/src/'>the jungerl</url>. Smart exceptions then provide line
-	number information:
-</p>
-
-    <pre>
-        4> c(crash, [{parse_transform, smart_exceptions}]).
-        {ok,crash}
-        5> crash:f().
-        ** exited: {{crash,g,0},{line,9},match,[5]} **
-        </pre>
-
-  </section>
-  <section>
     <marker id="erlrt-and-sae"/>
     <title>...distribute the Erlang programs I write to my friends/colleagues/users?</title>
 
