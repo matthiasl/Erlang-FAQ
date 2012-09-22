@@ -117,18 +117,20 @@ BEAM and JAM files.
 <section><title>Is there an Erlang IDE?</title>
 <p>
 
-	The "official" development environment for Erlang is Emacs,
+	Some claim that the "official" development environment for Erlang is Emacs,
 	and there's a special emacs mode for Erlang. This can be
 	found in <c>lib/emacs/erlang.el</c> under the
 	source tree.
 	</p><p>
 
-	VI fans have several options. There is a
-	<url href="http://www.erlang.org/contrib/nedit_mode-0.9.tgz">
-	colouring mode for nedit</url>. VIM has a fully-fledged Erlang
-        mode. A basic version is included in VIM as of version 5.6, a
-        much more complete version is available for
-        <url href="http://zanazan.am/vim/">download</url>.
+	For Vim fans there are several options. A basic version is included in
+	Vim as of version 5.6 and a much more complete version is available as
+	an
+	<url href="https://github.com/jimenezrick/vimerl">erlang plugin</url>
+	available via Git on GitHub.
+	<c>vimerl</c> is also available via vundle, specify 
+	<c>Bundle 'jimenezrick/vimerl'</c> in your <c>vimrc</c> and do
+	<c>BundleInstall</c>.
 	</p><p>
 
 	There is an
