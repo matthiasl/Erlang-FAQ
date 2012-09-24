@@ -25,7 +25,7 @@ all: obj obj/faq.html obj/t1.html local_copy_of_definions
 # Make a list of links in the document. I check these manually because
 # an automatic checker is likely to miss semi-dead pages.
 linkcheck: $(sources)
-	grep http $(sources) | cut -d \" -f 2 | sort | uniq > $(PWD)/link-check
+	egrep https?: $(sources) | cut -d \" -f 2 | sort | uniq > $(PWD)/link-check
 
 obj:
 	mkdir obj

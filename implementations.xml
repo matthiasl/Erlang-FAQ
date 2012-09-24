@@ -222,13 +222,13 @@
   Erlang/OTP distribution includes support and documentation for cross
   compiling. This is described in the INSTALL-CROSS.md file at the
   top of the Erlang source, available from the
-  <url href='http://erlang.org/download.html'>downloads page</url>.
+  <url href="http://erlang.org/download.html">downloads page</url>.
 </p>
 
 <p>
   Releases <em>prior</em> to R13B04 can also be cross-compiled
   with a moderate amount of effort. There's a fairly
-  <url href='http://www.trapexit.org/Cross_compiling'>
+  <url href="http://www.trapexit.org/Cross_compiling">
     detailed writeup</url> on the trapexit wiki which covers
   cross compiling between linux systems.
 </p>

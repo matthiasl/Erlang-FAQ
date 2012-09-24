@@ -263,10 +263,10 @@
     <marker id="repositories"/>
 
     <p>As of R13B03 (November 2009), there is
-      an <url href='http://github.com/erlang/otp'>official Git
+      an <url href="http://github.com/erlang/otp">official Git
       repository</url> maintained (daily!) by the Erlang/OTP
       group. There is also
-      an <url href='http://github.com/mfoemmel/erlang-otp'> unofficial
+      an <url href="http://github.com/mfoemmel/erlang-otp"> unofficial
       repository</url> which includes history before the R13B03
       release.
     </p>
@@ -284,7 +284,7 @@ Where you put the actual code is up to you.
 </p><p> If your code is a correction, modification or extension to an
 existing part of OTP, the usual way of spreading it is via github, the
 wiki has <url
-href='https://github.com/erlang/otp/wiki/submitting-patches'>instructions</url>.</p>
+href="https://github.com/erlang/otp/wiki/submitting-patches">instructions</url>.</p>
 
     <p>
 If your code is a new application or library, some common ways of

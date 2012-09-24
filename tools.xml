@@ -168,7 +168,7 @@ BEAM and JAM files.
 	<em>Syntax Tools</em> do
 	proper source->source transforms. Among other things they
 	can be used to modify old code so that it no longer uses
-	deprecated functions. The <url href='http://www.erlang.org/doc/apps/syntax_tools/index.html'>Syntax Tools Application</url> is a standard
+	deprecated functions. The <url href="http://www.erlang.org/doc/apps/syntax_tools/index.html">Syntax Tools Application</url> is a standard
         part of Erlang.
 </p><p>
 	<em>Distel/EMACS</em> supports refactoring and interactive debugging.
@@ -245,7 +245,7 @@ BEAM and JAM files.
    Writing a decompiler which can turn the above example back to source
    is a fifteen minute job. Writing a decompiler which handles more
    complex Erlang code is more time consuming, but not much harder.
-   The <url href='http://www.erlang.org/doc/apps/syntax_tools/index.html'>
+   The <url href="http://www.erlang.org/doc/apps/syntax_tools/index.html">
    syntax_tools</url> application can do most of the hard work.
 </p><p>
    If the abstract code is <em>not</em> present in the
