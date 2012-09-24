@@ -53,7 +53,7 @@
 href="http://erlang.org/pipermail/erlang-questions/1999-March/000165.html">
 	mailing list archive.</url>
 	</p><p>
-	
+
 	The essential reason for Rose and such not looking
 	promising for use with Erlang is that the way you model
 	a problem in Erlang is rather different to the way you
@@ -113,51 +113,42 @@ BEAM and JAM files.
 <codeinclude file="erlang_magic_file"/>
 
 </section>
-<section><title>Is there an Erlang IDE?</title>
+<section><title>Which IDE should I use for Erlang development?</title>
 <p>
+        Whichever you like; Erlang works with any IDE/editor which
+        handles plain-text files.
+</p><p>
+        Eclipse: there is an
+        <url href="http://erlide.org/">Eclipse plugin for Erlang</url>.
+</p><p>
+	Emacs: the Erlang distribution includes an Erlang mode
+        (in <c>lib/emacs/erlang.el</c>).
+</p><p>
+        VIM: VIM includes a Erlang plugin. A more advanced
+        <url href="https://github.com/jimenezrick/vimerl">
+	erlang VIM plugin</url> is available on GitHub.
+        <c>vimerl</c> is also available via vundle, specify
+        <c>Bundle 'jimenezrick/vimerl'</c> in your <c>vimrc</c> and do
+        <c>BundleInstall</c>.
 
-	The "official" development environment for Erlang is Emacs,
-	and there's a special emacs mode for Erlang. This can be
-	found in <c>lib/emacs/erlang.el</c> under the
-	source tree.
-	</p><p>
 
-	VI fans have several options. There is a
-	<url href="http://www.erlang.org/contrib/nedit_mode-0.9.tgz">
-	colouring mode for nedit</url>. VIM has a fully-fledged Erlang
-        mode. A basic version is included in VIM as of version 5.6, a
-        much more complete version is available for
-        <url href="http://zanazan.am/vim/">download</url>.
 	</p><p>
-
-	There is an
-        <url href="http://sourceforge.net/projects/erlide/">Eclipse
-        plugin for Erlang</url>.
-	
-	</p><p>
-	Some Windows developers use Ultraedit. Danie Schutte contributed
+	Ultraedit: Danie Schutte contributed
         a <url href="http://www.erlang.org/download/contrib/ultraedit_erlang.zip">wordfile</url> which provides syntax highlighting.
 
 	</p><p>
-	There is an Erlang editor for NetBeans :
-	<url href="http://sourceforge.net/projects/erlybird">ErlyBird</url>
+	NetBeans: <url href="http://sourceforge.net/projects/erlybird">ErlyBird</url>
 	</p>
 
 	<p>
-	There is a
-	<url href="http://mac.softpedia.com/get/Developer-Tools/ErlangBBLM.shtml">BBEdit module</url>
+	BBEdit: a
+	<url href="http://code.google.com/p/erlang-bblm/">BBEdit module</url>
 	</p>
 
 	<p>
-	There is a
+	Textmate: a
 	<url href="http://oneless.blogspot.com/2007/04/howto-erlang-textmate-bundle.html">Textmate bundle</url>
 	</p>
-
-        <p>
-	There is a defunct X IDE for unix systems called "xerl". It
-	isn't worth using.
-        </p>
-
 
 </section>
 <section><title>Are there Erlang Coding Guidelines?</title>
@@ -174,15 +165,13 @@ BEAM and JAM files.
 	code refactoring. They can also be used for a range of
 	other purposes.
 </p><p>
-	<em>Syntax Tools</em>Richard Carlsson's syntax tools do
+	<em>Syntax Tools</em> do
 	proper source->source transforms. Among other things they
 	can be used to modify old code so that it no longer uses
-	deprecated functions. It is available on the
-	<url href="http://www.erlang.org/user.html">user contributions
-	page</url>
+	deprecated functions. The <url href='http://www.erlang.org/doc/apps/syntax_tools/index.html'>Syntax Tools Application</url> is a standard
+        part of Erlang.
 </p><p>
-	<em>Distel/EMACS</em> is an EMACS monstrosity
-        with support for refactoring and interactive debugging.
+	<em>Distel/EMACS</em> supports refactoring and interactive debugging.
         The <url href="http://fresh.homeunix.net/~luke/distel/">
         homepage</url> has more information.
 
