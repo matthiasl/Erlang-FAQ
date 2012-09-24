@@ -56,7 +56,7 @@
 	telecommunications products, selling programming
 	tools is not really a business Ericsson	is interested in.
 	</p><p>
-	
+
 	<em>Stimulate adoption</em>: Erlang is a great
 	language for many sorts of systems. Releasing a
 	good, free development environment is likely to
@@ -115,7 +115,7 @@
 	</p><p>
 	A rule of thumb is that it is straightforward to write
 	Erlang programs which can respond to
-	external events within a few milliseconds. 	
+	external events within a few milliseconds.
 	The parts of Erlang which help with this are:
         </p>
 
@@ -154,9 +154,9 @@
 	Abstract Machine.
 	</p>
 	</quote>
-	
+
 	<quote>
-	<p>	
+	<p>
 	Then I wrote a compiler from Erlang to JAM
 	and an emulator to see if the machine worked.
 	Both these were written in prolog.
@@ -174,7 +174,7 @@
 	Then I rewrote the erlang-to-jam compiler in Erlang and
 	used the prolog compiler to compile it. The resultant
 	object code was run in the C emulator. Then we threw away prolog.
-	</p>	
+	</p>
         </quote>
 <p>
 	Some of this is described in <url
@@ -216,10 +216,10 @@
 	Most people find it simplest to program as though the answer
 	was <em>"yes, always"</em>.
 	</p><p>
-	
+
 	Per Hedeland covered the issues on the mailing list (edited a bit):
 </p>
-	
+
 	<quote>
 	<p>
 	"Delivery is guaranteed if nothing breaks" - and if something
@@ -231,7 +231,7 @@
 	broken, or if any of these happen <em>before</em>
 	you do the link.
 	</p><p>
-	
+
 	It seems this issue of "guaranteed delivery" comes up every
 	now and	then, but I've never managed to find out exactly what
 	it is those that are asking for it actually want:
@@ -239,7 +239,7 @@
         </quote>
 
 	<list>
-	<item><p>	
+	<item><p>
 		A guarantee that the message is put into the receiver's
 		input queue? But if the receiver dies before extracting
 		it from there, that guarantee is useless, as the message
@@ -271,7 +271,7 @@
              </p></item>
 	</list>
 
-        <quote>	
+        <quote>
         <p>
 	Add to this that any guarantee would <em>have</em>
 	to entail some
@@ -311,7 +311,7 @@
 		been processed.
         </p>
         </section>
-	
+
         <section>
 	<title>Pretty-safe</title>
         <p>
@@ -323,7 +323,7 @@
         <p>
 	There are any number of combinations of these (e.g. receiver sends
 	ack not after each message but at some critical points in the
-	processing). 	
+	processing).
         </p>
 	</quote>
 
@@ -347,12 +347,12 @@
 	Yes and no. A fun is a reference to code; it is not the
 	code itself. Thus a fun can only be evaluated if the code
 	it refers to is actually loaded on the evaluating node.
-	
+
 	In some cases, we can be sure that execution will never
 	return to a fun. In these cases the old code can be purged
 	without	problems. The following code causes no surprises:
 </p>
-	
+
 	<code><![CDATA[
 	Parent = self(),
 	F = fun() -> loop(Parent) end,
@@ -364,7 +364,7 @@
 	In the following example, the old verson of F is
 	executed even after a code change:
 </p>
-	
+
 <code><![CDATA[
 	-module(cc).
 	-export([go/0, loop/1]).
@@ -534,7 +534,7 @@ or Visual Basic) does everything.
 	do what every other language can, so in that sense Erlang is
 	redundant.
 	</p><p>
-	
+
 	On the other hand, we'd hope that some tools are better for
 	some things than other tools. Erlang was born from systematic
 	experiments to determine what would make a language good
@@ -602,7 +602,7 @@ or Visual Basic) does everything.
 	    _ -> Acc
           end.
 	]]></code>
-	
+
 <p>
 	The bit-syntax provides an alternative way of handling
 	strings with different space/time tradeoffs to the
@@ -612,7 +612,7 @@ or Visual Basic) does everything.
         <p>Some techniques for improving performance of string-related
         code:
 </p>
-	
+
 	<list>
 	<item><p>Avoid O(N^2) operations. Sometimes this means building
 		a longer string backwards and then using <c>reverse
@@ -650,7 +650,7 @@ or Visual Basic) does everything.
 <code><![CDATA[
 gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\n\r\n"]).
 ]]></code>
-		
+
         </item>
 	</list>
 
@@ -688,7 +688,7 @@ gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\n\r\n"]).
 	There are some alternative approaches to memory management
 	which can be enabled at run-time, including a <em>shared
 	heap</em>.
-	
+
 
 </p></section>
 <section><title>Can I exploit knowledge about my program to make the GC more efficient?</title>
@@ -743,7 +743,7 @@ gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\n\r\n"]).
 	There is an active research group looking at problems
 	related to formal verification, they have a
 	<url href="http://www.sics.se/fdt/">home page</url>.
-	
+
 </p></section>
 <section><title>I've heard it's a bad idea to program defensively in Erlang. Why?</title>
 

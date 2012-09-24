@@ -29,7 +29,7 @@
 	advantage of the fault tolerance and concurrency takes a while.
 </p>
 </section>
-	
+
 <section><title>How can I learn Erlang?</title>
 
         <p>
@@ -82,7 +82,7 @@
 	<code><![CDATA[
 	-module(hello).
 	-export([hello_world/0]).
-	
+
 	hello_world() -> io:fwrite("hello, world\n").
 	]]></code>
 
