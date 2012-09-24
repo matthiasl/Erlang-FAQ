@@ -245,9 +245,8 @@ BEAM and JAM files.
    Writing a decompiler which can turn the above example back to source
    is a fifteen minute job. Writing a decompiler which handles more
    complex Erlang code is more time consuming, but not much harder.
-   The <c>syntax_tools</c> package from the
-   <url href="http://jungerl.sourceforge.net/">jungerl</url>
-   can be used to do most of the hard work.
+   The <url href='http://www.erlang.org/doc/apps/syntax_tools/index.html'>
+   syntax_tools</url> application can do most of the hard work.
 </p><p>
    If the abstract code is <em>not</em> present in the
    beam file, the problem gets much harder. It is possible to study

@@ -100,7 +100,7 @@
         </row>
         <tcaption>Standard data structures</tcaption>
 	</table>
-	
+
 <p>
 
 	The <url href="http://www.erlang.org/user.html">
@@ -169,8 +169,8 @@
         <url href="http://erlang.org/pipermail/erlang-questions/2004-May/012329.html">on the mailing list</url>.
 </p><p>
         There are other ways to spread your code, including
-        distributing it from your own website or adding it to
-        the <url href="http://jungerl.sourceforge.net/">jungerl</url>.
+        distributing it from your own website or starting a project
+	at a code hosting site. <url href='http://github.org'>github</url> is quite popular with Erlang developers.
 
 </p>
 </section>
