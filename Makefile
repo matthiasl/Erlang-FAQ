@@ -50,9 +50,6 @@ obj/t1.html: obj/faq.html
 	cp obj/faq.html obj/t1.html
 
 
-ship:
-	(cd ..; tar  -czvf ~/erlfaq.tgz faq/*.xml faq/Makefile faq/*erl faq/README faq/Makefile faq/erlang_magic_file)
-
 # Install on erlang.org.
 #
 # We have to do some renaming to keep the traditional structure
