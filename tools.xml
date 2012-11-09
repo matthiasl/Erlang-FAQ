@@ -85,14 +85,12 @@ href="http://erlang.org/pipermail/erlang-questions/1999-March/000165.html">
 	fault analysis.
 	</p><p>
 
-<!--
-	H&aring;kan Matsson released his <url
-	href="http://www.erlang.org/~hakan/mnesia_test_3.9.2.tgz">
-	mnesia test suite</url>
-	which, by virtue of Mnesia being large, is a reasonable
-	test suite for the whole of Erlang.
+	There are several open-source tools either inspired by
+	QuickCheck or based on similar ideas to QuickCheck, including
+	<url href="http://proper.softlab.ntua.gr/">Proper</url>
+	and <url href="https://github.com/krestenkrab/triq">Triq</url>.
+	</p><p>
 
- REVISIT: this link was broken at last viewing -->
 
 </p></section>
 <section><title>Is there a way to benchmark an Erlang implementation?</title>
