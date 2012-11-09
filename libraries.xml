@@ -135,30 +135,39 @@
 </p><p>
 
 	The <url
-	href="http://www.erlang.org/doc/apps/wx/">wxErlang</url>
+	href="http://www.erlang.org/doc/apps/wx/">wx</url>
 	application lets you make GUIs with
 	<url href="http://www.wxwidgets.org">wxWidgets</url>, a
-	cross-platform toolkit. wxErlang is part of the OTP
+	cross-platform toolkit. wx is part of the OTP
 	distribution.
+        The deprecated <url
+	href="http://www.erlang.org/doc/apps/gs">gs</url> application
+	uses <url href="http://www.tcl.tk">tk</url> as a backend.
 </p><p>
 
-	The deprecated <url
-	href="http://www.erlang.org/doc/apps/gs/">gs</url> application
-	uses TK as a backend. Some people prefer to work with TK
-	through <url href="http://sourceforge.net/projects/erlgtk/">
-	etk</url>. ETK is a fairly direct binding to the TK toolkit.
-	</p><p>
+        For those who like <url href="http://glade.gnome.org">glade</url>,
+        the <url href="http://www.gtk.org">GTK</url>
+        interface builder, there's a
+        <url href="https://github.com/massemanet/gtknode">binding</url>
+        to GTK which is tightly coupled to glade. For the bare-metal
+        types, there's some <url ref="http://www.sics.se/~joe/ex11/">
+        interesting work</url> to directly access the X protocol.  
+</p><p>
 
-	There's also an <url
-	href="https://github.com/massemanet/gtknode">Erlang binding to
-	GTK</url> and a <url href="https://github.com/nox/gd1_drv">
-	binding to GD</url> which is useful for dynamically creating
-	JPEG and PNG images).
+        <url href=
+        "http://www.erlang.org/documentation/doc-5.0.1/lib/etk-0.9.3/doc">
+	etk</url>, a fairly direct binding to tk, seems to have been
+        abandoned around 1999, while
+        <url href="http://sourceforge.net/projects/erlgtk/">erlgtk</url>,
+        another binding to GTK, hasn't received much love since 2009.
+</p><p>
 
-	There's a popular <url href="http://www.wings3d.com/">OpenGL
-	modeller</url> and some <url
-	href="http://www.sics.se/~joe/ex11/"> interesting work</url>
-	to directly access the X protocol.  </p><p>
+	Related work includes a popular
+        <url href="http://www.wings3d.com/">OpenGL modeller</url>, and a
+        <url href="https://github.com/nox/gd1_drv">
+	binding to GD</url>, which is useful for dynamically creating
+	JPEG and PNG images.
+</p><p>
 
 </p></section>
 <section><title>I've written a library to handle XYZ. How do I get it into the standard Erlang distribution?</title>
