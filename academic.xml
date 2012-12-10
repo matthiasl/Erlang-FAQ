@@ -69,25 +69,6 @@
 	</p><p>
 
 </p></section>
-<section><title>What can I do for Open Source Erlang?</title>
-<p>
-
-	Implement useful systems using Erlang. Spread the word!
-	</p><p>
-
-	Erlang is the easiest way to write fault-tolerant realtime software,
-	but people won't use it if they don't know about it.
-	</p><p>
-
-	The more people we have using Erlang, the better quality
-	the product becomes, the more cool applications we get
-	and the more libraries are added to Erlang. Volunteers have
-	already fixed several important bugs, created a
-	<url href="http://www.debian.org/">Debian GNU/Linux</url>
-	package and ported Erlang to new platforms.
-	</p><p>
-
-</p></section>
 
 <section><marker id="soft-realtime"/>
 <title>What does soft realtime mean?</title>
@@ -461,33 +442,23 @@
 
 
 </section>
-<section><title>Flamewars</title>
-<p>
-
-	The following "questions" all relate to topics which have
-	generated long discussions in public forums, often with
-	some amount of stepping on people's toes. If you're going
-	to post a news article (or write a report, or...) about any
-	of these, reading the answers here might help you avoid
-	some arguments we've already been through.
-
-</p></section>
 <section><title>What's the history of static type checking in Erlang?</title>
 <p>
-        Current versions of Erlang (R12B onwards) ship with a static
-	type analysis system called
-	the <url href="http://www.it.uu.se/research/group/hipe/dialyzer/">Dialyzer</url>. Using
-	the dialyzer is optional, though many or most serious projects
-	use it. The Dialyzer does not require source code to be
-	modified or annotated, though annotations increase the number
-	of problems the Dialyzer can find.
+        Erlang ships with a static type analysis system called the
+        <url
+        href="http://www.it.uu.se/research/group/hipe/dialyzer/">Dialyzer</url>.
+        Using the dialyzer is optional, though many or most serious
+        projects use it. The Dialyzer does not require source code to
+        be modified or annotated, though annotations increase the
+        number of problems the Dialyzer can find.
 </p>
+
 <p>
-	Until about 2005, static type checking was used rarely in
+	Prior to about 2005, static type checking was used rarely in
 	commercial Erlang-based systems. Several people experimented
 	with various approaches to the problem, including Sven-Olof
-	Nyström, Joe Armstrong, Philip Wadler, Simon Marlow and
-	Thomas Arts.
+	Nyström, Joe Armstrong, Philip Wadler, Simon Marlow and Thomas
+	Arts.
 </p>
 </section>
 
@@ -524,64 +495,47 @@ Java/Python/C/C++/Haskell?</title>
 </p>
 </section>
 
-<section><title>
-Why do we have to have yet another programming language; C++ (or Java,
-or Visual Basic) does everything.
-</title>
+<section><title>What's Erlang's relation to 'object oriented' programming?</title>
+
 <p>
+  Many people think of Erlang as a language oriented towards
+  concurrency and message passing, which happens to be
+  functional. I.e. object-oriented isn't mentioned.
+</p>
 
-	It's undisputed that pretty much any programming language can
-	do what every other language can, so in that sense Erlang is
-	redundant.
-	</p><p>
-
-	On the other hand, we'd hope that some tools are better for
-	some things than other tools. Erlang was born from systematic
-	experiments to determine what would make a language good
-	at solving telecommunications-related problems, and
-	empirical evidence from	large projects within Ericsson
-	suggests that Erlang succeeded in doing that.
-	</p><p>
-
-</p></section>
-<section><title>Erlang should use a Just In Time compiler</title>
 <p>
+  Another common point of view is to try and define 'object oriented'
+  and then look at how Erlang fits that definition. For instance, a
+  relatively noncontroversial list of OO features is: dynamic
+  dispatch, encapsulation, subtype polymorphism, inheritance and open
+  recursion. If you regard an Erlang process as an object, then three
+  of the five features are clearly there---e.g. 'open recursion' is
+  just sending a message to self(). The two others, subtype
+  polymorphism and inheritance, are less naturally modelled.
+</p>
 
-	This might result in a faster Erlang system, or it might not.
-	It would be interesting to see some research done in this
-	area.
-
-</p></section>
-<section><title> Erlang should be object oriented</title>
 <p>
-	People coming to Erlang from object-oriented languages
-	sometimes spend a while trying to write programs in an
-	object-oriented style in Erlang before "seeing the light" and
-	realising that the benefits that may give in other languages
-	don't materialise in Erlang. Several papers have been
-	published about how to "do OO in Erlang", including a chapter
-	in the old (Armstrong, Virding, Wikström, Williams) Erlang
-	book.
-	</p><p>
+  Still another approach is to elevate the importance of message
+  passing in OO. Alan Kay is often brought up in such discussions for
+  three reasons: he's credited with cointing the term 'object
+  oriented' and message passing is the first thing he mentions when
+  explaining what he means by 'object oriented' (for instance in
+  <url href='http://www.purl.org/stefan_ram/pub/doc_kay_oop_en'>
+    this email</url>) and he doesn't specify a rigid interpretation of
+    how <em>inheritance</em> should work.
+</p>
 
-	A common conservative position is to say that processes,
-	asynchronous messages, functions and modules provide the
-	same ability to structure systems as do threads, classes,
-	methods, inheritance and aggregation.
-	</p><p>
-
-	An aggressive position is to say that OO is just
-	snake oil, that inheritance is error prone and
-	that any system which doesn't model concurrent problems
-	with concurrency in the program is defective. Taking
-	this position in newsgroups/mailing lists tends to trigger
-	a flamewar.
-	</p>
-
-	<p>The <url href="http://ceylan.sourceforge.net/main/documentation/wooper/">
-	    WOOPER</url> project is one example of a serious effort to
-	  put an OO layer on top of Erlang. </p>
+<p>
+  Various people have published papers on 'how to do OO in Erlang",
+  the first book (now defunct) about Erlang featured a whole chapter
+  on the subject. In practice, few, if any, real Erlang systems
+  attempt to follow those 'OO Erlang' conventions. The <url
+  href="http://ceylan.sourceforge.net/main/documentation/wooper/">
+  WOOPER</url> project is one example of a serious effort to put an OO
+  layer on top of Erlang.
+</p>
 </section>
+
 <section>
     <marker id="string-performance"/>
     <title>How are strings implemented and how can I speed up my string code?</title>
@@ -655,35 +609,33 @@ gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\n\r\n"]).
 	</list>
 
 </section>
-<section><title> How does the Garbage Collector work?</title>
+<section><title> How does the Garbage Collector (GC) work?</title>
 <p>
-	The current default GC is a "stop the world" generational
-	mark-sweep collector. Each Erlang process has its
-	own heap and these are collected individually, so
-	although every process is stopped while GC happens
-	for one processes, this stop time is expected to
-	be short because each process is expected to have a
-	small heap.
-	</p><p>
+  GC in Erlang works independently on each Erlang process, i.e.
+  each Erlang process has its own heap, and that heap is GCed
+  independently of other processes' heaps.
+</p>
 
-	The GC for a new process is full-sweep. Once the process'
-	live data grows above a certain size, the GC switches to
-	a generational strategy. If the generational strategy
-	reclaims less than a certain amount, the GC reverts
-	to a full sweep. If the full sweep also fails to recover
-	enough space, then the heap size is increased.
-	</p><p>
+<p>
+  The current default GC is a "stop the world" generational mark-sweep
+  collector. On Erlang systems running with multiple threads (the
+  default on systems with more than one core), GC stops work on the
+  Erlang process being GCed, but other Erlang processes on other OS
+  threads within the same VM continue to run. The time the process
+  spends stopped is normally short because the size of one process'
+  heap is normally relatively small; much smaller than the combined
+  size of all processes heaps.
+</p>
 
-	In practice, this works quite well. It scales well
-	because larger systems tend to have more processes
-	rather than (just) larger processes. Measurements
-	in AXD301 (the large ATM switch) showed that about
-	5% of CPU time is spent garbage collecting.
-	</p><p>
+<p>
+  The GC strategy for a newly started Erlang process is
+  full-sweep. Once the process' live data grows above a certain size,
+  the GC switches to a generational strategy. If the generational
+  strategy reclaims less than a certain amount, the GC reverts to a
+  full sweep. If the full sweep also fails to recover enough space,
+  then the heap size is increased.
+</p>
 
-	Problems arise when the assumptions are violated,
-	e.g. having processes with rapidly growing large heaps.
-	</p>
 
 </section>
 <section><title>Can I exploit knowledge about my program to make the GC more efficient?</title>
