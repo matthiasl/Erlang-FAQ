@@ -438,29 +438,14 @@ distributing it are:
 
   <section><title>Are there any websites apart from erlang.org?</title>
 
-    <p>
-	<!-- REVISIT: erlang projects was down at last viewing, 2009-05-15 -->
-	<url href="http://www.erlang-projects.org/">Erlang-projects</url>
-	aims to track Erlang use in projects.
-
-</p><p>
-        <url href="http://trapexit.org">trapexit</url> is a grab-bag
-        of erlang news, erlang-related forums and a bidirectional
-        forum/mailing list gateway.
-
-</p><p>
-        <url href="http://planeterlang.org">planet erlang</url> aggregates
-        a couple of dozen erlang-related RSS feeds.
-
-</p><p>
-	The <url href="http://www.erlang.se">Ericsson site</url> for
-	all matters related to Ericsson-internal use of Erlang
-	also contains information about internal training and consulting.
-
-</p><p>
-	The mozilla dmoz has a
-	<url href="http://dmoz.org/Computers/Programming/Languages/Erlang/">
-	directory of Erlang links</url>.
+<!-- REVISIT: This section, 'Are there any websites apart from erlang.org',
+              was removed 2012-12 because most of the sites in it were dead
+	      or abandoned. Of those, it's possible that trapexit.org
+	      might come back, but currently it's full of spam. Consider
+	      merging planeterlang into some other question. -->
+<p>
+        <url href="http://planeterlang.org">planet erlang</url> is
+	<em>the</em> place to go for erlang-related news feeds and sites.
 </p>
   </section>
 
@@ -476,14 +461,14 @@ distributing it are:
 	</p>
 
         <list>
-	  <item><url href="http://www.erlang-solutions.com/jobs/">
-	  Erlang-solutions' recruitment page</url></item>
-
 	  <item><url href="http://totally-erlang.com/">Totally Erlang
 	  </url></item>
 
 	  <item><url href="http://functionaljobs.com/">Functional Jobs
 	  </url></item>
+
+	  <item><url href="http://www.erlang-solutions.com/about/careers/">
+	  Erlang-solutions' recruitment page</url></item>
 	</list>
 
 	<p>
