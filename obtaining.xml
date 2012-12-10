@@ -125,7 +125,9 @@
 	<url href="http://www.amazon.com/exec/obidos/tg/detail/-/2212110790/qid=1087192705/sr=1-3/ref=sr_1_3/102-4008653-6425766?v=glance%25s=books">
         Amazon</url>.
 
-	</p><p>
+	</p><p> <em>Erlang/OTP (Platform für massiv-parallele und
+	fehlertolerante System)</em> (Pavlo Baron) is the first German
+	book about Erlang. Amazon have it.  </p><p>
 
 	<em>Concurrent Programming in Erlang (2nd. Edition, 1993)</em>
 	(Armstrong, Virding, Wikstr&ouml;m &amp; Williams) is only of
@@ -235,7 +237,16 @@
   </section>
 
   <section><title> What documentation is there in related subjects?</title>
-    <p>
+
+  <p>
+    There are a couple of books about specific types of applications
+    which use Erlang as the main language in the book:
+
+  </p><p>
+  <em>Building Web Applications with Erlang</em> by Zachary Kessin
+  </p><p>
+  <em>Handbook of Neuroevolution Through Erlang</em> by Gene I. Sher
+  </p><p>
 
 	The standard text about data structures in functional languages
 	is <em>Purely Functional Data Structures</em> by
@@ -249,11 +260,7 @@
 	<em>Structure and Interpretation of Computer Programs</em>
 	is a standard introductory text to functional programming. It is
 	available both on paper and
-	<url href="http://mitpress.mit.edu/sicp/">online</url>
-
-</p><p>
-	(Suggestions for further books to for this section are welcome.
-	Mail the maintainer: <url href="mailto:matthias@corelatus.com"> matthias@corelatus.com</url>.)
+	<url href="http://mitpress.mit.edu/sicp/">online</url>.
 
 </p>
   </section>
