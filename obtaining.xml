@@ -330,14 +330,15 @@ distributing it are:
     <section>
       <title>Conferences</title><p>
 
-	Every year (in September or October) there is an <em>
-	Erlang user conference</em>. The<url href="http://www.erlang.se/euc/">
-	proceedings</url> are archived.
+      <url href="http://www.erlang-factory.com">Erlang Factory</url>
+      organises regular Erlang conferences around the world. By tradition,
+      the annual Erlang User Conference is held in May in Stockholm
+      (Erlang's birthplace).
 </p><p>
-        In June 2008 and April 2009, the first ever <em>commercial</em> Erlang
-	conferences were held in London and San Francisco. This is now
-	a regular event with further <url href="http://www.erlang-exchange.com/">Erlang Exchange
-        </url> events planned.
+      The programming conferences
+      <url href="https://thestrangeloop.com/">Strange Loop</url>
+      and <url href="http://techmeshconf.com/">Tech Mesh</url>
+      both featured presentations about aspects of Erlang in 2012.
 </p><p>
         Academic conferences about
 	functional programming are also attended by a few Erlang users.
