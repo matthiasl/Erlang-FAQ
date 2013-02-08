@@ -78,26 +78,43 @@
 </p>
   </section>
 
-  <section><title> What documentation is there for Erlang?</title>
+  <section><title>Where is the Erlang documentation?</title>
 
     <p>
         The language itself is best described by the
 	<url href="http://www.erlang.org/doc/reference_manual/users_guide.html">
         Language Reference Manual</url>.</p><p>
 
-	The documentation delivered with open source erlang
+	The documentation delivered with open source erlang,
 	as both man pages and <url href="http://www.erlang.org/doc.html">
-	html</url> is the most up-to-date reference to both the
-	OTP libraries and Erlang itself. On unix systems, the
+	html</url>, is the most up-to-date reference to both the
+	OTP libraries and Erlang itself. On unix systems,
 	an easy way to read the man pages is <c>erl -man gen_tcp
 	</c>.
+      </p>
+  </section>
+
+  <section><title>Which book about Erlang should I read?</title>
+
+  <p>Different books are aimed at different audiences, so recommending
+  one in particular is difficult. The currently available books in
+  English, starting with the most recently published, are:
+  </p>
+
+	<p>
+        <em>Introducing Erlang</em> by Simon St. Laurent
+        is a very gentle introduction to Erlang for beginners.
+        It's available directly from the <url
+        href="http://shop.oreilly.com/product/0636920025818.do">publisher</url>.
 	</p>
+
 
 	<p>
         <em>Learn You Some Erlang for Great Good!</em> by Fred Hebert
         is a beginners' book about Erlang, published in 2013. It's
         available directly from the <url
-        href="http://nostarch.com/erlang">publisher</url>.
+        href="http://nostarch.com/erlang">publisher</url> and also
+	for reading <url href="learnyousomeerlang.com">online</url>.
 	</p>
 
 
@@ -122,6 +139,10 @@
 	original inventors, published in 2007. You can buy it on paper
 	from Amazon and other online bookstores, or directly from
 	the <url href="http://pragmaticprogrammer.com/titles/jaerlang/index.html">publisher</url>.
+
+	</p><p>
+
+	There are also some books in languages other than English:
 
 	</p><p>
 	French: <em>Erlang Programmation</em> (Micka&euml;l R&eacute;mond)
