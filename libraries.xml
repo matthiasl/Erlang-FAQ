@@ -92,6 +92,9 @@
 	<row><cell>dict</cell>
               <cell>maps, also called associative arrays</cell>
         </row>
+	<row><cell>queue</cell>
+              <cell>double-ended queues</cell>
+        </row>
 	<row><cell>ets</cell>
               <cell>hash tables and ordered sets (trees), stored outside the process</cell>
         </row>
@@ -100,14 +103,6 @@
         </row>
         <tcaption>Standard data structures</tcaption>
 	</table>
-
-<p>
-
-	The <url href="http://www.erlang.org/user.html">
-	contributions area</url>
-	at the erlang.org site includes	modules for
-	double-ended queues and balanced trees.
-	</p>
 
         <p>
 	(Beware: the less frequently used modules <c>ordset</c> and

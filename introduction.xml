@@ -96,11 +96,6 @@
                 </p></item>
 	</list>
 
-<p>
-	The <url href="http://www.erlang.org/white_paper.html">
-	Erlang white paper</url> examines the language in more detail
-	from a technical point of view.
-</p>
 </section>
 <section><title>What sort of problems is Erlang not particularly suitable for?
 </title>
