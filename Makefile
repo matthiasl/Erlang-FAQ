@@ -13,8 +13,13 @@ sources= \
 	academic.xml \
 	mnesia.xml 
 
-# Erlang compiler
-ERL=erl
+erl_docgen_privdir:=$(shell escript erl_docgen_privdir.escript)/
+dtd_html_ent_dir=$(erl_docgen_privdir)/dtd_html_entities/
+dtd_dir=$(erl_docgen_privdir)/dtd/
+dtd_files=$(addprefix $(dtd_dir), chapter.dtd part.dtd)
+ent_file=$(dtd_html_ent_dir)/xhtml-lat1.ent
+
+generation_date=$(shell date +"%B %e %Y")
 
 XSL_FILES= \
 	faq_html.xsl \
@@ -30,18 +35,21 @@ linkcheck: $(sources)
 obj:
 	mkdir obj
 
-obj/faq.html: $(sources) $(XSL_FILES)
-	erl_docgen_privdir=`escript erl_docgen_privdir.escript`; \
-	date=`date +"%B %e %Y"`; \
-	xsltproc --stringparam outdir obj --stringparam gendate "$$date" --stringparam topdocdir . --xinclude -path $$erl_docgen_privdir/docbuilder_dtd -path $$erl_docgen_privdir/dtd_html_entities faq_html.xsl faq.xml
+# The ent_file and dtd_files dependencies are there to make sure
+# xsltproc can find the .ent and .dtd files it needs. If it can't
+# find them, it'll silently produce broken output.
+obj/faq.html: $(sources) $(XSL_FILES) $(ent_file) $(dtd_files) 
+	xsltproc --stringparam outdir obj --stringparam gendate "$(generation_date)" --stringparam topdocdir . --xinclude -path $(dtd_dir) -path $(dtd_html_ent_dir) faq_html.xsl faq.xml
+
+image_dir=$(erl_docgen_privdir)/images
+css_dir=$(erl_docgen_privdir)/css
 
 # Copy needed images, stylesheets and scripts
 local_copy_of_definions:
-	erl_docgen_privdir=`escript erl_docgen_privdir.escript`; \
-	cp -a $$erl_docgen_privdir/css/otp_doc.css obj; \
-	cp -a $$erl_docgen_privdir/images/* obj; \
-	mkdir -p obj/js/flipmenu; \
-	cp -a $$erl_docgen_privdir/js/flipmenu/* obj/js/flipmenu
+	cp -a $(erl_docgen_privdir)/css/otp_doc.css obj/
+	cp -a $(erl_docgen_privdir)/images/* obj/
+	mkdir -p obj/js/flipmenu
+	cp -a $(erl_docgen_privdir)/js/flipmenu/* obj/js/flipmenu
 
 
 # Historically, the FAQ started at t1.html. Preserve that to avoid breaking
