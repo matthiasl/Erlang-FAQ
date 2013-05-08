@@ -234,46 +234,44 @@
 </p>
 </section>
 
-<section><title>Is Erlang small enough for Pocket PCs?</title>
-<p>
-
-        Various people on the erlang-questions mailing list have reported
-        Erlang running on pocket PCs, including the
-	<url href="http://dynamism.com/sl-c3000/main.shtml">Sharp Zaurus</url>.
-
-</p></section>
 <section><title>Is Erlang small enough for embedded systems?</title>
 <p>
+  Many people run Erlang on many different types of embedded systems
+  such as mobile telephones, telecommunication switching equipment and
+  in-car electronics.
 
-	Rule of thumb: if the embedded system can run an
-	operating system like linux, then it is probably possible
-	to get current implementations of Erlang running on it
-	with a reasonable amount of effort.
+  </p><p>
+  Rule of thumb: if the embedded system can run an
+  operating system like linux, then it is possible
+  to get current implementations of Erlang running on it
+  with a reasonable amount of effort.
 
-	Getting Erlang to run on, say, an 8 bit CPU with 32kByte of
-	RAM is not feasible.
+  </p><p>
+  Getting Erlang to run on, say, an 8 bit CPU with 32kByte of
+  RAM is not feasible.
 
-	People successfully run the Ericsson implementation of
-	Erlang on systems with as little as 16MByte of RAM. It
-	is reasonably straightforward to fit Erlang itself into
-	2MByte of persistant storage (e.g. a flash disk).
-	</p><p>
+  </p><p>
+  People successfully run the Ericsson implementation of
+  Erlang on systems with as little as 16MByte of RAM. It
+  is reasonably straightforward to fit Erlang itself into
+  2MByte of persistant storage (e.g. a flash disk).
 
-	A 2MByte stripped Erlang system can include the
-	beam emulator and almost all of the stdlib, sasl,
-	kernel, inets and runtime_tools libraries, provided
-	the libraries are compiled without debugging information
-	and are compressed:
-	</p>
+  </p><p>
+  A 2MByte stripped Erlang system can include the
+  beam emulator and almost all of the stdlib, sasl,
+  kernel, inets and runtime_tools libraries, provided
+  the libraries are compiled without debugging information
+  and are compressed:
+</p>
 
-	<code>
-	compile:file("foo", [compressed,no_debug_info]).
-	</code>
+<code>
+  compile:file("foo", [compressed,no_debug_info]).
+</code>
 
-	<p>
-	This can be automated by editing otp.mk.in and adding
-	<c>+compressed +no_debug_info</c>
-	to the erlang compiler options and then rebuilding all the libraries.
+<p>
+  This can be automated by editing otp.mk.in and adding
+  <c>+compressed +no_debug_info</c>
+  to the erlang compiler options and then rebuilding all the libraries.
 </p>
 
 </section>
