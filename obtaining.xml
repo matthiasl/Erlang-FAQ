@@ -42,8 +42,8 @@
 
   <section><title>What's the current version of (Open Source) Erlang?</title>
 
-	<p>R15B was released in December 2011. As further patches are
-	released, the "current" version becomes R15B01, R15B02 etc.
+	<p>R16B was released in February 2013. As further patches are
+	released, the "current" version becomes R16B01, R16B02 etc.
 	This curious version numbering scheme is also used on Ericsson
 	mobile phones, for instance my phone is an R1F phone...</p>
 
