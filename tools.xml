@@ -28,12 +28,13 @@
 	<url href="https://github.com/rvirding/leex">GitHub</url>.
 
 </p></section>
-<section><title>Is there a diagram tool for Erlang?</title>
+<section><title>Is there a diagram tool specifically for Erlang?</title>
 <p>
 
-	Not really, most people use general-purpose diagram
-	tools like <url href="http://wwwhome.cs.utwente.nl/~tcm/index.html">
-	tcm</url> or xfig. TCM, in particular, is highly recommended.
+	No. Most people use general-purpose diagram
+	tools.
+</p><p>
+
 	Some people see
 	<url href="http://www.sdl-forum.org/">SDL</url>
 	as the natural
@@ -43,26 +44,13 @@
 	alternative notation</url> at the Erlang User Conference 1999.
 	</p><p>
 
-	The first thing many people say is "what about Rose".
-	An Ericsson project took a look at using
-	Rose for Erlang projects, and concluded that it wasn't
-	worth using for a whole host of reasons (you can read
-	Ulf Wiger's post about an investigation into using
-	Rose as much more than just a diagram tool
-	in the <url
+	UML-based tools never caught on in the Erlang world. Here's
+	a post from the <url
 href="http://erlang.org/pipermail/erlang-questions/1999-March/000165.html">
-	mailing list archive.</url>
-	</p><p>
+	mailing list archive</url> discussing some of the reasons.
+	</p>
 
-	The essential reason for Rose and such not looking
-	promising for use with Erlang is that the way you model
-	a problem in Erlang is rather different to the way you
-	decompose a problem with OO. While you're worrying about
-	processes, gen_servers, asynchronous messages and supervision
-	trees the tool wants to help you with singletons, exceptions,
-	threads and templates.
-
-</p></section>
+</section>
 <section><title>What code testing tools and suites exist for and in Erlang/OTP?</title>
 <p>
 	A test suite is especially useful for making sure that
@@ -175,7 +163,7 @@ BEAM and JAM files.
         part of Erlang.
 </p><p>
 	<em>Distel/EMACS</em> supports refactoring and interactive debugging.
-        The <url href="http://fresh.homeunix.net/~luke/distel/">
+        The <url href="https://github.com/massemanet/distel/">
         homepage</url> has more information.
 
 </p></section>

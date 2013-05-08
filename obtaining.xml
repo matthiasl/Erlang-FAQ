@@ -240,13 +240,6 @@
         Another Masters Thesis</url> contains a good
         overview of Erlang's distribution mechanisms (Section 5).
 </p><p>
-
-	Mnesia's internals are described on
-	<!-- REVISIT: erlang projects was down at last viewing, 2009-05-15 -->
-	<url href="http://www.erlang-projects.org/Groups/erlang_frameworks/mnesia_internals_sli/block_11394822732946/file">
-	H&aring;kan's slides</url>
-
-</p><p>
         The <url href="http://www.cs-lab.org/papers.html">
 	(Ex-Ericsson) computer science laboratory</url> has a collection
 	of papers about Erlang-related topics.
@@ -256,11 +249,6 @@
 	internal build documentation in the subdirectory
 	<c>erts/emulator/internal_doc/
 	</c>.
-
-</p><p>
-	<!-- REVISIT: erlang projects was down at last viewing, 2009-05-15 -->
-	Erlang-projects has a <url href="http://www.erlang-projects.org/Public/documentation/serc/">collection</url> of papers written at the
-	now-defunct SERC division of RMIT.
 
 </p><p>
 	The Trapexit wiki has a collection of
@@ -377,10 +365,9 @@ distributing it are:
 </p><p>
         Academic conferences about
 	functional programming are also attended by a few Erlang users.
-	The <url href="http://pli2002.cs.brown.edu/">
-	Principles, Logics, and Implementations of High-Level Programming Languages</url> usually includes an Erlang workshop. The
-        <url href="http://www.erlang.se/workshop/">ACM Sigplan</url>
-        Conference includes an Erlang workshop too.
+	The <url href="http://icfpconference.org/">
+	International Conference on Functional Programming</url> usually
+	includes an Erlang workshop.
 </p>
   </section>
   <section>
