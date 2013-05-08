@@ -139,27 +139,13 @@
   <section><title>...use unicode/UTF-8?</title>
     <p>
 
-	Representing strings as lists of integers also has advantages,
-	one of which is that unicode (and any other character encodings)
-	is automatically supported in the sense that you can pass around
-	lists of unicode characters.
-	</p><p>
+	Erlang represents strings as lists of integers, so it is
+	directly capable of handling unicode. The <url
+	href="http://www.erlang.org/doc/man/unicode.html">unicode</url>
+	library module helps with converting between various
+	representations of unicode.
 
-	In practice, supporting unicode means a bit more, for instance
-	being able to read unicode from a file and being able to sort
-	unicode	strings.
-	</p><p>
-
-	There is some undocumented code in the OTP XMERL application
-        (the xmerl_ucs module) to help with some of that.
-	</p><p>
-
-	There's also <url href="http://12monkeys.co.uk/starling/">alpha
-        code</url> to help with basic operations over
-	unicode strings: comparison, concatention, substring extraction,
-	substring search and case conversion.
-
-</p></section>
+	</p></section>
   <section><title>...destructively update data, like in C</title>
     <p>
         Not being able to do this is considered a feature of Erlang. The
