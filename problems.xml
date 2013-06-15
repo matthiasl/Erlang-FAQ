@@ -74,7 +74,7 @@
 	Among other things, It's nice being able to rely on a
 	certain variable always having the same value.)
         </p>
-	
+
 </section>
 <section><title>Why do lists of numbers get printed incorrectly?</title>
 <p>
@@ -95,7 +95,7 @@
 	to see it as a list of numbers or as a string. The shell bases
 	its guess on checking whether or not the list contains all
 	printable characters, so you can force a string to be unprintable:
-	
+
 	</p>
 	<pre>
 	5> [0, 65, 66, 67].
@@ -140,7 +140,7 @@
         The solution is usually to use <c>case</c>
 	instead. Case is used much more frequently than
 	<c>if</c> in most Erlang programs:
-	
+
 	</p>
 	<code>
 	issue_warning() ->
@@ -156,7 +156,7 @@
 
 	You can. Since R6A, several guards separated with semicolons
 	perform a logical 'or', for example:
-	
+
 	</p>
 	<code>
 	f(N) when (N - 1) > 3; atom(N) -> yes;
@@ -197,7 +197,7 @@
 
 	It seems natural enough to write
 </p>
-	
+
 	<code>
 	2> A = catch 1/0.
 	** 2: syntax error before: 'catch' **
@@ -225,7 +225,7 @@
 	old (last century) Erlang book, for instance:
 
 </p>
-	
+
 	<code>
         1> c(sets.erl).
         {error,sticky_directory}
@@ -324,7 +324,7 @@
 	with the two previous major versions of Erlang/OTP, i.e. R13B
 	works with all R13B minor releases as well as with R12B and
 	R11B.  </p><p>
-	
+
 	Beyond that, you need to start digging. Erlang nodes communicate
 	by connecting to the <c>epmd</c> daemon.
 	The daemon is started
@@ -333,7 +333,7 @@
 	</c>) and
 	then restart it with the debugging flag. You can find
 	<c>epmd</c> in the same directory as the erlang binary:
-	
+
 	</p>
 	<code>
 	~ >/otp/releases/otp_beam_sunos5_r6b/erts-4.9.1/bin/epmd -d -d
@@ -413,7 +413,7 @@ Why does my application die every second time I load new code into it?
 
 	You can check if there is any old code for a particular
 	module still running:
-	
+
 	</p>
 	<code>
 	Eshell V4.9.1  (abort with ^G)
@@ -534,4 +534,44 @@ this code:
 </p>
 
 </section>
+
+<section><title>Why do I get incorrect answers for floating-point operations?</title>
+
+<p>
+  Some floating point operations produce results which surprise some people.
+  Here's an example:
+</p>
+
+<code>
+  5> 1.001 * 1000.
+  1000.9999999999999
+</code>
+
+<p>
+  This is not an error, it is a property of floating point arithmetic
+  and it is not specific to Erlang. Any language which uses floating point
+  arithmetic behaves this way.
+</p>
+
+<p>
+  <url
+  href='http://floating-point-gui.de/'>http://floating-point-gui.de/</url>
+  is a relaxed introduction to the topic. <url
+  href='http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html'>What
+  Every Computer Scientist Should Know About Floating-Point
+  Arithmetic</url> goes into more depth.
+</p>
+
+<p>
+  Erlang's output formatting lets you specify the precision, for
+  instance:
+</p>
+
+<code>
+  1> io:fwrite("~.3f\n", [1.001 * 1000]).
+  1001.000
+</code>
+
+</section>
+
 </chapter>
