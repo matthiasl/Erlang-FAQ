@@ -47,6 +47,9 @@
 	This curious version numbering scheme is also used on Ericsson
 	mobile phones, for instance my phone is an R1F phone...</p>
 
+	<p>The next major release of Erlang will switch to a more
+	conventional version numbering scheme; it will be called 17.0.</p>
+
 	<p>Before the R13 releases, releases were named R12B-0, R12B-1,
 	R12B-2 etc.
 
