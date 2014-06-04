@@ -42,26 +42,17 @@
 
   <section><title>What's the current version of (Open Source) Erlang?</title>
 
-	<p>R16B was released in February 2013. As further patches are
-	released, the "current" version becomes R16B01, R16B02 etc.
-	This curious version numbering scheme is also used on Ericsson
-	mobile phones, for instance my phone is an R1F phone...</p>
+	<p>Erlang/OTP 17.0 was released in April 2014.</p>
 
-	<p>The next major release of Erlang will switch to a more
-	conventional version numbering scheme; it will be called 17.0.</p>
-
-	<p>Before the R13 releases, releases were named R12B-0, R12B-1,
-	R12B-2 etc.
+	<p>Prior to 17.0, Erlang used a slightly unusual version
+	numbering scheme, e.g. the previous version was called R16B-3.
 
 	</p><p>Major releases typically come somewhere between 12
 	and 18 months apart.
 
 	</p><p>
 	Components of Erlang have their own version numbers, for
-	instance the virtual machine in R7B-0 has version 5.0.1
-	(yes, this is a bit confusing;
-	<seealso marker="implementations#version-table">
-        see also</seealso>).
+	instance the virtual machine in 17.0 has version 6.0.
         </p>
   </section>
 
