@@ -113,9 +113,9 @@
 <section><title>Is there a serial port driver for Erlang?</title>
 <p>
 	Johan Bevemyr wrote one which works for unix machines. The
-	code is freely available at
-	<url href="http://www.erlang.org/user.html"> the contributions
-	area</url> as <em>serial-1.0</em>.
+	code has moved around a few times, for the moment it seems
+	to be on
+	<url href="https://github.com/tonyg/erlang-serial">github</url>.
 	</p><p>
 
 	There have been discussions on the mailing list about writing
@@ -135,9 +135,6 @@
 	<url href="http://www.wxwidgets.org">wxWidgets</url>, a
 	cross-platform toolkit. wx is part of the OTP
 	distribution.
-        The deprecated <url
-	href="http://www.erlang.org/doc/apps/gs">gs</url> application
-	uses <url href="http://www.tcl.tk">tk</url> as a backend.
 </p><p>
 
         For those who like <url href="http://glade.gnome.org">glade</url>,
@@ -149,20 +146,9 @@
         interesting work</url> to directly access the X protocol.
 </p><p>
 
-        <url href=
-        "http://www.erlang.org/documentation/doc-5.0.1/lib/etk-0.9.3/doc">
-	etk</url>, a fairly direct binding to tk, seems to have been
-        abandoned around 1999, while
-        <url href="http://sourceforge.net/projects/erlgtk/">erlgtk</url>,
-        another binding to GTK, hasn't received much love since 2009.
-</p><p>
-
 	Related work includes a popular
-        <url href="http://www.wings3d.com/">OpenGL modeller</url>, and a
-        <url href="https://github.com/nox/gd1_drv">
-	binding to GD</url>, which is useful for dynamically creating
-	JPEG and PNG images.
-</p><p>
+        <url href="http://www.wings3d.com/">OpenGL modeller</url>.
+    </p><p>
 
 </p></section>
 <section><title>I've written a library to handle XYZ. How do I get it into the standard Erlang distribution?</title>

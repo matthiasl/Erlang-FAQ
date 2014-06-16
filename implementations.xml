@@ -70,7 +70,7 @@
 		HiPE. A <url href="http://www.erlang.se/euc/01/kostis2001/sld001.htm">presentation at the EUC 2001</url> described how to use it.</p></item>
 
 	<item><p>
-		<url href="http://www.iro.umontreal.ca/~etos/">
+		<url href="https://github.com/feeley/etos/">
 		Erlang to Scheme Compiler</url> (ETOS).
 		ETOS is another research project to compile Erlang
 		programs to native code by first translating the

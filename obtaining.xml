@@ -108,7 +108,7 @@
         is a beginners' book about Erlang, published in 2013. It's
         available directly from the <url
         href="http://nostarch.com/erlang">publisher</url> and also
-	for reading <url href="learnyousomeerlang.com">online</url>.
+	for reading <url href="http://learnyousomeerlang.com">online</url>.
 	</p>
 
 
@@ -380,7 +380,7 @@ distributing it are:
   </section>
 
   <section>
-    <marker id="#mailing-lists"/>
+    <marker id="mailing-lists"/>
     <title>Where is Erlang discussed online?</title>
 
     <p>
