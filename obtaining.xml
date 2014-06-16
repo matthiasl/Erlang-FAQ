@@ -452,19 +452,6 @@ distributing it are:
 
   </section>
 
-  <section><title>Are there any websites apart from erlang.org?</title>
-
-<!-- REVISIT: This section, 'Are there any websites apart from erlang.org',
-              was removed 2012-12 because most of the sites in it were dead
-	      or abandoned. Of those, it's possible that trapexit.org
-	      might come back, but currently it's full of spam. Consider
-	      merging planeterlang into some other question. -->
-<p>
-        <url href="http://planeterlang.org">planet erlang</url> is
-	<em>the</em> place to go for erlang-related news feeds and sites.
-</p>
-  </section>
-
   <section><title>Where can I find Erlang programmers/employers?</title>
     <p>
 	Posting a short note to <seealso marker="#mailing-lists">
