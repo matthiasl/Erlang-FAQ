@@ -155,11 +155,6 @@
         </p></item>
 
 	<item><p>
-	<url href="http://www.aptela.com/">Aptela</url>
-	(VoIP Service Provider)
-        </p></item>
-
-	<item><p>
 	<url href="http://www.nortel.com/">Bluetail/Alteon/Nortel</url>
 	(distributed, fault tolerant email system, SSL accelerator)
         </p></item>
@@ -238,6 +233,12 @@
 	<url href="http://www.telia.se/">
 	Telia</url> (a telecomms operator)
         </p></item>
+
+	<item><p>
+	<url href="http://www.ubnt.com/">
+	Ubiquiti</url> (Networking Hardware)
+        </p></item>
+
 	<item><p>
 	<url href="http://www.vailsys.com">Vail Systems</url>
 	(Interactive Voice Response systems)
