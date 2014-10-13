@@ -23,14 +23,8 @@
 	The <url href="http://www.debian.org/">Debian
 	Distribution</url> of <em>GNU/Linux</em>, and derivatives such
 	as Ubuntu, includes various versions Erlang in different
-	releases, under <em>interpreters</em>.  </p>
-
-	<p> Precompiled ready-to-go installers for a variety of
-	platforms are available from the <url
-	href="http://cean.process-one.net/"> Comprehensive Erlang
-	Archive Network (CEAN)</url>. CEAN also provides dozens of
-	Erlang applications.  </p><p>
-
+	releases, under <em>interpreters</em>.
+</p><p>
 	For the BSDs, the 'ports' collection has up to date versions of
 	Erlang.
 </p><p>
@@ -324,7 +318,6 @@ distributing it are:
 
       <item><p>Putting the code on a personal homepage </p></item>
 
-      <item><p>Getting your code <url href="http://cean.process-one.net/contrib/packaging-guide.txt">packaged into the CEAN</url></p></item>
     </list>
   </section>
   <section>
