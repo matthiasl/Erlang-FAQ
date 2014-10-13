@@ -19,11 +19,18 @@
 	as binaries for Windows machines. This is probably the best
 	place to go to make sure you're getting the latest version.
 </p><p>
+        Erlang Solutions provide
+	<url href='https://www.erlang-solutions.com/downloads/download-erlang-otp'>binaries</url>
+	for a variety of platforms
+	(Ubuntu, CentOS, MacOS X, Debian, Windows, Fedora and Raspian).
+
+</p><p>
 
 	The <url href="http://www.debian.org/">Debian
 	Distribution</url> of <em>GNU/Linux</em>, and derivatives such
 	as Ubuntu, includes various versions Erlang in different
-	releases, under <em>interpreters</em>.
+	releases, under <em>interpreters</em>. The version tends to
+	lag a long way behind Erlang Solutions' package (above).
 </p><p>
 	For the BSDs, the 'ports' collection has up to date versions of
 	Erlang.
