@@ -193,13 +193,6 @@
 	generate .beam files from Core Erlang.
 
 </p><p>
-        <url href="http://forum.trapexit.org/viewtopic.php?p=44172#44172">
-        The Erlang Rationale</url> is a short (13 page) discussion
-        written by one of the original authors of Erlang about why
-        some parts of Erlang became the way they are. It's a work
-        in progress.
-
-</p><p>
 	The proceedings from the Erlang User Conferences contain
 	many interesting articles. The
 	<url href="http://www.erlang.se/euc/">
