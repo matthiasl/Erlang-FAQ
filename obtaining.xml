@@ -97,7 +97,7 @@
   </p>
 
 	<p>
-        <em>Introducing Erlang</em> by Simon St. Laurent
+        <em>Introducing Erlang</em> by Simon St. Laurent, 2013,
         is a very gentle introduction to Erlang for beginners.
         It's available directly from the <url
         href="http://shop.oreilly.com/product/0636920025818.do">publisher</url>.
@@ -174,10 +174,19 @@
   </section>
 
   <section><title> What advanced Erlang documentation is there?</title>
-    <p>
 
+    <p>
+      The only way to keep completely up to date with Erlang internals
+      is to examine the source code. This section lists some material
+      which can help with understanding the code, but keep in mind that
+      they all age, i.e. the article/paper/presentation describes the
+      code as it was at a particular moment, which is often some
+      time ago.
+    </p>
+
+    <p>
 	The <url href="http://www.erlang.org/download/erl_spec47.ps.gz">
-	Standard Erlang</url> spec aims to define the Erlang language.
+	Standard Erlang</url> spec (1999) aims to define the Erlang language.
 	There is currently no compiler which actually implements everything
 	exactly the way <em>Standard Erlang</em> specifies.
 	This specification is quite precise; it's intended as a reference,
@@ -186,7 +195,7 @@
 
 </p><p>
 	<url href="http://www.it.uu.se/research/group/hipe/cerl/">Core Erlang
-	</url> is an effort to define an Erlang-like language which is
+	</url> (2004) is an effort to define an Erlang-like language which is
 	nicer to compilers and language tools and can be automatically
 	generated from Erlang. Erlang compilers from R10 onwards can
 	generate Core Erlang from normal Erlang code. They can also
@@ -203,7 +212,7 @@
 </p><p>
 	The internals of the BEAM file format are described on
 	<url href="http://www.erlang.se/~bjorn">
-	Bj&ouml;rn's homepage </url>. Eventually
+	Bj&ouml;rn's homepage (2000) </url>. Eventually
 	this will/might include a description of the
 	virtual machine's instructions. Bj&ouml;rn also includes some
 	benchmarks comparing different versions of the BEAM machine.
@@ -213,20 +222,17 @@
 </p><p>
 	Joe Armstrong's Thesis,
         <url href="http://www.sics.se/~joe/thesis/armstrong_thesis_2003.pdf">
+	  (2003)
 	Making reliable distributed systems in the presence of software errors</url> contains a lot of interesting information, including a compact overview
         of the language, a number of case studies and some discussion of
         the language's evolution, somewhat similar to Bjarne
         Stroustrup's <em>Design and Evolution of C++</em>.
 
 </p><p>
-        <url href="http://www.d.kth.se/~d95-rgr/examensarbetesrapport/">
-        This Masters Thesis</url> contains a good
-        overview of some of Erlang's implementation aspects, including
-        memory allocation (section 7).
-</p><p>
-
         <url href="http://www.student.nada.kth.se/~d95-bka/thesis.html">
-        Another Masters Thesis</url> contains a good
+        Secure Distributed Communication in SAFEERLANG</url> (2000) which was
+	a student thesis published in contains a good, if
+	somewhat historical,
         overview of Erlang's distribution mechanisms (Section 5).
 </p><p>
         The <url href="http://www.cs-lab.org/papers.html">
