@@ -151,6 +151,34 @@
     </p><p>
 
 </p></section>
+
+<section><title>I've written an application/library. How do I package it so others can use it?</title>
+
+<p>It depends.</p>
+
+<p>
+  For open-source projects intended for use with other open source
+  projects, the de-facto way to distribute is on <url
+  href="http://github.org">github</url>. Building and installing
+  dependencies should then ideally involve no more than typing 'make'.
+</p>
+
+<p>
+  The most popular way of doing that is to use
+  <url href='https://github.com/rebar/rebar'>rebar</url>.
+</p>
+
+<p>
+  An alternative is <url
+  href='http://ninenines.eu/docs/en/erlang.mk'>'erlang.mk'</url>,
+  which in turn can use <url
+  href='https://github.com/erlware/relx'>relx</url>.
+</p>
+
+<p>
+</p>
+
+</section>
 <section><title>I've written a library to handle XYZ. How do I get it into the standard Erlang distribution?</title>
 <p>
 
