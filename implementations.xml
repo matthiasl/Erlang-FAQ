@@ -196,19 +196,11 @@
 
 <section><title>Can Erlang be cross compiled?</title>
 <p>
-  From release R13B04 (released February 2010) onwards, the standard
+  Yes. From release R13B04 (released February 2010) onwards, the standard
   Erlang/OTP distribution includes support and documentation for cross
   compiling. This is described in the INSTALL-CROSS.md file at the
   top of the Erlang source, available from the
   <url href="http://erlang.org/download.html">downloads page</url>.
-</p>
-
-<p>
-  Releases <em>prior</em> to R13B04 can also be cross-compiled
-  with a moderate amount of effort. There's a fairly
-  <url href="http://www.trapexit.org/Cross_compiling">
-    detailed writeup</url> on the trapexit wiki which covers
-  cross compiling between linux systems.
 </p>
 </section>
 
@@ -222,7 +214,7 @@
   Rule of thumb: if the embedded system can run an
   operating system like linux, then it is possible
   to get current implementations of Erlang running on it
-  with a reasonable amount of effort.
+  with a moderate amount of effort.
 
   </p><p>
   Getting Erlang to run on, say, an 8 bit CPU with 32kByte of
@@ -239,17 +231,7 @@
   beam emulator and almost all of the stdlib, sasl,
   kernel, inets and runtime_tools libraries, provided
   the libraries are compiled without debugging information
-  and are compressed:
-</p>
-
-<code>
-  compile:file("foo", [compressed,no_debug_info]).
-</code>
-
-<p>
-  This can be automated by editing otp.mk.in and adding
-  <c>+compressed +no_debug_info</c>
-  to the erlang compiler options and then rebuilding all the libraries.
+  and are compressed.
 </p>
 
 </section>
