@@ -245,12 +245,6 @@
 	<c>erts/emulator/internal_doc/
 	</c>.
 
-</p><p>
-	The Trapexit wiki has a collection of
-	<url href="http://wiki.trapexit.org/index.php/Category:HowTo">
-        HowTo</url> documents showing how to do all manner of things from
-        <url href="http://wiki.trapexit.org/index.php/A_fast_web_server_demonstrating_some_undocumented_Erlang_features">how to write a webserver in Erlang</url> to <url href="http://wiki.trapexit.org/index.php/Writing_an_Erlang_Port_using_OTP_Principles">how to write an Erlang Port program</url>.
-
 </p>
   </section>
 
@@ -374,8 +368,7 @@ distributing it are:
         Arlington, Washington DC), France (Paris), China (I can't read the
         characters which described the location), Italy, Germany (Aachen),
         Poland (Krakow), New Zealand (Wellington) and others. There's a
-        <url href="http://www.trapexit.org/ErlangUserGroups">Trapexit</url>
-        page listing known usergroups.</p>
+        <url href="http://erlangcentral.org/wiki/index.php/ErlangUserGroups">wiki page on erlangcentral.org</url> listing known usergroups.</p>
   </section>
   </section>
 
@@ -438,10 +431,13 @@ distributing it are:
 	<url href="http://news.gmane.org/gmane.comp.lang.erlang.patches">
 	Erlang Patches</url>.
 
-        </p><p>
-        The <url href="http://www.trapexit.org/">trapexit</url> site
-        also has a forum interface to the mailing list.
-</p>
+        </p>
+
+	<p>
+	  <url href='http://www.erlangcentral.org'>Erlang Central</url>
+	  has some Erlang-related forums. It also has a good calendar of
+	  Erlang events (hack nights, local meetups, etc.)
+	</p>
   </section>
 
 
