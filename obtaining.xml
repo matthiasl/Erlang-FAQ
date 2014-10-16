@@ -43,7 +43,7 @@
 
   <section><title>What's the current version of (Open Source) Erlang?</title>
 
-	<p>Erlang/OTP 17.0 was released in April 2014.</p>
+	<p>Erlang/OTP 17.3 was released in September 2014.</p>
 
 	<p>Prior to 17.0, Erlang used a slightly unusual version
 	numbering scheme, e.g. the previous version was called R16B-3.
