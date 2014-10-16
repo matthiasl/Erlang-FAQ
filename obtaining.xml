@@ -193,11 +193,12 @@
 	generate .beam files from Core Erlang.
 
 </p><p>
-	The proceedings from the Erlang User Conferences contain
-	many interesting articles. The
+	The proceedings from the
+	<url href='http://www.erlang-factory.com/'>Erlang User Conferences
+	</url> contain many interesting articles. The
 	<url href="http://www.erlang.se/euc/">
-	proceedings</url> for each of the yearly conferences since 1999
-	are online.
+	proceedings</url> for conferences from 1999 to 2008 are also still
+	online.
 
 </p><p>
 	The internals of the BEAM file format are described on
