@@ -231,9 +231,13 @@
 </p><p>
         <url href="http://www.student.nada.kth.se/~d95-bka/thesis.html">
         Secure Distributed Communication in SAFEERLANG</url> (2000) which was
-	a student thesis published in contains a good, if
-	somewhat historical,
+	a student thesis contains a good, if somewhat historical,
         overview of Erlang's distribution mechanisms (Section 5).
+</p><p>
+        <url href="http://www.erlang.se/publications/xjobb/d95-rgr.thesis.2s.pdf">
+        Enhancing Security in Distributed Erlang by Integrating Access Control</url> (2000) contains a good
+        overview of some of Erlang's implementation aspects, including
+        memory allocation (section 7).
 </p><p>
         The <url href="http://www.cs-lab.org/papers.html">
 	(Ex-Ericsson) computer science laboratory</url> has a collection
