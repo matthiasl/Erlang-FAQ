@@ -249,6 +249,11 @@
 	<c>erts/emulator/internal_doc/
 	</c>.
 
+</p><p>
+    <url href="http://www.erlang-in-anger.com">
+    Stuff Goes Bad: Erlang in Anger</url> (2014) contains tips and
+    tricks to help understand where failures come from in production
+    Erlang systems, with pointers on how to debug and solve them live.
 </p>
   </section>
 
