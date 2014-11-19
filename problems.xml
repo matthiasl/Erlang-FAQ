@@ -103,6 +103,17 @@
 	</pre>
 
 <p>
+	In Erlang/OTP R16B and above, you can use the function
+	<c>shell:strings/1</c> to turn off this behaviour in the shell:
+	</p>
+	<pre>
+	2> shell:strings(false).
+	true
+	3> [65, 66, 67].
+	[65,66,67]
+	</pre>
+
+<p>
 	A similar problem occurs with <c>io:fwrite()</c>,
 	but in that case you can take direct control by specifying the
 	appropriate formatting character. "~s" always prints the
