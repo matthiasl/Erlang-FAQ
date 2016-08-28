@@ -141,9 +141,7 @@
         the <url href="http://www.gtk.org">GTK</url>
         interface builder, there's a
         <url href="https://github.com/massemanet/gtknode">binding</url>
-        to GTK which is tightly coupled to glade. For the bare-metal
-        types, there's some <url href="http://www.sics.se/~joe/ex11/">
-        interesting work</url> to directly access the X protocol.
+        to GTK which is tightly coupled to glade.
 </p><p>
 
 	Related work includes a popular

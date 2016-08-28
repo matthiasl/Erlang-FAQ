@@ -20,7 +20,7 @@
 	place to go to make sure you're getting the latest version.
 </p><p>
         Erlang Solutions provide
-	<url href='https://www.erlang-solutions.com/downloads/download-erlang-otp'>binaries</url>
+	<url href='https://www.erlang-solutions.com/resources/download.html'>binaries</url>
 	for a variety of platforms
 	(Ubuntu, CentOS, MacOS X, Debian, Windows, Fedora and Raspian).
 
@@ -143,8 +143,7 @@
 	French: <em>Erlang Programmation</em> (Micka&euml;l R&eacute;mond)
         can be ordered
         <url href="http://www.eyrolles.com/Informatique/Livre/9782212110791/livre-erlang.php">from the publisher</url> or via
-	<url href="http://www.amazon.com/exec/obidos/tg/detail/-/2212110790/qid=1087192705/sr=1-3/ref=sr_1_3/102-4008653-6425766?v=glance%25s=books">
-        Amazon</url>.
+	<url href="http://www.amazon.com/">Amazon</url>.
 
 	</p><p> Spanish: <em>Erlang/OTP Un Mundo Concurrente</em>
 	(Manuel Rubio) can be ordered directly from the <url
@@ -214,7 +213,7 @@
 
 </p><p>
 	Joe Armstrong's Thesis,
-        <url href="http://www.sics.se/~joe/thesis/armstrong_thesis_2003.pdf">
+        <url href="http://erlang.org/download/armstrong_thesis_2003.pdf">
 	  (2003)
 	Making reliable distributed systems in the presence of software errors</url> contains a lot of interesting information, including a compact overview
         of the language, a number of case studies and some discussion of
@@ -222,9 +221,9 @@
         Stroustrup's <em>Design and Evolution of C++</em>.
 
 </p><p>
-        <url href="http://www.student.nada.kth.se/~d95-bka/thesis.html">
-        Secure Distributed Communication in SAFEERLANG</url> (2000) which was
-	a student thesis contains a good, if somewhat historical,
+        <url href="http://www.erlang.se/publications/xjobb/Secure_Dist_Comm_in_SafeErlang.pdf">
+        Secure Distributed Communication in SAFEERLANG</url> (2000), which was
+	a student thesis, contains a good, if dated,
         overview of Erlang's distribution mechanisms (Section 5).
 </p><p>
         <url href="http://www.erlang.se/publications/xjobb/d95-rgr.thesis.2s.pdf">
@@ -303,9 +302,8 @@ mailing list, or, in the case of patches, the Erlang Patches mailing list.
 Where you put the actual code is up to you.
 
 </p><p> If your code is a correction, modification or extension to an
-existing part of OTP, the usual way of spreading it is via github, the
-wiki has <url
-href="https://github.com/erlang/otp/wiki/submitting-patches">instructions</url>.</p>
+existing part of OTP, the usual way of spreading it is via
+<url href="https://github.com/erlang/otp/wiki/Contribution-Guidelines">github</url>.</p>
 
     <p>
 If your code is a new application or library, some common ways of
@@ -316,7 +314,6 @@ distributing it are:
       <item><p>Starting your own
       <url href="http://github.com/">github</url>
       or <url href="http://code.google.com/projecthosting/">Google code</url>
-      or <url href="http://sourceforge.net/">sourceforge</url>
       project </p></item>
 
       <item><p>Putting the code on a personal homepage </p></item>
@@ -331,7 +328,7 @@ distributing it are:
         established code-base, changes and enhancements are still
         being incorporated. There is a mechanism
         called the <url
-        href="http://user.it.uu.se/~pergu/eep/eep-0001.html">Erlang
+        href="http://www.erlang.org/erlang-enhancement-proposals">Erlang
         Enhancement Proposal</url> which formalises the process.
 
 </p>
@@ -348,10 +345,9 @@ distributing it are:
       the annual Erlang User Conference is held in May in Stockholm
       (Erlang's birthplace).
 </p><p>
-      The programming conferences
+      Erlang crops up in other conferences every so often, e.g.
       <url href="https://thestrangeloop.com/">Strange Loop</url>
-      and <url href="http://techmeshconf.com/">Tech Mesh</url>
-      both featured presentations about aspects of Erlang in 2012.
+      usually has a presentation or two about Erlang.
 </p><p>
         Academic conferences about
 	functional programming are also attended by a few Erlang users.
@@ -462,28 +458,23 @@ distributing it are:
 	</p>
 
         <list>
-	  <item><url href="http://totally-erlang.com/">Totally Erlang
-	  </url></item>
-
 	  <item><url href="http://functionaljobs.com/">Functional Jobs
 	  </url></item>
 
-	  <item><url href="http://www.erlang-solutions.com/about/careers/">
+	  <item><url href="https://www.erlang-solutions.com/about/careers.html">
 	  Erlang-solutions' recruitment page</url></item>
 	</list>
 
 	<p>
 
-	Several consultant groups have Erlang-certified people in
-	Sweden, including
-	<url href="http://www.enea.se/"> ENEA data</url> and
-	<url href="http://www.erlang-services.com/">Sj&ouml;land &amp; Thyselius</url>.
+	Several consultant groups have Erlang-certified people,
+	including <url
+	href="http://www.erlang-solutions.com/">erlang-solutions.com
+	</url> (based in London, take assignments worldwide), <url
+	href="http://www.process-one.net/en/services/">
+	Process-one</url> (based in France) and <url
+	href="http://www.enea.se/"> ENEA data</url> (Sweden)
 
-	<url href="http://www.erlang-solutions.com/">erlang-solutions.com
-	</url> take assignments worldwide.
-
-        <url href="http://www.process-one.net/en/services/">
-         Process-one</url> are based in France.
 
 	</p><p>
 	If you want to be listed here, send some mail to

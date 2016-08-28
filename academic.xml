@@ -690,7 +690,7 @@ gen_tcp:send(Socket, ["GET ", Url, " HTTP/1.0", "\r\n\r\n"]).
 	Two tools used to do that are
 	<url href="https://github.com/fredlund/McErlang">
 	  MCErlang</url> and
-	<url href="https://github.com/mariachris/Concuerror">
+	<url href="https://github.com/parapluu/Concuerror">
 	  Concuerror</url>.
 
 

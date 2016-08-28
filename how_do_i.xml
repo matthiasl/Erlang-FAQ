@@ -559,13 +559,10 @@
         indirectly via a packaging system such as Debian's or BSD's) is
         the simplest option in many cases.
 </p><p>
-        A further alternative which has fallen into disuse is SAE:
-        stand-alone Erlang. SAE allows an Erlang program to be distributed
-        as just two files, totalling about 500k. SAE no longer works
-        on current Erlang releases, but for historical interest, there is
-	<url href="http://www.sics.se/~joe/sae.html">
-	a page about SAE</url> which shows you how to build a self-contained
-	system for the (very outdated) R9B Erlang release.
+        A historical footnote from 2007 is SAE: stand-alone Erlang.
+        SAE allowed an Erlang program to be distributed as just two files,
+        totalling about 500k. SAE fell into disuse and is no longer
+        maintained.
 
 </p></section>
   <section>
