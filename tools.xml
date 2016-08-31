@@ -18,6 +18,15 @@
 	you also get a pretty printer just by printing from emacs.
 
 </p></section>
+
+<section><title>Is there an erlang formatter for CI?</title>
+<p>
+
+  <url href='https://github.com/vim-erlang/vim-erlang-runtime'>
+    vim-erlang-runtime</url> can do that.
+</p>
+
+</section>
 <section><title>Where is the source for LEEX (the erlang lexer)?</title>
 <p>
 
