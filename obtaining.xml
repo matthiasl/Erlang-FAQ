@@ -335,6 +335,13 @@ distributing it are:
   </section>
 
   <section>
+    <title>How do I report a bug?</title>
+    <p>
+      Use the <url href="https://bugs.erlang.org/">bug tracker</url>.
+    </p>
+  </section>
+
+  <section>
     <title>Where is Erlang discussed in the real world?</title>
 
     <section>
@@ -400,18 +407,6 @@ distributing it are:
 		All posts to <em>erlang-announce</em> also appear
 		in <em>erlang-questions</em>.</p>
     </section>
-
-    <section>
-      <title>erlang-patches</title><p>
-		This list is for patches to the Erlang distribution.
-		At the time of writing, it is not archived.</p>
-    </section>
-
-    <section>
-      <title>erlang-bugs</title><p>
-		This list is for bug reports.</p>
-    </section>
-
   <section>
     <marker id="forums"/>
     <title>Web forums and mailing list archives</title>
