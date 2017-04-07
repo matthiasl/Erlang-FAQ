@@ -278,17 +278,15 @@
 </p>
   </section>
 
-  <section><title>Is there public CVS/Git/your-favourite-vcs repository for the Erlang source?</title>
+  <section><title>Is there public repository for the Erlang source?</title>
 
     <marker id="repositories"/>
 
-    <p>As of R13B03 (November 2009), there is
-      an <url href="http://github.com/erlang/otp">official Git
-      repository</url> maintained (daily!) by the Erlang/OTP
+    <p>Erlang has an <url href="http://github.com/erlang/otp">official Git
+      repository</url> maintained by the Erlang/OTP
       group. There is also
       an <url href="http://github.com/mfoemmel/erlang-otp"> unofficial
-      repository</url> which includes history before the R13B03
-      release.
+      repository</url> which includes history all the way back to 1999.
     </p>
 
   </section>
