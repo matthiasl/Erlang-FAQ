@@ -507,20 +507,12 @@
 
 </p></section>
   <section><title>...use multiple CPUs (or cores) in one server?</title>
-    <p>
-        As of OTP R12B, Erlang has SMP support on all the major
-        platforms, and it's enabled by default. Some platforms
-        (Solaris, Linux, MacOSX on PPC) had SMP support in earlier
-        versions.
-</p><p>
-        Given that Erlang programs are naturally written in a concurrent
-        manner, most programs require no modification at all to take
-        advantage of SMP.
-</p><p>
-	A more loosely coupled approach is to start multiple Erlang nodes
-        on the same server.
+  <p>
+    Erlang has SMP support on all major platforms and it's enabled by
+    default.
+  </p>
 
-</p></section>
+</section>
   <section><title>...run distributed Erlang through a firewall?</title>
     <p>
 	The simplest approach is to make an a-priori restriction to the
