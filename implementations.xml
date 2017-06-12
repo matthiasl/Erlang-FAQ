@@ -11,68 +11,38 @@
   </header>
 
 <section>
-    <marker id="implementations"/>
-    <title>What Production-quality implementations of Erlang are there?</title>
+    <title>Open Source Erlang</title>
 
-	<list>
-	<item><p> <url href="http://www.erlang.org/"> Open Source
-	Erlang </url>
-	  is the most popular implementation.
-	  It is built from the same source tree as the commercial
-	  version of Erlang. You can use Open Source Erlang to build
-	  commercial products without having to pay royalties or licence
-	  fees to Ericsson.
-	<marker id="commercial-erlang"/>
-        </p></item>
-
-
-	<item><p> <url href="http://www.erlang.se/">
-		Ericsson's Commercial Erlang</url>. This is essentially
-		the same as Open Source Erlang. The main differences are:
-               </p>
-
-		<list>
-		<item><p>Commercial Erlang comes with a support agreement
-                 </p></item>
-
-		<item><p>The OTP team go to greater lengths
-			to test the commercial release, so you
-			get a more stable product. Similarly, they
-			make the transition between versions smoother.
-                 </p></item>
-
-		<item><p>The commercial version includes some
-			encryption-related code which cannot be
-			provided in the open source release for legal reasons.
-                 </p></item>
-
-		<item><p>The commercial release does <em>not
-			</em> contain applications which are
-			considered experimental or unstable.
-                 </p></item>
-
-		</list>
-             </item>
-	</list>
+    <p>
+      <url href="http://www.erlang.org/"> Open Source Erlang </url> is
+      the standard implementation of Erlang. You can use Open Source
+      Erlang to build commercial products without having to pay
+      royalties or licence fees to Ericsson. Open Source Erlang uses
+      the Apache License 2.0.
+    </p>
 
 </section>
-<section><title>What Experimental and Research Implementations are there?</title>
+<section><title>What Experimental, Research and Historical
+Implementations are there?</title>
 
 	<list>
 
 	<item><p><url
 		href="http://www.it.uu.se/research/group/hipe">
-		High Performance Erlang</url> (HiPE).
-		HiPE is an in-progress project to create a faster Erlang
-		by compiling to native code. Since R8A, the HiPE compiler
-		is tightly integrated with the normal BEAM system; if
-		you have downloaded open source erlang, then you also have
-		HiPE. A <url href="http://www.erlang.se/euc/01/kostis2001/sld001.htm">presentation at the EUC 2001</url> described how to use it.</p></item>
+	  High Performance Erlang</url> (HiPE) is part of
+          ordinary Open Source Erlang. It allows compiling Erlang
+          modules to native code.</p></item>
+
+          <item><p><url
+                       href='https://github.com/trifork/erjang'>Erjang</url>
+          is an experimental Erlang VM implemented in Java.
+          </p>
+          </item>
 
 	<item><p>
 		<url href="https://github.com/feeley/etos/">
 		Erlang to Scheme Compiler</url> (ETOS).
-		ETOS is another research project to compile Erlang
+		ETOS was another research project to compile Erlang
 		programs to native code by first translating the
 	        program into scheme. They have some impressive benchmarks.
 		ETOS is no longer under active development.</p></item>
@@ -122,24 +92,23 @@
 </p>
 
 	<list>
-	<item><p> Solaris (including 64 bit)</p></item>
-	<item><p> BSD</p></item>
-	<item><p> Linux</p></item>
-	<item><p> OSX</p></item>
-	<item><p> TRU64</p></item>
-	<item><p> Windows NT/2000/2003/XP/Vista</p></item>
-	<item><p> VxWorks</p></item>
+	  <item><p> BSD</p></item>
+	  <item><p> Linux</p></item>
+	  <item><p> Microsoft Windows</p></item>
+	  <item><p> OSX</p></item>
+	  <item><p> Solaris</p></item>
+	  <item><p> TRU64</p></item>
+	  <item><p> VxWorks</p></item>
 	</list>
 
         <p>
+	  There are reports on the mailing list of other people
+          compiling it successfully IRIX, along with reports of
+          Erlang running on less usual systems such as iPhones, Xboxes
+          Tilera 64-core CPUs and many embedded systems.
+	</p>
 
-	There are reports on the mailing list of other people
-        compiling it successfully IRIX, along with reports of
-        Erlang running on less usual systems such as iPhones, Xboxes
-        Tilera 64-core CPUs and many embedded systems.
-	</p><p>
-
-</p></section>
+</section>
 <section><title> What implementations of the Erlang Virtual Machine are there?</title>
 <p>
 
@@ -169,37 +138,22 @@
 	</section>
 
 </section>
-<section><title>Is there an unofficial port for...?</title>
-<p>
 
-	<em>MacOS X</em>: Releases since R9B compile on
-		MacOS X.
-		</p><p>
-
-	<em>QNX</em>: Vlad Dumitrescu has looked
-		at porting to QNX. If you're interested, ask on the
-		erlang mailing list.</p><p>
-
-	<em>VxWorks</em>: VxWorks support is
-		included in the standard distribution.  </p><p>
-
-</p></section>
 <section>
     <marker id="cygwin-cross"/>
     <title>Can Erlang be compiled under Microsoft Windows?</title>
 <p>
 
-	There is a README.win32 file at the top of the source code
-	distribution which explains how to do this.
+	HOWTO/INSTALL-WIN32.md in the source code distribution which
+	explains how to do this.
 
 </p></section>
 
-<section><title>Can Erlang be cross compiled?</title>
+<section><title>How can I cross-compile Erlang?</title>
 <p>
-  Yes. From release R13B04 (released February 2010) onwards, the standard
-  Erlang/OTP distribution includes support and documentation for cross
-  compiling. This is described in the INSTALL-CROSS.md file at the
-  top of the Erlang source, available from the
+  The standard Erlang/OTP distribution includes support and
+  documentation for cross compiling. This is described in the
+  HOWTO/INSTALL-CROSS.md file in the Erlang source, available from the
   <url href="http://erlang.org/download.html">downloads page</url>.
 </p>
 </section>
