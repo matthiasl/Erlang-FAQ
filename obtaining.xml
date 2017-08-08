@@ -177,6 +177,11 @@
     </p>
 
     <p>
+        <url href="https://happi.github.io/theBeamBook/">The BEAM book</url>
+        describes Erlang's virtual machine, called BEAM.
+    </p>
+
+    <p>
 	The <url href="http://www.erlang.org/download/erl_spec47.ps.gz">
 	Standard Erlang</url> spec (1999) aims to define the Erlang language.
 	There is currently no compiler which actually implements everything
