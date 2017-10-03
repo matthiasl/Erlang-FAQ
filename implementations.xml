@@ -103,9 +103,9 @@ Implementations are there?</title>
 
         <p>
 	  There are reports on the mailing list of other people
-          compiling it successfully IRIX, along with reports of
-          Erlang running on less usual systems such as iPhones, Xboxes
-          Tilera 64-core CPUs and many embedded systems.
+	  compiling it successfully on IRIX, along with reports of Erlang
+	  running on less usual systems such as iPhones, Xboxes, QNX,
+	  Tilera 64-core CPUs and many embedded systems.
 	</p>
 
 </section>
