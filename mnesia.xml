@@ -121,12 +121,43 @@ comes with Erlang.
 </p></section>
 <section><title>How much data can be stored in Mnesia?</title>
 <p>
+	It depends on the storage type of your tables.
+</p>
 
-	Dets uses 32 bit integers for file offsets, so the
-	largest possible mnesia table (for now) is 4Gb.
+	<list>
+	<item><p>
+
+	For <c>ram_copies</c> and <c>disc_copies</c>, the entire table
+	is kept in memory, so data size is limited by available RAM.
+
 	</p><p>
-	In practice your machine will slow to a crawl way before
-	you reach this limit.
+
+	Note that for <c>disc_copies</c> tables, the entire table
+	needs to be read from disk to memory on node startup, which
+	can take a long time for large tables.
+
+	</p></item>
+
+	<item><p>
+
+	<c>disc_only_copies</c> tables are limited to 2 GB each. If
+	your table is fragmented, each fragment counts as a separate
+	table, and the combined size can thus exceed 2 GB.
+	</p><p>
+
+	The reason for this limit is that <c>disc_only_copies</c>
+	tables are backed by Dets tables, and the Dets file format
+	uses signed 32-bit integers for file offsets.
+
+	</p></item>
+	</list>
+
+	<p>
+
+	An earlier version of this FAQ entry claimed that all tables
+	are limited by the Dets limit. This was the case until R7B-4
+	(released on 30th September 2001), when <c>disc_copies</c>
+	tables were moved from Dets to <c>disk_log</c>.
 
 </p></section>
 <section><title>Contributors</title>
