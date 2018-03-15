@@ -71,7 +71,7 @@ comes with Erlang.
 
 	<list>
 	<item><p>
-	
+
 	Storage type - Both <c>ram_copies</c> and
 	<c>disc_copies</c> tables
 	rely on storing a full copy of the whole table and data
@@ -87,7 +87,7 @@ comes with Erlang.
 	to repair (this was improved in recent versions but is
 	still not quick).
         </p></item>
-	
+
 	<item><p>
 	Replication - if the table has a replica then updating
 	an entry and rebuilding after a restart will copy the
@@ -98,7 +98,7 @@ comes with Erlang.
 	</list>
 
 	<p>
-	
+
 	As always, measurement of the different mechanisms for your
 	specific application is recommended.
 
@@ -160,7 +160,4 @@ comes with Erlang.
 	tables were moved from Dets to <c>disk_log</c>.
 
 </p></section>
-<section><title>Contributors</title>
-<p> Thanks to Chris Pressey, Ulf Wiger and Sean Hinde for writing
-	the entries in this section.
-</p></section></chapter>
+</chapter>
