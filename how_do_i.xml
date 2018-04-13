@@ -233,7 +233,6 @@
     <list>
       <item><p><url href="http://code.google.com/p/epi/">A set of C++ classes</url></p></item>
       <item><p><url href="http://www.lysator.liu.se/~tab/erlang/py_interface/">A Python implementation of an Erlang hidden node</url></p></item>
-      <item><p><url href="http://gitorious.org/erlua">ErLua, an Erlang to Lua interface</url>.</p></item>
     </list>
 
   </section>
