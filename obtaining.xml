@@ -418,18 +418,8 @@ distributing it are:
 	The erlang-questions list is
 	<url href="http://www.erlang.org/pipermail/erlang-questions/">
 	archived on the Erlang website</url>.
-
-        </p><p>
-        The GMANE news/mail gateway acts as both an archive and a
-        forum-style way of using the mailing list. It has
-        <url href="http://news.gmane.org/gmane.comp.lang.erlang.general">
-	Erlang Questions</url> and
-	<url href="http://news.gmane.org/gmane.comp.lang.erlang.patches">
-	Erlang Patches</url>.
-
-        </p>
-
-	<p>
+    </p>
+    <p>
 	  <url href='http://www.erlangcentral.org'>Erlang Central</url>
 	  has some Erlang-related forums. It also has a good calendar of
 	  Erlang events (hack nights, local meetups, etc.)
