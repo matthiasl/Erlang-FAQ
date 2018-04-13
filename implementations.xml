@@ -2,7 +2,7 @@
 <!DOCTYPE chapter SYSTEM "chapter.dtd">
 <chapter>
   <header>
-    <title>Implementation and Ports of Erlang</title>
+    <title>Implementations and Ports of Erlang</title>
     <prepared>Matthias Lang</prepared>
 <docno></docno>
 <date>2007-09-12</date>
@@ -52,11 +52,10 @@ Implementations are there?</title>
                 language. GERL compiled to native code via C. GERL has
 		fallen into disuse.</p></item>
 
-	<item><p><url
-		href="http://www.adfa.edu.au/~lpb/research/sserl/">
-		Safe Erlang</url>,
-		which is a prototype made by extending an older version
-		of Ericsson's implementation, is intended for
+	<item><p>
+		<em>Safe Erlang</em>
+		was a prototype made by extending an older version
+		of Ericsson's implementation. It was intended for
 		applications where Erlang nodes must cooperate with
 		other Erlang nodes which are not trusted. Safe Erlang
                 is no longer under active development.</p></item>
