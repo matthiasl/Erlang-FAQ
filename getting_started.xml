@@ -54,16 +54,14 @@
 	<url href="http://www.erlang.org/doc/getting_started/users_guide.html">online</url>.
 	</p><p>
 
-	<url href="http://www.erlang.se/training/index.shtml">
-	Ericsson</url> run training courses for Ericsson employees.
+	Ericsson run training courses for Ericsson employees.
 	</p><p>
 
 	<url href="http://www.erlang-solutions.com/">erlang-solutions.com
-	</url> and <url
-	href="http://www.erlang-services.com/">erlang-services.com</url>
-	both run training courses (primarily in London and Stockholm,
+	</url> run training courses (primarily in London and Stockholm,
 	but also in the US, Asia and Australia) aimed at
-        businesses.
+        businesses. These are often in conjunction with the yearly
+        Erlang User Conference.
 	</p><p>
 
 	Many <seealso marker="introduction#universities">universities

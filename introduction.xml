@@ -155,7 +155,7 @@
         </p></item>
 
         <item><p>
-        <url href="http://www.bluetab.net/index.php/revenue-management/#Event">Bluetab Solutions</url>
+        <url href="http://www.bluetab.net/">Bluetab Solutions</url>
 	(Event data collection)
         </p></item>
 
@@ -297,7 +297,7 @@
 
 
 	<item><p>
-		<url href="http://www.macs.hw.ac.uk/~dsg/telecoms/">
+		<url href="http://www.macs.hw.ac.uk/">
 		Heriot-Watt University</url> in the UK.
         </p></item>
 
@@ -345,7 +345,7 @@
 	<item><p><url href="https://www.cs.kent.ac.uk/">The University of Kent</url> in the UK</p></item>
 
 	<item><p>
-		<url href="http://staffwww.dcs.shef.ac.uk/people/J.Derrick/">University of Sheffield</url> in the UK
+		<url href="https://www.sheffield.ac.uk/dcs/people/academic/jderrick">University of Sheffield</url> in the UK
         </p></item>
 
 	<item><p>
@@ -373,16 +373,10 @@
 </section>
 <section><title> Can I get commercial support for Erlang?</title>
 	<p>
-	Several consulting companies provide support and training courses:
-	<url href="http://www.erlang-solutions.com">Erlang-solutions.com
-	</url>,
-	<url href="http://www.erlang-services.com">Sjoland and Thyselius</url> and
-	<url href="http://www.process-one.net/en/services/">Process One</url>.
-        </p>
-
-	<p>
-        Users within Ericsson can obtain support, printed manuals and
-        binaries from <url href="http://www.erlang.se/">www.erlang.se</url>.
+	  Many consulting companies provide support and training courses,
+          the most well-known one is
+          <url href="http://www.erlang-solutions.com">Erlang-solutions.com
+	  </url>.
         </p>
 </section>
 </chapter>

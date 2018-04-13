@@ -64,7 +64,7 @@ href="http://erlang.org/pipermail/erlang-questions/1999-March/000165.html">
 <p>
 	A test suite is especially useful for making sure that
 	"improvements" to the system haven't broken something.
-	The <url href="http://www.erlang.org/doc-1/man/test_server_app.html">test system</url>
+	The <url href="http://erlang.org/doc/apps/common_test/index.html">test system</url>
         for Erlang can be used for testing your project and
         it includes test suites for the Erlang emulator	and Erlang stdlib.
 	</p><p>
