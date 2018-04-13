@@ -324,12 +324,17 @@
 	<url href="http://www.graduate.technion.ac.il/Eng/Subjects/?SUB=046273">Technion</url>&#x2014;Israel Institute of Technology (Electrical Engineering Faculty).
         </p></item>
 
+        <item><p> <url
+        href="https://softech.cs.uni-kl.de/homepage/de/teaching/SS18/progdist/">
+          Technische Universität Kaiserslautern</url> in Germany, for
+          research and in their distributed systems source.  </p></item>
+
 	<item><p>
 		<url href="http://www.itesm.edu/wps/wcm/connect/Campus/CEM/Estado+de+Mexico/">Tecnol&oacute;gico de
 		  Monterrey, Campus Estado de M&#233;xico
 		</url> in the
 		<url href="http://webcem01.cem.itesm.mx:8005/apps/s201213/tc3035/noticias/">
-		Programming Languages course</url>.
+ 		Programming Languages course</url>.
         </p></item>
 
 	<item><p>
@@ -350,7 +355,7 @@
 		Programming course and also for research.
         </p></item>
 
-	<item><p>
+ 	<item><p>
 		<url href="http://www.uu.se/">Uppsala University </url>
 		in Sweden is home to the
 		<url href="http://www.it.uu.se/research/group/hipe/">HiPE</url>
