@@ -157,7 +157,7 @@
 <p>
   For open-source projects intended for use with other open source
   projects, the de-facto way to distribute is on <url
-  href="http://github.org">github</url>. Building and installing
+  href="http://github.com">github</url>. Building and installing
   dependencies should then ideally involve no more than typing 'make'.
 </p>
 

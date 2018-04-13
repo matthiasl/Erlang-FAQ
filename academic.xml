@@ -530,7 +530,7 @@ Java/Python/C/C++/Haskell?</title>
   the first book (now defunct) about Erlang featured a whole chapter
   on the subject. In practice, few, if any, real Erlang systems
   attempt to follow those 'OO Erlang' conventions. The <url
-  href="http://ceylan.sourceforge.net/main/documentation/wooper/">
+  href="http://wooper.esperide.org/">
   WOOPER</url> project is one example of a serious effort to put an OO
   layer on top of Erlang.
 </p>
