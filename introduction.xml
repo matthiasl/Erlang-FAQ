@@ -160,11 +160,6 @@
         </p></item>
 
 	<item><p>
-	<url href="http://www.radware.com/Resources/ssl_accelerator.aspx">RAD</url>
-	(SSL accelerator, previously owned by Nortel, Alteon and Bluetail)
-        </p></item>
-
-	<item><p>
 	 <url href="https://www.corelatus.com/">Corelatus</url>
 	(Signalling in telecommuncations networks)
         </p></item>
@@ -172,6 +167,11 @@
 	<item><p>
 	 <url href="http://counter.hackers.lv/">dqdp.net (in Latvian)</url>
 	(Web Services)
+        </p></item>
+
+        <item><p>
+	  <url href="http://ee.co.uk/">EE (British mobile operator, previously T-Mobile and one2one)</url>
+	(advanced call control services)
         </p></item>
 
 	<item><p>
@@ -231,14 +231,17 @@
 	<url href="http://www.rabbitmq.com/">RabbitMQ</url>
 	(<url href="http://www.amqp.org/">AMQP</url> Enterprise Messaging)
         </p></item>
+
+        <item><p>
+	<url href="http://www.radware.com/Resources/ssl_accelerator.aspx">RAD</url>
+	(SSL accelerator, previously owned by Nortel, Alteon and Bluetail)
+        </p></item>
+
 	<item><p>
 	<url href="http://smarkets.com">Smarkets</url>
 	(Betting exchange and prediction market)
         </p></item>
-	<item><p>
-	<url href="http://ee.co.uk/">EE (British mobile operator, previously T-Mobile and one2one)</url>
-	(advanced call control services)
-        </p></item>
+
 	<item><p>
 	<url href="http://www.telia.se/">
 	Telia</url> (a telecomms operator)
