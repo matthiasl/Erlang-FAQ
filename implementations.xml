@@ -177,7 +177,7 @@ Implementations are there?</title>
   People successfully run the Ericsson implementation of
   Erlang on systems with as little as 16MByte of RAM. It
   is reasonably straightforward to fit Erlang itself into
-  2MByte of persistant storage (e.g. a flash disk).
+  2MByte of persistent storage (e.g. a flash disk).
 
   </p><p>
   A 2MByte stripped Erlang system can include the

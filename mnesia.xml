@@ -63,7 +63,7 @@ comes with Erlang.
 <p>
 
 	It depends. Erlang has no problem storing Erlang binary data
-	types of arbritary size,  however due to the in-memory-database
+	types of arbitrary size,  however due to the in-memory-database
 	design emphasis of mnesia, storing lots of binary
 	data will eventually hit one of a number of limitations.
 	These are driven by:
