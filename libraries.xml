@@ -163,7 +163,7 @@
 
 <p>
   The most popular way of doing that is to use
-  <url href='https://github.com/rebar/rebar'>rebar</url>.
+  <url href='https://github.com/erlang/rebar3'>rebar</url>.
 </p>
 
 <p>
